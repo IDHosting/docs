@@ -18,6 +18,85 @@
             "pages": [
               "index"
             ]
+          },
+          {
+            "group": "Backup/Restore",
+            "pages": [
+              "articles/backup-restore/how-to-download-backup-of-home-directory-mysql-or-email-only",
+              "articles/backup-restore/how-to-generate-and-download-a-full-backup-of-your-cpanel",
+              "articles/backup-restore/how-to-restore-partial-backups-in-cpanel",
+              "articles/backup-restore/how-to-generate-a-cpanel-backup-and-send-it-to-ftp"
+            ]
+          },
+          {
+            "group": "cPanel - Control Panel",
+            "pages": [
+              "articles/cpanel-control-panel/how-to-reset-cpanels-account-password"
+            ]
+          },
+          {
+            "group": "Databases",
+            "pages": [
+              "articles/databases/how-to-create-a-database-in-cpanel",
+              "articles/databases/how-to-rename-a-database-in-cpanel",
+              "articles/databases/how-to-create-a-database-username-in-cpanel",
+              "articles/databases/how-to-delete-a-database-in-cpanel",
+              "articles/databases/how-to-add-a-user-to-a-database-and-grant-privileges"
+            ]
+          },
+          {
+            "group": "DNS - Nameservers",
+            "pages": [
+              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-name-com",
+              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-dynadot",
+              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-namecheap",
+              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-netearthone-or-based",
+              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-godaddy"
+            ]
+          },
+          {
+            "group": "Domain Management",
+            "pages": [
+              "articles/domain-management/how-to-create-an-alias-or-park-a-domain-in-cpanel",
+              "articles/domain-management/how-to-remove-parked-domains-aliases-in-cpanel",
+              "articles/domain-management/how-to-create-addon-domains-in-cpanel",
+              "articles/domain-management/how-to-remove-an-add-on-domain-in-cpanel",
+              "articles/domain-management/how-to-redirect-an-add-on-domain-in-cpanel",
+              "articles/domain-management/how-to-create-a-subdomain-in-cpanel",
+              "articles/domain-management/how-to-remove-a-subdomain-in-cpanel",
+              "articles/domain-management/how-to-redirect-a-subdomain-to-an-external-url",
+              "articles/domain-management/how-to-redirect-your-website-to-any-page-or-external-domain",
+              "articles/domain-management/how-to-remove-a-domain-redirect-in-cpanel"
+            ]
+          },
+          {
+            "group": "Email",
+            "pages": [
+              "articles/email/how-to-access-email-from-cpanel-webmail",
+              "articles/email/how-to-change-an-email-accounts-password-in-cpanel",
+              "articles/email/how-to-create-an-email-autoresponder-when-you-are-on",
+              "articles/email/how-to-forward-an-email-to-gmail-or-other-email-service",
+              "articles/email/how-to-create-an-email-account-in-cpanel"
+            ]
+          },
+          {
+            "group": "FTP",
+            "pages": [
+              "articles/ftp/how-to-create-an-ftp-account-in-cpanel",
+              "articles/ftp/how-to-change-the-password-of-the-ftp-account-in-cpanel",
+              "articles/ftp/how-to-change-the-ftp-user-quota-in-cpanel",
+              "articles/ftp/how-to-delete-an-ftp-user-account-from-cpanel"
+            ]
+          },
+          {
+            "group": "Mail Filters &amp; SPAM",
+            "pages": [
+              "articles/mail-filters-spam/how-to-enable-boxtrapper-in-cpanel",
+              "articles/mail-filters-spam/how-to-enable-apache-spamassassin-and-spambox-in-cpanel",
+              "articles/mail-filters-spam/how-to-create-an-account-level-global-email-filter-in-cpanel",
+              "articles/mail-filters-spam/how-to-edit-an-account-level-global-email-filter-in-cpanel",
+              "articles/mail-filters-spam/how-to-delete-an-account-level-global-email-filter-in-cpanel"
+            ]
           }
         ]
       }
@@ -42,15 +121,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {

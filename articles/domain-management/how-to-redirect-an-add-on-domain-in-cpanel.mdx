@@ -1,0 +1,40 @@
+---
+title: "Redirect an Add-on Domain in cPanel"
+description: "Learn how to redirect your add-on domain to another domain using cPanel."
+---
+
+This article will guide you through the process of redirecting an add-on domain to another website using your cPanel account.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by logging in with your provided credentials.
+  </Step>
+  <Step title="Navigate to Redirects">
+    In the **Domains** section of your cPanel dashboard, click on **Redirects**.
+    <Frame>
+      <img src="/images/kb/cpanel-redirect.gif" alt="cPanel Redirects Interface" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure the Redirect">
+    Under the **Add Redirect** section, you will need to enter the following details:
+    <ul>
+      <li>
+        <strong>Type:</strong> Select either <strong>Permanent (301)</strong> for a permanent move or <strong>Temporary (302)</strong> for a temporary redirect.
+      </li>
+      <li>
+        <strong>https?://(www.)?:</strong> Choose the add-on domain you wish to redirect from the dropdown menu. You can also specify a particular page within that domain to redirect.
+      </li>
+      <li>
+        <strong>Redirects to:</strong> Enter the full URL of the destination where you want your add-on domain to redirect.
+      </li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/redirect-addon.gif" alt="Addon Domain Redirect Configuration" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Add the Redirect">
+    Once you have entered all the necessary details, click the <strong>Add</strong> button to create the redirect.
+  </Step>
+</Steps>
+
+Congratulations! You have successfully set up a redirect for your add-on domain. Visitors accessing your add-on domain will now be automatically sent to the specified destination URL.

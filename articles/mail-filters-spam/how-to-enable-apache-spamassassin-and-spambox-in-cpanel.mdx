@@ -1,0 +1,46 @@
+---
+title: "Enable Apache SpamAssassin and SpamBox in cPanel"
+description: "Learn how to enable Apache SpamAssassin and SpamBox in cPanel to filter spam emails effectively."
+---
+
+Apache SpamAssassin is a powerful mail filter that identifies and isolates spam. It uses a variety of tests to detect unsolicited bulk email by examining email headers and content with advanced statistical methods.
+
+This guide will walk you through enabling Apache SpamAssassin and SpamBox in your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel Account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Spam Filters">
+    In the **Email** section of your cPanel dashboard, click on **Spam Filters**.
+    <Frame>
+      <img 
+        src="/images/kb/apache-spamassassin-icon.gif" 
+        alt="Apache SpamAssassin Icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enable Apache SpamAssassin">
+    To enable Apache SpamAssassin, toggle the **Process New Emails and Mark them as Spam** option. If the toggle is greyed out, it means Apache SpamAssassin is currently disabled.
+    <Frame>
+      <img 
+        src="/images/kb/apache-spam-assassin-enable-button.gif" 
+        alt="Enable Apache SpamAssassin Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enable SpamBox">
+    Activate **SpamBox** by clicking on the **Move New Spam to a Separate Folder (Spam Box)** option.
+    <Frame>
+      <img 
+        src="/images/kb/enable-spambox-cpanel.gif" 
+        alt="Enable SpamBox in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once enabled, SpamAssassin will automatically move incoming spam messages with a spam score of 5 or higher to your Spam Box folder.

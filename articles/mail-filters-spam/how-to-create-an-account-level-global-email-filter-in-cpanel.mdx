@@ -1,0 +1,51 @@
+---
+title: "Create an Account Level/Global Email Filter in cPanel to Fight Spam"
+description: "Learn how to set up account-level email filters in cPanel to automatically manage spam across all your email accounts."
+---
+
+It's challenging to completely eliminate spam emails, but you can effectively filter, discard, or redirect them using cPanel's global email filters. This guide will walk you through creating an account-level filter to help combat spam.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard using your provided credentials.
+  </Step>
+  <Step title="Navigate to Global Email Filters">
+    In the **Email** section, click on **Global Email Filters**.
+    <Frame>
+      <img 
+        src="/images/kb/account-level-filtering-icon.gif" 
+        alt="Global Email Filters icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create a New Filter">
+    Click on the **Create a New Filter** button.
+  </Step>
+  <Step title="Name Your Filter">
+    Enter a descriptive name for your filter in the **Filter Name** input box.
+  </Step>
+  <Step title="Define Filter Rules">
+    Configure the rules for your filter. For example, to filter emails containing specific words:
+    <ol>
+      <li>In the first dropdown menu, select <strong>Body</strong>.</li>
+      <li>In the second dropdown menu, select <strong>Contains</strong>.</li>
+      <li>In the text field, enter the word or phrase you want to filter (e.g., "Lottery").</li>
+    </ol>
+    <Frame>
+      <img 
+        src="/images/kb/create-filter-body.gif" 
+        alt="Configuring filter rules to check the email body for specific content"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose an Action">
+    From the **Actions** dropdown menu, select what you want to do with matching emails. For instance, choose **Discard Message** to delete them automatically.
+  </Step>
+  <Step title="Save the Filter">
+    Click on the **Create** button to save your new filter.
+  </Step>
+</Steps>
+
+You have now successfully set up an account-level email filter in cPanel. This filter will help reduce the amount of spam reaching all your associated email accounts.

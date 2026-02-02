@@ -1,0 +1,42 @@
+---
+title: "Redirect a Subdomain to an External URL"
+description: "Learn how to redirect a subdomain to an external URL using cPanel."
+---
+
+Redirecting a subdomain to an external URL is useful when you want visitors to be automatically sent to another website. In cPanel, you can set up a redirection in just a few steps.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Log in to your cPanel account.
+  </Step>
+  <Step title="Navigate to Redirects">
+    In the **Domains** section, click on **Redirects**.
+    <Frame>
+      <img
+        src="/images/kb/cpanel-redirect.gif"
+        alt="cPanel Redirects interface"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure the Redirect">
+    Under **Add Redirect**, enter the following details and choose the appropriate options:
+    <ul>
+      <li><strong>Type:</strong> Choose either <strong>Permanent (301)</strong> or <strong>Temporary (302)</strong>.</li>
+      <li><strong>https?://(www.)?:</strong> Select the Subdomain you wish to redirect. You can also redirect a specific page within the subdomain.</li>
+      <li><strong>Redirects to:</strong> Enter the external URL where you want to redirect your subdomain.</li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/redirect-addon.gif"
+        alt="Add Redirect configuration in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the Redirect">
+    Click on the **Add** button to save your redirect configuration.
+  </Step>
+</Steps>
+
+Congratulations! You have successfully created a redirect for your subdomain.

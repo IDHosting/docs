@@ -1,0 +1,53 @@
+---
+title: "Redirect Your Website to Any Page or External Domain"
+description: "Learn how to set up website redirects to send visitors to a different page or an external website using cPanel."
+---
+
+Redirecting your website is a useful technique for sending visitors to a new location, whether it's another page on your site or an entirely external domain. This is particularly helpful when you're moving your site, updating links, or consolidating content.
+
+Follow these steps to set up a redirect:
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Redirects">
+    In the **Domains** section, click on **Redirects**.
+
+    <Frame>
+      <img 
+        src="/images/kb/cpanel-redirect.gif" 
+        alt="cPanel Redirects interface"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure the Redirect">
+    Under the **Add Redirect** section, you will need to configure the following details:
+
+    *   **Type**: Choose between a **Permanent (301)** redirect, which tells search engines the content has permanently moved, or a **Temporary (302)** redirect, for short-term moves.
+    *   **https?://(www.)?**: This field is for the source URL. You can leave it as is if you are redirecting the entire domain. If you wish to redirect a specific directory or page, enter its name in the text box.
+    *   **Redirects to**: Enter the full URL of the destination where you want to redirect your visitors.
+
+    <Frame>
+      <img 
+        src="/images/kb/redirect-config.gif" 
+        alt="Redirect configuration settings in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the Redirect">
+    Once you have entered all the necessary details, click the **Add** button to save your redirect.
+
+    <Frame>
+      <img 
+        src="/images/kb/paper-domain-redirect-1.gif" 
+        alt="Add button for configuring redirects"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Following these steps will successfully redirect your website traffic as intended.

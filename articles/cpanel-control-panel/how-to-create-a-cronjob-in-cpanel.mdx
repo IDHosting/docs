@@ -1,0 +1,48 @@
+---
+title: "Create a Cronjob in cPanel"
+description: "Learn how to create and manage cron jobs in your cPanel account to automate tasks."
+---
+
+This guide will walk you through the process of creating a cron job in cPanel. Cron jobs are automated tasks that run at specified intervals, useful for website maintenance, backups, and more.
+
+## Steps to Create a Cron Job
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by navigating to your cPanel login URL and entering your credentials.
+  </Step>
+  <Step title="Navigate to Cron Jobs">
+    Once logged in, scroll down to the **Advanced** section and click on **Cron Jobs**.
+
+    <Frame>
+      <img
+        src="/images/kb/cronjob-icon.gif"
+        alt="cPanel Cron Jobs Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Cron Job Settings">
+    Under the **Add New Cron Job** section, click the **Common Settings** drop-down menu. Select a predefined schedule like **Once Per Day**, **Once Per Hour**, or choose a custom interval if needed.
+  </Step>
+  <Step title="Enter Command or Script Path">
+    In the **Command** field, enter the full path to your script (e.g., `/usr/bin/php /home/yourusername/public_html/your_script.php`) or the specific command you wish to execute.
+  </Step>
+  <Step title="Add the Cron Job">
+    After configuring the settings and entering the command, click the **Add New Cron Job** button.
+
+    <Frame>
+      <img
+        src="/images/kb/add-cronjob.gif"
+        alt="Add New Cron Job Button in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>
+  Ensure that the command or script path you enter is correct. An incorrect path or command will prevent the cron job from running.
+</Note>
+
+We hope this tutorial was helpful in setting up your cron jobs in cPanel.

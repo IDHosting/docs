@@ -1,0 +1,57 @@
+---
+title: "Create Addon Domains in cPanel"
+description: "A guide on how to create addon domains within your cPanel account."
+---
+
+<Note>
+  Before adding an addon domain, ensure that your addon domain's nameservers are pointed to your primary domain's nameservers. Allow 12 to 24 hours for these changes to propagate.
+</Note>
+
+## Steps to Create an Addon Domain
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by logging in with your provided credentials.
+  </Step>
+  <Step title="Navigate to Domains">
+    In the **Domains** section of your cPanel dashboard, click on the **Domains** icon.
+    <Frame>
+      <img 
+        src="/images/kb/cp-domains-icon.gif" 
+        alt="cPanel Domains Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create New Domain">
+    Click on the **Create A New Domain** button.
+    <Frame>
+      <img 
+        src="/images/kb/cp-create-a-new-domain.gif" 
+        alt="Create A New Domain Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter Domain Details">
+    Under the **Create a New Domain** section, fill in the following details:
+    <ul>
+      <li><strong>Domain:</strong> Enter your addon domain name (e.g., <code>example.net</code>).</li>
+      <li><strong>Share document root:</strong> Ensure this option is <strong>unchecked</strong> to create your addon domain correctly.</li>
+      <li><strong>Subdomain:</strong> This field will auto-populate. Remove the domain extension (e.g., <code>.com</code> or <code>.net</code>).</li>
+    </ul>
+    Leave all other options at their default settings.
+    <Frame>
+      <img 
+        src="/images/kb/addon-domain-form.gif" 
+        alt="Addon Domain Creation Form"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Submit">
+    Click on the **Submit** button to create the addon domain.
+  </Step>
+</Steps>
+
+You should see a confirmation message indicating that the domain has been successfully created.

@@ -1,0 +1,48 @@
+---
+title: "Create an FTP Account in cPanel"
+description: "Learn how to create a dedicated FTP account in cPanel for specific directory access."
+---
+
+You can access your hosting account using your cPanel login details, which grants full access to your home directory. However, if you need to create an FTP user account with access limited to a specific directory, you can set up a separate FTP account.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by navigating to your cPanel login URL and entering your credentials.
+  </Step>
+  <Step title="Navigate to FTP Accounts">
+    Once logged in, locate the **Files** section and click on **FTP Accounts**.
+    <Frame>
+      <img 
+        src="/images/kb/cpanel-ftp-icon.gif" 
+        alt="cPanel FTP Accounts Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add FTP Account Details">
+    Under the **Add FTP Account** section, you will need to fill in the following details:
+    <ul>
+      <li><strong>Log in:</strong> Enter a username for your FTP account. Avoid using spaces. For example, you could use <code>new-user</code>.</li>
+      <li><strong>Password:</strong> Create a strong password for this FTP account or use the password generator.</li>
+      <li><strong>Directory:</strong> Specify the directory this FTP user will have access to. To grant access to the entire <code>public_html</code> directory, enter <code>public_html</code>. To restrict access to a subdirectory, enter the path like <code>public_html/new-user</code>. An FTP user cannot access files outside of the directory assigned to them.</li>
+      <li><strong>Quota:</strong> Set a storage limit for this FTP account. You can enter a specific amount or choose <strong>unlimited</strong>.</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/new-ftp-account.gif" 
+        alt="New FTP Account Creation Form in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create the FTP Account">
+    After filling in all the required details, click on the <strong>Create FTP Account</strong> button.
+  </Step>
+</Steps>
+
+Your new FTP account is now created and ready to be used with your FTP client. Here are the details you'll need to connect:
+
+*   **Host:** Your website's IP address or domain name (e.g., <code>ftp.example.com</code>, replacing <code>example.com</code> with your actual domain).
+*   **Username:** Your newly created FTP username appended with your domain name (e.g., <code>new-user@example.com</code>).
+*   **FTP Port:** 21 (This is the default port for FTP).
+*   **FTP Password:** The password you set for this FTP account.

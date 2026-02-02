@@ -1,0 +1,81 @@
+---
+title: "Forward an Email to Gmail or Other Email Service Providers"
+description: "Learn how to set up email forwarding to keep all your messages in one place."
+---
+
+<Info>
+Keeping all your emails in one central location can significantly improve your organization and ensure you never miss an important message. This guide will walk you through setting up email forwarding.
+</Info>
+
+## How to Forward an Email
+
+Follow these steps to forward emails from your account to another email address.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account.
+  </Step>
+  <Step title="Navigate to Forwarders">
+    In the **Email** section, click on **Forwarders**, then click on **Add Forwarder**.
+    <Frame>
+      <img
+        src="/images/kb/email-forward-icon.gif"
+        alt="Add Forwarder icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter Forwarding Details">
+    Fill in the following fields:
+    *   **Address to Forward**: Enter the local part of the email address you wish to forward (e.g., `myemail` if you want to forward `myemail@example.com`).
+    *   **Domain**: Select the appropriate domain from the dropdown list if you manage multiple domains.
+    *   **Destination**: Choose **Forward to email address** and enter the email address where you want to receive the forwarded messages.
+    <Frame>
+      <img
+        src="/images/kb/email-forward-steps.gif"
+        alt="Email forwarding configuration steps in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the Forwarder">
+    Click on the **Add Forwarder** button to save your settings.
+  </Step>
+</Steps>
+
+## How to Forward an Email to a Mail Pipe Script/Program
+
+This method allows you to forward emails directly to a script for processing.
+
+<Steps>
+  <Step title="Navigate to Forwarders">
+    From the **Email** section in cPanel, click on **Forwarders** and then select **Add Forwarder**.
+  </Step>
+  <Step title="Enter Basic Details">
+    Provide the following information:
+    *   **Address to Forward**: Enter the email address you want to forward.
+    *   **Domain**: Select the relevant domain from the dropdown if you have multiple.
+  </Step>
+  <Step title="Configure Advanced Options">
+    In the **Destination** section, click on **Advanced Options**.
+    Select **Pipe to a Program** and enter the full path to your pipe script. For example:
+    ```bash
+    home/username/public_html/myemailpipe.php
+    ```
+    <Note>
+    Note that the path should not start with a forward slash (`/`).
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/email-pipe.gif"
+        alt="Configuring mail pipe forwarding in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the Forwarder">
+    Click **Add Forwarder** to finalize the setup.
+  </Step>
+</Steps>
+
+We hope you found this guide helpful in setting up your email forwarding preferences.
