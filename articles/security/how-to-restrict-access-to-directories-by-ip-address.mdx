@@ -1,0 +1,60 @@
+---
+title: "Restrict Access to Directories by IP Address"
+description: "Learn how to secure your directories by allowing access only from specific IP addresses using an .htaccess file."
+---
+
+To secure sensitive directories, such as your admin area, you can restrict access to only allow connections from specific IP addresses. This is achieved by creating an `.htaccess` file within the directory you wish to protect.
+
+For example, if you want to secure your WordPress admin directory (`wp-admin`), you would create an `.htaccess` file inside that directory.
+
+## Restricting Access
+
+<Steps>
+  <Step title="Create the .htaccess file">
+    Create a new file named `.htaccess` inside the directory you want to protect. For a WordPress installation, this would typically be in the `/wp-admin/` directory.
+  </Step>
+  <Step title="Add the access control code">
+    Open the `.htaccess` file and add the following code:
+
+    ```apache
+    order deny, allow
+    deny from all
+    allow from YOUR-IP-ADDRESS-HERE
+    ```
+  </Step>
+  <Step title="Replace placeholder with your IP address">
+    Replace `YOUR-IP-ADDRESS-HERE` with your actual IP address.
+    <Note>
+      You can find your current IP address by searching "what is my IP" on Google.
+    </Note>
+  </Step>
+  <Step title="Save and test">
+    Save the `.htaccess` file. Now, try accessing the protected directory from your IP address. It should be accessible. Then, try accessing it from a different IP address; you should be denied access.
+  </Step>
+</Steps>
+
+## Example for WordPress Admin Area
+
+If you have a WordPress blog installed on your main directory and you log in via `example.com/wp-admin`, you should create an `.htaccess` file in `/wp-admin/.htaccess` with the following content:
+
+```apache
+order deny, allow
+deny from all
+allow from YOUR-IP-ADDRESS-HERE
+```
+
+Remember to replace `YOUR-IP-ADDRESS-HERE` with your specific IP address.
+
+<Tip>
+  If you need to allow access from multiple IP addresses, you can add additional `allow from` lines for each IP.
+  ```apache
+  order deny, allow
+  deny from all
+  allow from 192.168.1.100
+  allow from 10.0.0.5
+  ```
+</Tip>
+
+<Warning>
+  Ensure you correctly identify your IP address. If you use a dynamic IP address that changes frequently, this method might lock you out. Consider using a static IP or alternative security measures in such cases.
+</Warning>

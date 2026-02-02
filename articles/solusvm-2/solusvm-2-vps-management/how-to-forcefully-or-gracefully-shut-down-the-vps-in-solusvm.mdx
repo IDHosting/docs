@@ -1,0 +1,92 @@
+---
+title: "Forcefully or Gracefully Shut Down the VPS in SolusVM 2"
+description: "Learn how to shut down your Virtual Private Server (VPS) in SolusVM 2, both gracefully and forcefully, through the control panel and the command line."
+---
+
+You can shut down your VPS in SolusVM 2 using two methods: a graceful shutdown or a forceful shutdown. This guide will walk you through both processes.
+
+## Gracefully Shut Down the VPS in SolusVM 2
+
+A graceful shutdown ensures that all running processes are terminated properly, minimizing the risk of data corruption.
+
+<Steps>
+  <Step title="Log in to SolusVM 2">
+    Access your SolusVM 2 Control Panel by logging in with your credentials.
+  </Step>
+  <Step title="Select Project">
+    Under the **Projects** section, click on the **project** that contains the VPS you wish to shut down.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-status.gif"
+        alt="SolusVM 2 VPS Status"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select VPS">
+    Click on the specific VPS you want to manage.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-select.gif"
+        alt="SolusVM 2 Select VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Stop">
+    Click the **Stop** button.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-stop-vps.gif"
+        alt="SolusVM 2 Stop VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm Shutdown">
+    Click **Yes** in the confirmation dialog to proceed with the shutdown.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-stop-confirmation.gif"
+        alt="SolusVM 2 Stop Confirmation"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+The VPS will begin shutting down. This process may take some time, and a confirmation message will be displayed once it's complete.
+
+## Forcefully Shut Down the VPS in SolusVM 2
+
+For a forceful shutdown, you can use the **Power Off** option. This is similar to pulling the power cord and should be used with caution as it may lead to data loss.
+
+<Frame>
+  <img
+    src="/images/kb/solusvm2-forced-poweroff.gif"
+    alt="SolusVM 2 Forceful Power Off"
+    style={{ width: '100%', height: 'auto' }}
+  />
+</Frame>
+
+## Shut Down the VPS via the Command Line
+
+You can also shut down your VPS using the command line via SSH.
+
+<Warning>
+  This method is equivalent to abruptly cutting power and carries a risk of data loss. Use it only when necessary.
+</Warning>
+
+<Steps>
+  <Step title="Log in via SSH">
+    Connect to your VPS using an SSH client.
+  </Step>
+  <Step title="Execute Power Off Command">
+    Enter the following command and press Enter:
+    ```bash
+    poweroff
+    ```
+  </Step>
+</Steps>
+
+The VPS will shut down immediately after the command is executed.

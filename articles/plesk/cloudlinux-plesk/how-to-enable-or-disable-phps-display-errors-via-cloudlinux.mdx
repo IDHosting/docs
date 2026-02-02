@@ -1,0 +1,44 @@
+---
+title: "Enable or Disable PHP's display_errors via CloudLinux Selector in Plesk"
+description: "Learn how to enable or disable PHP's display_errors setting using the CloudLinux Selector in Plesk for debugging or security purposes."
+---
+
+<p>Sometimes, we need to debug PHP. Hence, we need to enable <strong>display_errors</strong> or disable them for security reasons. You can do this using the CloudLinux Selector to enable or disable PHP's display_errors in Plesk.</p>
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel.
+  </Step>
+  <Step title="Navigate to PHP Selector">
+    In the right sidebar, click on the **Pull icon** and select **PHP Selector**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-cl-php-selector-menu.gif" 
+        alt="Plesk CloudLinux PHP Selector menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options">
+    Click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>If the <strong>Options</strong> page shows an error related to the native PHP version, change it to a non-native version first.</Note>
+  </Step>
+  <Step title="Enable or Disable display_errors">
+    To enable <strong>display_errors</strong>, check the box next to it. To disable it, uncheck the box.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-or-disable-error.gif" 
+        alt="CloudLinux enable or disable display_errors option"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating whether the option has been enabled or disabled.
+  </Step>
+</Steps>

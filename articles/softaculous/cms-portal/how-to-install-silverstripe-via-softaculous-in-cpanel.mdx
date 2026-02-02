@@ -1,0 +1,117 @@
+---
+title: "Install SilverStripe via Softaculous in cPanel"
+description: "A guide on how to install SilverStripe using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of adding web applications to your website. This guide will walk you through installing SilverStripe using Softaculous in your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    You will be redirected to the Softaculous interface.
+  </Step>
+  <Step title="Search for SilverStripe">
+    On the left-hand sidebar, type **SilverStripe** into the search box. Click on the **SilverStripe** link that appears.
+    <Frame>
+      <img
+        src="/images/kb/silverstripe-softaculous.gif"
+        alt="Searching for SilverStripe in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/silverstripe-install-button.gif"
+        alt="SilverStripe Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., http, https) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you wish to install SilverStripe in a subdirectory (e.g., `example.com/directory`). Leave this field blank to install it in your main domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the <strong>Site Settings</strong> section, enter the following:
+    <ul>
+      <li>
+        <strong>Site Name:</strong> The name of your website (e.g., "My SilverStripe Site").
+      </li>
+      <li>
+        <strong>Site Description:</strong> A brief description of your website.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, provide:
+    <ul>
+      <li>
+        <strong>Admin Email:</strong> Your email address.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Choose a strong password for your administrator account.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-screen-four.gif"
+        alt="Softaculous admin account setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      Copy your admin username and password to a safe place, such as a Notepad file. You will need these credentials to log in to your SilverStripe admin area later.
+    </Note>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your SilverStripe installation. The default language is English.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-choose-language.gif"
+        alt="Softaculous language selection"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure database settings or set up automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Softaculous will now proceed with the installation. Once completed, you will receive confirmation with links to your new SilverStripe website and its administration area.

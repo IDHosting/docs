@@ -1,0 +1,46 @@
+---
+title: "Enable the GD Extension of PHP Using CloudLinux Selector in DirectAdmin"
+description: "Learn how to easily enable the GD extension for your PHP installation using the CloudLinux Selector in DirectAdmin."
+---
+
+You can use the CloudLinux Selector to enable the GD extension in PHP via DirectAdmin.
+
+<Steps>
+  <Step title="Log in to your DirectAdmin account">
+    Access your DirectAdmin control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Extra Features** section, click on **Select PHP version**. Alternatively, you can type "Select PHP" in the navigation filter box, and the option will appear. Click on it.
+    <Frame>
+      <img 
+        src="/images/kb/da-cl-php-selector-icon.gif" 
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to the Extensions tab">
+    Click on the **Extensions** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="CloudLinux Extensions Tab Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the <strong>Extensions</strong> page shows an error related to the native PHP version, you must first change it to a non-native version.
+    </Note>
+  </Step>
+  <Step title="Enable the GD extension">
+    Find the **GD** option and check the box next to it. Once enabled, a success message will be displayed.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-gd-extension.gif" 
+        alt="CloudLinux Enable GD Extension"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    The message will confirm that the **GD** module has been saved.
+  </Step>
+</Steps>

@@ -1,0 +1,58 @@
+---
+title: "Create a User Level Email Filter in cPanel"
+description: "Learn how to create a user-level email filter in cPanel to manage spam and unwanted emails."
+---
+
+It is challenging to completely stop spam emails, but you can effectively filter, discard, or deliver them to a selected folder using cPanel's email filtering tools. This guide will walk you through creating a user-level email filter.
+
+## How to Create a User Level Email Filter?
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Email Filters">
+    In the **Email** section, click on **Email Filters**.
+    <Frame>
+      <img 
+        src="/images/kb/user-level-filtering-icon.gif" 
+        alt="Email Filters icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Manage Filters for a User">
+    Under the **Filters by Users** section, you will see a list of your existing email accounts. Click on **Manage Filters** next to the email account you wish to configure.
+    <Frame>
+      <img 
+        src="/images/kb/manage-filter-by-user-level.gif" 
+        alt="Manage Filters by User Level"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create a New Filter">
+    Click on the **Create a New Filter** button.
+  </Step>
+  <Step title="Name Your Filter">
+    Enter a descriptive name for your filter in the **Filter Name** input box.
+  </Step>
+  <Step title="Define Filter Rules">
+    You can set various rules to filter your emails. For example, to filter emails containing specific words like "Lottery," select **Body** from the first dropdown list and **Contains** from the second dropdown list. Then, enter the word "Lottery" in the text field.
+  </Step>
+  <Step title="Choose an Action">
+    From the **Actions** dropdown menu, select the desired action. For this example, we will choose **Discard Message**.
+    <Frame>
+      <img 
+        src="/images/kb/create-filter-body.gif" 
+        alt="Create Filter rule for Body Contains Lottery and Action Discard Message"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create the Filter">
+    Finally, click on the **Create** button to save your new filter.
+  </Step>
+</Steps>
+
+Your user-level email filter is now active in cPanel and will help you manage your inbox more effectively by filtering unwanted messages.

@@ -1,0 +1,62 @@
+---
+title: "Block Any IP Address via an htaccess Rule"
+description: "Learn how to block specific IP addresses from accessing your website using an .htaccess rule."
+---
+
+You can block an IP address by adding a few lines to your `.htaccess` file. This is a common security measure to prevent unwanted traffic.
+
+## Blocking an IP Address
+
+To block an IP address, follow these steps:
+
+<Steps>
+  <Step title="Locate your .htaccess file">
+    The `.htaccess` file is usually located in the root directory of your website. If you cannot find it, you may need to enable viewing hidden files in your FTP client or file manager.
+  </Step>
+  <Step title="Edit the .htaccess file">
+    Open the `.htaccess` file in a text editor.
+  </Step>
+  <Step title="Add the blocking rule">
+    Add the following lines to your `.htaccess` file:
+
+    ```apache
+    order allow,deny
+    deny from IP-ADDRESS
+    allow from all
+    ```
+  </Step>
+  <Step title="Replace the placeholder IP address">
+    Replace `IP-ADDRESS` with the actual IP address you wish to block. For example, to block `192.168.1.100`, the lines would look like this:
+
+    ```apache
+    order allow,deny
+    deny from 192.168.1.100
+    allow from all
+    ```
+  </Step>
+  <Step title="Save and upload the file">
+    Save the changes to your `.htaccess` file and upload it back to your server.
+  </Step>
+</Steps>
+
+<Note>
+  Ensure you replace `IP-ADDRESS` with the correct IP address. Blocking the wrong IP could inadvertently restrict access for legitimate users.
+</Note>
+
+<Tip>
+  If you need to block multiple IP addresses, you can add a separate `deny from` line for each IP address.
+</Tip>
+
+## Example for Multiple IPs
+
+To block multiple IP addresses, you would add each one on a new line:
+
+```apache
+order allow,deny
+deny from 192.168.1.100
+deny from 10.0.0.5
+deny from 172.16.0.1
+allow from all
+```
+
+This configuration ensures that only the specified IP addresses are denied access, while all others are allowed.

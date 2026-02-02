@@ -1,0 +1,97 @@
+---
+title: "Install miniBB Forum via Softaculous in cPanel"
+description: "A guide on how to install miniBB Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. This guide will walk you through the process of installing miniBB Forum using Softaculous in your cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Begin by accessing your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, locate and click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for miniBB Forum">
+    On the left-hand side of the Softaculous interface, use the search box to type `miniBB`. Click on the `miniBB` link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/minibb-softaculous.gif"
+        alt="Searching for miniBB in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the installation process.
+    <Frame>
+      <img
+        src="/images/kb/minibb-install-button.gif"
+        alt="Install button for miniBB"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, you will need to configure the following:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http, https) and domain. If you wish to install miniBB in a specific directory (e.g., `example.com/forum`), enter the directory name in the "In Directory" field. Leave this field blank to install miniBB on your main domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Set Up Admin Account">
+    In the **Admin Account** section, provide the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your miniBB administrator account. For security reasons, avoid using common usernames like `administrator` or `admin`.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password for your admin account.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your email address. This is crucial for password resets and receiving important notifications.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-admin-fields.gif"
+        alt="Softaculous admin account fields"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a Notepad file. You will need these credentials to access the admin area of your miniBB forum later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure settings such as the database name or set up automated backups. You can generally leave these settings as default unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the installation of miniBB Forum.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

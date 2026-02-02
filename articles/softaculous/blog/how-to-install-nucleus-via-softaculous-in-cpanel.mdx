@@ -1,0 +1,94 @@
+---
+title: "Install Nucleus via Softaculous in cPanel"
+description: "A guide on how to install Nucleus using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications incredibly easy. Follow the steps below to install Nucleus on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Nucleus">
+    You will be redirected to the Softaculous interface. On the left-hand side, type **Nucleus** into the search box. Click on the **Nucleus** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/nucleus-softaculous.gif"
+        alt="Searching for Nucleus in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Nucleus installation process.
+
+    <Frame>
+      <img
+        src="/images/kb/nucleus-install-button.gif"
+        alt="Nucleus Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    *   **Choose Installation URL:** Select the appropriate protocol (e.g., `http` or `https`) and your domain. If you wish to install Nucleus in a subdirectory (e.g., `example.com/directory`), enter the directory name in the **In Directory** field. Otherwise, leave it blank to install in the root of your domain (e.g., `example.com`).
+
+        <Frame>
+          <img
+            src="/images/kb/softaculous-general-install-screen.gif"
+            alt="Softaculous general installation screen"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following information:
+    *   **Site Name:** Enter the name for your website (e.g., `My First Website`).
+    *   **Site Short Name:** Enter a short, descriptive name for your site.
+  </Step>
+  <Step title="Configure Admin Account">
+    Under the **Admin Account** section, enter your administrator credentials:
+    *   **Admin Username:** Choose a username for your Nucleus admin account. For security, avoid common usernames like "admin" or "administrator".
+    *   **Admin Password:** Create a strong and secure password.
+    *   **Real Name:** You can leave this as is or enter your actual name.
+    *   **Admin Email:** Provide a valid email address for administrative purposes.
+
+        <Frame>
+          <img
+            src="/images/kb/mycms-install-screen.gif"
+            alt="Nucleus admin account setup screen"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </Frame>
+
+        <Note>
+          It is highly recommended to copy your admin username and password to a secure location, such as Notepad. You will need these credentials to access the Nucleus admin area later.
+        </Note>
+  </Step>
+  <Step title="Advanced Options and Finalize Installation">
+    Under **Advanced Options**, you can configure database details or set up automated backups. Unless you have specific requirements, it's generally safe to leave these settings at their defaults. Creating frequent backups can consume significant disk space.
+
+    Scroll to the bottom of the page and click the **Install** button to complete the process.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

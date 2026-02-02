@@ -1,0 +1,46 @@
+---
+title: "Enable the Mailparse Extension of PHP Using CloudLinux Selector in cPanel"
+description: "Learn how to enable the Mailparse PHP extension using the CloudLinux Selector tool within your cPanel interface."
+---
+
+You can use CloudLinux Selector to enable the **Mailparse** extension in PHP via cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on **Select PHP Version**.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="cPanel Select PHP Version icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to the Extensions tab">
+    Click on the **Extensions** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="CloudLinux Extensions tab button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the **Extensions** page displays an error related to the native PHP version, you must first change it to a non-native version before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable the Mailparse extension">
+    Locate **Mailparse** in the list of extensions and check the box next to it. Once enabled, a success message will appear.
+    <Frame>
+      <img 
+        src="/images/kb/cl-mailparse-enable.gif" 
+        alt="CloudLinux Mailparse enable checkbox"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    The success message will confirm that the **Mailparse** module has been saved.
+  </Step>
+</Steps>

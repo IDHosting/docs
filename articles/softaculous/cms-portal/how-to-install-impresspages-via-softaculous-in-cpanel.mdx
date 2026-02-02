@@ -1,0 +1,107 @@
+---
+title: "Install ImpressPages via Softaculous in cPanel"
+description: "A guide on how to install ImpressPages using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of installing web applications. This guide will walk you through installing ImpressPages using Softaculous in your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for ImpressPages">
+    On the left-hand sidebar, type "ImpressPages" into the search box. Click on the **ImpressPages** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/impresspages-softaculous.gif"
+        alt="Searching for ImpressPages in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/impresspages-install-button.gif"
+        alt="ImpressPages Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., http:// or https://) and your domain. If you wish to install ImpressPages in a subdirectory (e.g., `example.com/directory`), enter the directory name in the "<strong>In Directory</strong>" field. Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general software setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the <strong>Site Settings</strong> section, enter the following:
+    <ul>
+      <li>
+        <strong>Site Name:</strong> Provide a name for your website, such as "ImpressPages".
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, enter the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your ImpressPages admin panel. For security reasons, avoid common usernames like "administrator" or "admin".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your email address.
+      </li>
+    </ul>
+    <Note>
+      Copy your admin username and password to a secure location like Notepad. You will need these credentials to log in to your ImpressPages admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-gen-install-screen-two.gif"
+        alt="Softaculous admin account setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure database settings or set up automated backups. You can typically leave these as default unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with the links to your new ImpressPages website and its admin area.

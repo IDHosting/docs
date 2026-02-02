@@ -1,0 +1,46 @@
+---
+title: "Increase PHP's post_max_size Value Using CloudLinux's Selector in Plesk"
+description: "Learn how to adjust the post_max_size setting for your PHP environment in Plesk using CloudLinux's PHP Selector."
+---
+
+You can modify PHP's `post_max_size` setting to accommodate your needs using the CloudLinux PHP Selector within Plesk.
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel.
+  </Step>
+  <Step title="Navigate to PHP Selector">
+    In the right sidebar, click on the **Pull icon** and select **PHP Selector**.
+    <Frame>
+      <img
+        src="/images/kb/plesk-cl-php-selector-menu.gif"
+        alt="Plesk CloudLinux PHP Selector menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options">
+    Click on the **Options** menu.
+    <Frame>
+      <img
+        src="/images/kb/cl-options-menu.gif"
+        alt="CloudLinux Options menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the **Options** page displays an error related to the native PHP version, you will need to change it to a non-native version first before proceeding.
+    </Note>
+  </Step>
+  <Step title="Adjust post_max_size">
+    Locate the **post_max_size** setting. Click on the drop-down menu next to it and select the desired limit according to your requirements.
+    <Frame>
+      <img
+        src="/images/kb/cl-post_max_size.gif"
+        alt="CloudLinux post_max_size setting adjustment"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating that the Maximum Post Size has been successfully updated.
+  </Step>
+</Steps>

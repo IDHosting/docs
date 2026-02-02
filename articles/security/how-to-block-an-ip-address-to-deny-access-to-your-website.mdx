@@ -1,0 +1,53 @@
+---
+title: "Block an IP Address to Deny Access to Your Website"
+description: "Learn how to block specific IP addresses from accessing your website using cPanel's IP Blocker."
+---
+
+You can block an IP address to prevent it from accessing your website. This is a useful security measure to stop malicious actors or unwanted traffic.
+
+## Block an IP Address
+
+Follow these steps to block an IP address using cPanel:
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by navigating to your cPanel login URL and entering your credentials.
+  </Step>
+  <Step title="Navigate to IP Blocker">
+    Once logged in, scroll down to the **Security** section and click on **IP Blocker**.
+    <Frame>
+      <img 
+        src="/images/kb/ip-deny-manager-icon.gif" 
+        alt="IP Blocker icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter IP Address to Block">
+    In the **Add an IP or Range** field, enter the IP address you wish to block.
+    <Frame>
+      <img 
+        src="/images/kb/denyip.gif" 
+        alt="Adding an IP address to block in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the IP Address">
+    Click the **Add** button to confirm and block the IP address.
+  </Step>
+</Steps>
+
+## IP Address Formats
+
+You can block IP addresses in various formats:
+
+*   **Single IP Address:** `192.168.0.1`
+*   **Range:** `192.168.0.1-192.168.0.40`
+*   **Implied Range:** `192.168.0.1-40`
+*   **CIDR Format:** `192.168.0.1/32`
+*   **Wildcard:** `10.*.*.*` (This implies all IPs starting with 10)
+
+<Note>
+  Once an IP address is blocked, it will no longer have access to your website.
+</Note>

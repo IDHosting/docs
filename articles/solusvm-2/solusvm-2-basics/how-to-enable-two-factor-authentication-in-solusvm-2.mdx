@@ -1,0 +1,69 @@
+---
+title: "Enable Two-Factor Authentication in SolusVM 2"
+description: "Learn how to secure your SolusVM 2 account with two-factor authentication."
+---
+
+Two-factor authentication (2FA) adds an essential layer of security to your SolusVM 2 account. It requires a unique code from an authentication app during login, preventing unauthorized access even if your password is compromised.
+
+## Requirements
+
+To enable 2FA, you will need:
+
+*   A smartphone with a supported time-based one-time password (TOTP) app. Popular options are available for Android, iOS, and Windows mobile operating systems.
+
+## Enabling Two-Factor Authentication
+
+Follow these steps to enable 2FA on your SolusVM 2 account:
+
+<Steps>
+  <Step title="Log in to SolusVM 2">
+    Access your SolusVM 2 Control Panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Account Settings">
+    In the left-hand sidebar, click on **Account**.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-account-menu.gif" 
+        alt="SolusVM 2 account menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Two-Factor Authentication">
+    Click on the **Two-Factor Authentication** option.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-two-factor-menu.gif" 
+        alt="SolusVM 2 two-factor authentication menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Scan QR Code or Enter Secret Key">
+    Open your authenticator app (e.g., Google Authenticator) and scan the displayed QR code. If your app does not support QR code scanning, you can manually enter the provided secret key.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-two-factor-enable.gif" 
+        alt="SolusVM 2 two-factor authentication QR code and secret key"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter Authentication Code and Enable">
+    In the **Code from the app** field, enter the current code displayed in your authenticator app. Then, click **Enable**.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-enable-two-fa.gif" 
+        alt="SolusVM 2 enable two-factor authentication code entry"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm with SolusVM Password">
+    You will be prompted to enter your SolusVM password to confirm the changes.
+  </Step>
+</Steps>
+
+<Note>
+Upon successful activation, SolusVM will display a recovery key. This key is crucial for regaining access to your account if you lose access to your authenticator device. Copy this recovery key and store it securely in a safe place.
+</Note>

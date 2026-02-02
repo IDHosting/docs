@@ -1,0 +1,63 @@
+---
+title: "Redirect a Subdomain to an External URL in Plesk"
+description: "Learn how to set up a subdomain redirect in Plesk to point it to an external website."
+---
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel.
+  </Step>
+  <Step title="Navigate to Websites & Domains">
+    Click on **Websites & Domains** from the sidebar menu.
+    <Frame>
+      <img
+        src="/images/kb/plesk-websites-and-domains-menu.gif"
+        alt="Plesk Websites and Domains menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Hosting Settings">
+    Under the list of **Domain names**, locate your subdomain and click on the **Hosting Settings** icon.
+    <Frame>
+      <img
+        src="/images/kb/plesk-hosting-setting-icon.gif"
+        alt="Plesk Hosting Settings icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Frame>
+      <img
+        src="/images/kb/plesk-open-subdomain.gif"
+        alt="Plesk subdomain hosting settings"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Forwarding">
+    Enter the following details:
+    <ul>
+      <li>
+        **Hosting Type**: Select **Forwarding** from the dropdown menu.
+      </li>
+      <li>
+        **Forward visitors to**: Enter the external URL where you want the subdomain to redirect.
+      </li>
+      <li>
+        **Forwarding Type**: Choose the appropriate option (e.g., 301 Permanent or 302 Temporary) based on your needs.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/plesk-forwarding-redirect-final.gif"
+        alt="Plesk forwarding and redirect settings"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Save Changes">
+    Click the **Save** button. You may see a warning message; confirm it by clicking **Yes**.
+  </Step>
+</Steps>
+
+The subdomain is now successfully redirected to the external URL. Visitors accessing the subdomain will be automatically directed to the specified external website.

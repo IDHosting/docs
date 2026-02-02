@@ -1,0 +1,79 @@
+---
+title: "Create an FTP Account in Plesk"
+description: "Learn how to create a dedicated FTP account in Plesk for specific directory access."
+---
+
+You can access your FTP account using your Plesk login details, which grants full access to your home directory. However, if you need to create an FTP user account for a specific directory, you can set up a separate FTP account.
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel.
+  </Step>
+  <Step title="Navigate to Websites & Domains">
+    Click on **Websites & Domains** from the sidebar menu.
+    <Frame>
+      <img
+        src="/images/kb/plesk-websites-and-domains-menu.gif"
+        alt="Plesk Websites & Domains menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select your domain">
+    Under the list of **Domain names**, click on the domain for which you want to create the FTP account.
+    <Frame>
+      <img
+        src="/images/kb/plesk-click-on-domain.gif"
+        alt="Plesk click on domain"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access FTP settings">
+    From the **Dashboard**, under the **Files & Databases** section, click on **FTP**.
+    <Frame>
+      <img
+        src="/images/kb/plesk-ftp-icon.gif"
+        alt="Plesk FTP icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add a new FTP Account">
+    Click on **Add an FTP Account**.
+    <Frame>
+      <img
+        src="/images/kb/plesk-add-an-ftp-account-button.gif"
+        alt="Plesk add an FTP account button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Fill in account details">
+    Complete the following fields:
+    <ul>
+      <li><strong>FTP account name:</strong> Enter a username for the FTP account (e.g., `john`).</li>
+      <li><strong>Home directory:</strong> Click the directory icon to select the specific directory you want this FTP user to access. If you grant access to a subdirectory, the user will be restricted to that directory and its contents.</li>
+      <li><strong>Password:</strong> Enter a password or click **Generate** to create a strong password. You can click **Show** to view and copy the generated password.</li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/plesk-create-ftp-account-options.gif"
+        alt="Plesk create FTP account options"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm creation">
+    Click **OK** to create the FTP account.
+  </Step>
+</Steps>
+
+You can now access your FTP account using the following details:
+
+*   **Host:** Your website's IP address or your website name (e.g., `ftp.example.com`). Replace `example.com` with your actual domain name.
+*   **Username:** The FTP account name you created (e.g., `john`).
+*   **FTP Port:** `21` (This is the default port).
+*   **FTP Password:** The password you set or generated for the FTP account.
+
+Your FTP account has been successfully created in Plesk.

@@ -1,0 +1,61 @@
+---
+title: "Enable or Disable PPP in SolusVM 2"
+description: "Learn how to enable or disable the Point-to-Point Protocol (PPP) for your VPS in SolusVM 2."
+---
+
+PPP, or Point-to-Point Protocol, is primarily used for older VPN types like PPTP. Enabling PPP allows your VPS to securely send and receive data over such connections. If you don't require this functionality, you can keep it disabled.
+
+<Steps>
+  <Step title="Log in to SolusVM 2">
+    Access your SolusVM 2 Control Panel.
+  </Step>
+  <Step title="Select Project">
+    Under the **Projects** section, click on the project that contains your VPS.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-status.gif"
+        alt="SolusVM 2 VPS Status"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select VPS">
+    Click on the specific VPS you wish to configure.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-select.gif"
+        alt="SolusVM 2 Select VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Settings">
+    Click on the **Settings** tab.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-settings-tab.gif"
+        alt="SolusVM 2 Settings Tab"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Toggle PPP">
+    To enable PPP, toggle the **PPP** option to the ON position. Then, click **Change** to save your selection.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-ppp-enabled.gif"
+        alt="SolusVM 2 Enable PPP"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Reboot VPS">
+    After making the changes, reboot your VPS for the settings to take effect.
+  </Step>
+</Steps>
+
+### Disabling PPP
+
+To disable PPP, follow the same steps above but toggle the **PPP** option to the OFF position in Step 5. Remember to reboot your VPS after disabling it.
+
+You have now successfully learned how to enable or disable PPP in SolusVM 2.

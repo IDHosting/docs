@@ -1,0 +1,114 @@
+---
+title: "Install Xoops via Softaculous in cPanel"
+description: "A guide on how to install Xoops using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Xoops on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Begin by accessing your cPanel account.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    Once logged in, scroll down to the **Software** section and click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Xoops">
+    On the left-hand sidebar, use the search box to type "Xoops". Click on the **Xoops** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/xoops-softaculous.gif"
+        alt="Searching for Xoops in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button for Xoops.
+    <Frame>
+      <img
+        src="/images/kb/xoops-install-button.gif"
+        alt="Xoops Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the required fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., http:// or https://) and your domain. If you wish to install Xoops in a subdirectory (e.g., `example.com/directory`), enter the directory name in the "<strong>In Directory</strong>" field. Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+      <li>
+        <strong>Data Directory:</strong> It's recommended to leave this field as default.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-three.gif"
+        alt="Software Setup configuration in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following details:
+    <ul>
+      <li>
+        <strong>Site Name:</strong> Enter the name for your website (e.g., "Xoops").
+      </li>
+      <li>
+        <strong>Site Description:</strong> Provide a brief description of your site.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    In the **Admin Account** section, enter:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a secure username for your Xoops administrator account. Avoid common usernames like "admin" or "administrator".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Real Name:</strong> You can use your full name or leave it as is.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter a valid email address for administrative purposes.
+      </li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as Notepad. You will need these credentials to log in to your Xoops admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-screen2.gif"
+        alt="Admin Account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure settings like the database name or set up automated backups. You can leave these as default unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the Xoops installation.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

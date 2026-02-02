@@ -1,0 +1,42 @@
+---
+title: "PHP Error: Allowed Memory Size Exhausted"
+description: "Learn how to resolve the 'Allowed memory size exhausted' error in PHP using the .htaccess file."
+---
+
+If you encounter the "Allowed memory size of x bytes exhausted" error in your PHP applications, this guide will help you resolve it using the `.htaccess` file.
+
+## Understanding the Error
+
+The "Allowed memory size of x bytes exhausted" error indicates that a PHP script has tried to use more memory than is currently allocated to it. This can happen with complex scripts, large data processing, or inefficient code.
+
+## Resolving the Error with .htaccess
+
+You can often increase the memory limit for your PHP scripts by adding a directive to your `.htaccess` file.
+
+<Steps>
+  <Step title="Locate or Create .htaccess File">
+    Navigate to the root directory of your website or the specific directory where the error is occurring. Look for a file named `.htaccess`. If it doesn't exist, create a new file with this name.
+  </Step>
+  <Step title="Add Memory Limit Directive">
+    Open the `.htaccess` file in a text editor and add the following line:
+    ```apache
+    RLimitMem max
+    ```
+    This directive attempts to set the memory limit to the maximum allowed by the server.
+  </Step>
+  <Step title="Save and Test">
+    Save the `.htaccess` file and refresh the page that was causing the error. The error should now be resolved.
+  </Step>
+</Steps>
+
+<Note>
+If the error persists after adding `RLimitMem max` to your primary domain's `.htaccess` file, try placing the directive in the `.htaccess` file within the specific directory where the error is occurring (e.g., `example.com/directory/folder/.htaccess`).
+</Note>
+
+## Further Assistance
+
+If you've tried the steps above and the error continues to appear, it might indicate a more complex issue or a server-level configuration problem. In such cases, please contact our support team for further assistance.
+
+<Card title="Contact Support" icon="support" href="/contact">
+  Reach out to our support team if you need further help resolving this error.
+</Card>

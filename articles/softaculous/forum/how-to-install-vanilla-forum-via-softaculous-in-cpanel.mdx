@@ -1,0 +1,97 @@
+---
+title: "Install Vanilla Forum via Softaculous in cPanel"
+description: "A guide on how to install Vanilla Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Vanilla Forum on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Vanilla Forum">
+    On the left-hand sidebar, type "Vanilla" into the search box. Click on the **Vanilla** link that appears.
+    <Frame>
+      <img
+        src="/images/kb/vanilla-softaculous.gif"
+        alt="Searching for Vanilla in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click on the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/vanilla-install-button.gif"
+        alt="Vanilla Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you wish to install Vanilla Forum in a subdirectory (e.g., `example.com/forum`). Leave it blank to install it in the root of your domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen for URL setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Enter the following details under the **Site Settings** section:
+    <ul>
+      <li><strong>Site Name:</strong> Provide a name for your forum, such as "Community Hub" or "Discussion Forum".</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following information:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your Vanilla forum administrator. For security reasons, avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Enter your email address. This is crucial for password recovery and notifications.</li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-gen-install-screen-two.gif"
+        alt="Softaculous general installation screen for admin account setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, immediately after setting them. You will need these credentials to access the admin area of your Vanilla forum.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    You can configure **Advanced Options** if you wish to change the default database name or set up automated backups. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous final install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Vanilla Forum should now be successfully installed on your cPanel account. You can access your new forum and its admin area using the details you provided.

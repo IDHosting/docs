@@ -1,0 +1,48 @@
+---
+title: "Enable the Mailparse Extension of PHP Using CloudLinux Selector in DirectAdmin"
+description: "Learn how to enable the Mailparse PHP extension using the CloudLinux Selector in DirectAdmin."
+---
+
+You can use the CloudLinux Selector to easily enable the **Mailparse** extension for your PHP version directly through your DirectAdmin control panel.
+
+## Steps to Enable Mailparse Extension
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Begin by logging into your DirectAdmin account.
+  </Step>
+  <Step title="Access PHP Selector">
+    Navigate to the **Extra Features** section and click on **Select PHP version**. Alternatively, you can type "Select PHP" into the navigation filter box to find the option.
+    <Frame>
+      <img 
+        src="/images/kb/da-cl-php-selector-icon.gif" 
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to Extensions Tab">
+    Once the PHP Selector interface loads, click on the **Extensions** menu tab.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="CloudLinux Extensions Tab Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the <strong>Extensions</strong> page displays an error related to the native PHP version, you will need to switch to a non-native PHP version first before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable Mailparse">
+    Locate **Mailparse** in the list of extensions and check the box next to it.
+    <Frame>
+      <img 
+        src="/images/kb/cl-mailparse-enable.gif" 
+        alt="CloudLinux Mailparse Extension Enabled"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    Upon successful enabling, you will see a success message confirming that the **Mailparse** module has been saved.
+  </Step>
+</Steps>

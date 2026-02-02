@@ -1,0 +1,80 @@
+---
+title: "Forcefully or Gracefully Shut Down the VPS in Virtualizor"
+description: "Learn how to shut down your Virtualizor VPS either gracefully or forcefully."
+---
+
+You can shut down your Virtualizor VPS in two ways: forcefully or gracefully. This guide will walk you through both methods.
+
+## Gracefully Shut Down the VPS
+
+Gracefully shutting down ensures that all running processes are stopped properly before the VPS powers off.
+
+<Steps>
+  <Step title="Log in to Virtualizor">
+    Access your Virtualizor Control Panel.
+  </Step>
+  <Step title="Navigate to List VPS">
+    From the left-side panel, click on **List VPS**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-list-vps-menu.gif" 
+        alt="Virtualizor List VPS menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Manage VPS">
+    Hover your mouse over the desired VPS row until it's highlighted. Then, click the **Wrench icon** on that line.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-click-manage-vps.gif" 
+        alt="Clicking the wrench icon to manage VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Stop the VPS">
+    On the top-right side of the VPS management page, click the **Stop icon**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-gracefully-shutdown.gif" 
+        alt="Stop icon for graceful shutdown"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+The VPS will begin its graceful shutdown process, which may take some time. A confirmation message will appear once it's complete.
+
+## Forcefully Shut Down the VPS
+
+Forcefully shutting down immediately cuts power to the VPS. Use this method with caution as it can lead to data loss if applications are not closed properly.
+
+To force shut down, click the **Power Off** option within the VPS management interface.
+
+<Frame>
+  <img 
+    src="/images/kb/virtualizor-force-shut-down.gif" 
+    alt="Power Off icon for forceful shutdown"
+    style={{ width: '100%', height: 'auto' }}
+  />
+</Frame>
+
+## Shut Down the VPS via Command Line (Forceful)
+
+This method is equivalent to pulling the power cord and carries a risk of data loss.
+
+<Steps>
+  <Step title="Log in via SSH">
+    Connect to your VPS using an SSH client.
+  </Step>
+  <Step title="Execute the poweroff command">
+    Enter the following command and press Enter:
+    ```bash
+    poweroff
+    ```
+  </Step>
+</Steps>
+
+The VPS will shut down immediately after the command is executed.

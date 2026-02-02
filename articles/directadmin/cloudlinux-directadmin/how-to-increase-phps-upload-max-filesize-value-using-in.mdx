@@ -1,0 +1,34 @@
+---
+title: "Increase PHP's upload_max_filesize Value Using CloudLinux Selector in DirectAdmin"
+description: "Learn how to increase PHP's upload_max_filesize setting using the CloudLinux PHP Selector in DirectAdmin."
+---
+
+You can modify PHP's `upload_max_filesize` setting to accommodate larger file uploads through the CloudLinux PHP Selector available in your DirectAdmin control panel.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin account by navigating to your server's DirectAdmin URL and entering your credentials.
+  </Step>
+  <Step title="Access PHP Selector">
+    In the **Extra Features** section of your DirectAdmin dashboard, locate and click on **Select PHP version**. Alternatively, you can type "Select PHP" into the navigation filter box to find it.
+    <Frame>
+      <img src="/images/kb/da-cl-php-selector-icon.gif" alt="DirectAdmin CloudLinux PHP Selector Icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Options">
+    Once inside the PHP Selector interface, click on the **Options** menu.
+    <Frame>
+      <img src="/images/kb/cl-options-menu.gif" alt="CloudLinux Options Menu" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>
+      If you encounter an error related to the native PHP version on the Options page, you will first need to change your PHP version to a non-native one before proceeding.
+    </Note>
+  </Step>
+  <Step title="Adjust upload_max_filesize">
+    Locate the **upload_max_filesize** setting. Click on the current value displayed in the drop-down menu next to it and select the desired limit that meets your requirements.
+    <Frame>
+      <img src="/images/kb/cl-upload-max_filesize.gif" alt="CloudLinux upload_max_filesize setting" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    After making your selection, a confirmation message will appear indicating that the maximum upload file size has been successfully updated.
+  </Step>
+</Steps>

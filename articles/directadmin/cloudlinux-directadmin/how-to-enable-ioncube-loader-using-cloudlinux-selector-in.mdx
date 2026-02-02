@@ -1,0 +1,55 @@
+---
+title: "Enable ionCube Loader Using CloudLinux Selector in DirectAdmin"
+description: "A guide on how to enable the ionCube Loader extension using the CloudLinux Selector in DirectAdmin."
+---
+
+You can use the CloudLinux Selector in DirectAdmin to easily enable the ionCube Loader extension for your PHP installation.
+
+## Steps to Enable ionCube Loader
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Extra Features** section, locate and click on **Select PHP version**. Alternatively, you can type "Select PHP" into the navigation filter box to find it.
+    <Frame>
+      <img 
+        src="/images/kb/da-cl-php-selector-icon.gif" 
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to Extensions">
+    Once the PHP Selector interface loads, click on the **Extensions** menu tab.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="CloudLinux Extensions Tab Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>If the **Extensions** page displays an error related to the native PHP version, you will first need to change your PHP version to a non-native one before proceeding.</Note>
+  </Step>
+  <Step title="Enable ionCube Loader">
+    Find the **ioncube_loader** option in the list of extensions and check the box next to it.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-ioncubeloader.gif" 
+        alt="Enable ionCube Loader Checkbox"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    Upon successful enablement, a success message will appear, confirming that the module has been saved.
+    <Frame>
+      <img 
+        src="/images/kb/cl-ioncube-loader-enabled.gif" 
+        alt="ionCube Loader Enabled Success Message"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+You have now successfully enabled the ionCube Loader extension using the CloudLinux Selector in DirectAdmin.

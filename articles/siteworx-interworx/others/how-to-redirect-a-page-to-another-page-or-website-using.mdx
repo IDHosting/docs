@@ -1,0 +1,58 @@
+---
+title: "Redirect a Page to Another Page or Website Using htaccess"
+description: "Learn how to use the .htaccess file to redirect visitors from a non-existent page to a new page or an external website."
+---
+
+If a page on your website no longer exists and you want to redirect it to a new page or website, you can use the `.htaccess` file to redirect visitors.
+
+## Redirect from a Specific Page to a Domain
+
+This method redirects a specific page on your site to an external domain.
+
+<Steps>
+  <Step title="Access your .htaccess file">
+    You can usually find this file in the root directory of your website. If it doesn't exist, you can create it.
+  </Step>
+  <Step title="Add the redirect rule">
+    Open the `.htaccess` file in a text editor and add the following lines:
+    ```apache
+    RewriteEngine on
+    Redirect 301 /mypage.html http://example.com
+    ```
+    Replace `/mypage.html` with the original page you want to redirect and `http://example.com` with the target domain.
+  </Step>
+  <Step title="Save and upload the file">
+    Save the changes to your `.htaccess` file and upload it back to your server.
+  </Step>
+</Steps>
+
+<Note>
+The `Redirect 301` command indicates a permanent redirect, which is best for SEO as it tells search engines that the page has moved permanently.
+</Note>
+
+## Redirect from One Page to Another Page
+
+This method redirects visitors from an old page on your site to a new page on the same site.
+
+<Steps>
+  <Step title="Access your .htaccess file">
+    Locate the `.htaccess` file in your website's root directory.
+  </Step>
+  <Step title="Add the redirect rule">
+    Add the following lines to your `.htaccess` file:
+    ```apache
+    # Redirect from a page/directory to another page
+    Redirect 301 /oldpage.html /newpage.html
+    ```
+    Replace `/oldpage.html` with the original page and `/newpage.html` with the new page on your website.
+  </Step>
+  <Step title="Save and upload the file">
+    Save the `.htaccess` file and upload it to your server.
+  </Step>
+</Steps>
+
+After implementing this, any visitor who tries to access `example.com/oldpage.html` will be automatically redirected to `example.com/newpage.html`.
+
+<Tip>
+Ensure there are no typos in your file names or paths, as this can prevent the redirect from working correctly.
+</Tip>

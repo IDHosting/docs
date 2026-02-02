@@ -1,0 +1,73 @@
+---
+title: "Install XMB Forum via Softaculous in cPanel"
+description: "A guide on how to install XMB Forum using the Softaculous app installer in cPanel."
+---
+
+Softaculous is a powerful application installer that simplifies the process of deploying web applications like XMB Forum. Follow these steps to install XMB Forum on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous">
+    In the **Software and Services** section, click on the **Softaculous** icon.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Icon in cPanel" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for XMB Forum">
+    On the left-hand side of the Softaculous interface, type `XMB` into the search box. Click on the **XMB** link that appears in the search results.
+    <Frame>
+      <img src="/images/kb/xmb-softaculous.gif" alt="Searching for XMB in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/xmb-install-button.gif" alt="XMB Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "In Directory" field, enter a directory name if you wish to install XMB Forum in a subdirectory (e.g., `example.com/forum`). Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-general-install-screen.gif" alt="Softaculous General Install Screen - Software Setup" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Enter the following details under the **Site Settings** section:
+    <ul>
+      <li><strong>Site Name:</strong> Provide a name for your forum, such as "Technology Forum".</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following information:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your XMB administrator. For security reasons, avoid common usernames like "Administrator" or "Admin".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Enter your email address. This is crucial for password recovery and receiving important notifications.</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-gen-install-screen-two.gif" alt="Softaculous General Install Screen - Admin Account" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>
+      Copy your admin username and password to a secure location, such as a text file. You will need these credentials to access your XMB forum's administration area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure database settings or set up automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll down to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with the URLs to access your new XMB Forum and its administration area.

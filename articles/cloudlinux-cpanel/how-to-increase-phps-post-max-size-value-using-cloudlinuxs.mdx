@@ -1,0 +1,46 @@
+---
+title: "Increase PHP's post_max_size Value Using CloudLinux's Selector in cPanel"
+description: "Learn how to easily adjust the post_max_size value for your PHP installation using the CloudLinux PHP Selector tool within your cPanel interface."
+---
+
+You can modify PHP's `post_max_size` setting to accommodate your needs using the CloudLinux PHP Selector tool available in your cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on the **Select PHP Version** icon.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="CloudLinux Select PHP Version icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Options Menu">
+    Once the PHP Selector interface loads, click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux PHP Selector Options menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If you encounter an error related to the native PHP version on the Options page, you will first need to change your PHP version to a non-native one before proceeding.
+    </Note>
+  </Step>
+  <Step title="Adjust post_max_size">
+    Locate the **post_max_size** setting. Click on the current value displayed in the dropdown menu next to it and select the desired limit that meets your requirements.
+    <Frame>
+      <img 
+        src="/images/kb/cl-post_max_size.gif" 
+        alt="CloudLinux PHP Selector post_max_size setting"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear, indicating that the Maximum Post Size has been successfully updated.
+  </Step>
+</Steps>

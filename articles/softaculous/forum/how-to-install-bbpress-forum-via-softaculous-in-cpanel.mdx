@@ -1,0 +1,81 @@
+---
+title: "Install bbPress Forum via Softaculous in cPanel"
+description: "A guide on how to install the bbPress forum software using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install bbPress Forum on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer icon in cPanel" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    You will be redirected to the Softaculous interface.
+  </Step>
+  <Step title="Search for bbPress">
+    On the left-hand side of the Softaculous interface, type `bbPress` into the search box. Click on the `bbPress` link that appears.
+    <Frame>
+      <img src="/images/kb/bbpress-softaculous.gif" alt="bbPress search result in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/bbpress-install-button.gif" alt="bbPress Install button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "In Directory" field, enter a directory name if you want to install bbPress in a subdirectory (e.g., `example.com/forum`). Leave it blank to install on your main domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-general-install-screen.gif" alt="Softaculous general installation screen" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Enter the following details under the **Site Settings** section:
+    <ul>
+      <li><strong>Site Name:</strong> The name of your forum.</li>
+      <li><strong>Site Description:</strong> A brief description of your site.</li>
+      <li><strong>Enable Multisite (WPMU):</strong> It is recommended to leave this setting as is unless you have specific requirements.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, provide the following information:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your bbPress administrator. For security reasons, avoid common usernames like `administrator` or `admin`.</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Enter your email address. This is crucial for password recovery and notifications.</li>
+    </ul>
+    <Note>
+      Copy your admin username and password to a secure location (like Notepad). You will need these credentials to access the admin area of your bbPress forum later.
+    </Note>
+    <Frame>
+      <img src="/images/kb/bbpress-install-screen.gif" alt="bbPress installation screen with admin details" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Select Plugins (Optional)">
+    Under the **Select Plugin(s)** section, you can choose to install additional plugins or skip this step.
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure settings like the database name or automated backups. You can generally leave these as default unless you have specific needs.
+    <Warning>
+      Be mindful that creating frequent backups can consume significant disk space.
+    </Warning>
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install button at the bottom of the page" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>
+
+You have now successfully installed bbPress Forum using Softaculous!

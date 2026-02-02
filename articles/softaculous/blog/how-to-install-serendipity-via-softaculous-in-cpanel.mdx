@@ -1,0 +1,108 @@
+---
+title: "Install Serendipity via Softaculous in cPanel"
+description: "A guide on how to install Serendipity using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of adding web applications to your website. This guide will walk you through installing Serendipity, a popular blogging platform, using Softaculous in your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Search for Serendipity">
+    Once Softaculous loads, use the search bar on the left-hand side to type "Serendipity". Click on the **Serendipity** link when it appears.
+    <Frame>
+      <img
+        src="/images/kb/serendipity-softaculous.gif"
+        alt="Searching for Serendipity in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button for Serendipity.
+    <Frame>
+      <img
+        src="/images/kb/serendipity-install-button.gif"
+        alt="Serendipity Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL</strong>: Select the desired protocol (e.g., `http` or `https`) and domain. If you wish to install Serendipity in a subdirectory (e.g., `example.com/blog`), enter the directory name in the "In Directory" field. Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following details:
+    <ul>
+      <li><strong>Site Name:</strong> Enter the name for your blog (e.g., "My First Blog").</li>
+      <li><strong>Site Description:</strong> A brief description of your blog.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, configure your administrator credentials:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a secure username for your Serendipity admin account. Avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and unique password.</li>
+      <li><strong>Real Name:</strong> Enter your real name or leave it as is.</li>
+      <li><strong>Admin Email:</strong> Provide a valid email address.</li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a text file, as you will need them to log in to your Serendipity admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-screen2.gif"
+        alt="Serendipity admin account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your Serendipity blog from the dropdown menu. The default is English.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-choose-language.gif"
+        alt="Serendipity language selection in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    You can review the **Advanced Options** if you wish to customize database settings or configure automated backups. Be mindful that frequent backups can consume disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with links to your new Serendipity blog and its administration area. Remember to save your admin login details for future access.

@@ -1,0 +1,123 @@
+---
+title: "Install Geeklog via Softaculous in cPanel"
+description: "A guide on how to install Geeklog using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to easily install Geeklog on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's provided URL.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Geeklog">
+    On the left-hand sidebar, type "Geeklog" into the search box. Click on the **Geeklog** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/geeklog-softaculous.gif"
+        alt="Searching for Geeklog in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/geeklog-install-button.gif"
+        alt="Geeklog Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "<strong>In Directory</strong>" field, enter a directory name if you wish to install Geeklog in a subdirectory (e.g., `example.com/directory`). Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+      <li>
+        <strong>Data Directory: </strong>It is recommended to leave this field as it is.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-three.gif"
+        alt="Software Setup configuration in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, enter the following information:
+    <ul>
+      <li>
+        <strong>Site Name:</strong> Enter the name for your website (e.g., "My Geeklog Site").
+      </li>
+      <li>
+        <strong>Site Description: </strong>Provide a brief description of your website.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a secure username for your Geeklog administrator account. Avoid common usernames like "administrator" or "admin".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and unique password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your primary email address.
+      </li>
+      <li>
+        <strong>No-Reply Email: </strong>Enter an email address that will be used for no-reply notifications.
+      </li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, as you will need them to log in to your Geeklog admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-general-two.gif"
+        alt="Admin Account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Language">
+    Under the **Choose Language** section, select the desired language for your Geeklog admin interface. The default is English.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-choose-language-admin.gif"
+        alt="Language selection for Geeklog admin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options and Finalize Installation">
+    You can review the **Advanced Options** if you wish to change the database name or configure automated backups. Be mindful that frequent backups can consume significant disk space.
+    <br />
+    Finally, scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

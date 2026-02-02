@@ -1,0 +1,72 @@
+---
+title: "Exclude Specific Files/Folders from Plesk Backup"
+description: "Learn how to exclude specific files or folders from your Plesk backups to reduce backup size and skip unnecessary data."
+---
+
+This tutorial will guide you through the process of excluding specific files or folders from your Plesk backups. This is a useful technique to reduce the overall size of your backups and to avoid including files that you do not need to retain.
+
+<Steps>
+  <Step title="Log in to Plesk">
+    Begin by logging into your Plesk account.
+  </Step>
+  <Step title="Access Backup & Restore">
+    Navigate to **Websites & Domains**, then click on the **Pull icon** (usually represented by a downward arrow or similar icon), and select **Backup & Restore**.
+    <Frame>
+      <img
+        src="/images/kb/plesk-account-backup-manager-access.gif"
+        alt="Accessing Backup & Restore in Plesk"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Backup">
+    Within the **Backup Manager**, click on the **Back Up** button.
+    <Frame>
+      <img
+        src="/images/kb/plesk-backup-manager-generate.gif"
+        alt="Initiating a backup in Plesk Backup Manager"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Backup Type">
+    Choose the desired backup type. For this process, a **Full backup** is typically selected.
+    <Frame>
+      <img
+        src="/images/kb/plesk-backup-full-option.gif"
+        alt="Selecting the Full backup option in Plesk"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Exclusions">
+    Check the box labeled **Exclude specific files from the backup**.
+    <Frame>
+      <img
+        src="/images/kb/exclude-file-from-backup-plesk-account.gif"
+        alt="Enabling file exclusion for Plesk backup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <p>You will then be prompted to enter the paths of the files or folders you wish to exclude. Here are some examples:</p>
+    <ul>
+      <li>
+        To exclude a specific file:
+        <code>/httpdocs/directory/filename.jpg</code>
+      </li>
+      <li>
+        To exclude an entire directory:
+        <code>/httpdocs/images</code>
+      </li>
+      <li>
+        To exclude files with specific extensions (e.g., all PNG files in the images directory):
+        <code>/httpdocs/images/*.png</code>
+      </li>
+    </ul>
+  </Step>
+  <Step title="Confirm and Generate Backup">
+    Click **OK** to confirm your selections. The backup process will begin in the background, and you can safely navigate away from the page.
+  </Step>
+</Steps>
+
+You have now successfully configured your Plesk backup to exclude specific files or folders.

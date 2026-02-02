@@ -1,0 +1,93 @@
+---
+title: "Install FlatPress via Softaculous in cPanel"
+description: "A guide on how to easily install FlatPress using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install FlatPress on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for FlatPress">
+    On the left-hand sidebar, type "FlatPress" into the search box. Click on the **FlatPress** link that appears in the search results.
+    <Frame>
+      <img 
+        src="/images/kb/flatpress-softaculous.gif" 
+        alt="Searching for FlatPress in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img 
+        src="/images/kb/flatpress-install-button.gif" 
+        alt="FlatPress Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary details under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., http:// or https://) and your domain. If you wish to install FlatPress in a subdirectory (e.g., `example.com/blog`), enter the directory name in the "<strong>In Directory</strong>" field. Leave it blank to install FlatPress on your main domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-install-screen.gif" 
+        alt="Software Setup screen in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, provide the following information:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your FlatPress administrator. For security, avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Enter your email address.</li>
+    </ul>
+    <Note>
+      It's highly recommended to copy your admin username and password to a secure location (like a password manager or a text file) immediately after setting them. You will need these credentials to log in to your FlatPress admin area later.
+    </Note>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-admin-fields.gif" 
+        alt="Admin Account fields in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure settings like the database name or set up automated backups. You can generally leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with the URLs to access your new FlatPress blog and its administration area.

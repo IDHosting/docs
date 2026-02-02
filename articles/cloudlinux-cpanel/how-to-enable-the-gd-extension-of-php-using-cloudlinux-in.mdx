@@ -1,0 +1,46 @@
+---
+title: "Enable the GD Extension of PHP Using CloudLinux Selector in cPanel"
+description: "A guide on how to enable the GD extension for PHP using the CloudLinux Selector in cPanel."
+---
+
+You can use the CloudLinux Selector in cPanel to easily enable the GD extension for your PHP installation. Follow the steps below to do so.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's provided URL.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on **Select PHP Version**.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="Select PHP Version icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to the Extensions tab">
+    Once you are on the PHP Selector page, click on the **Extensions** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="Extensions tab button in PHP Selector"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the <strong>Extensions</strong> page displays an error related to the native PHP version, you will need to change it to a non-native version first before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable the GD extension">
+    Locate the **GD** extension in the list and check the box next to it. Once enabled, a success message will appear.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-gd-extension.gif" 
+        alt="Checking the GD extension checkbox"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    The success message will confirm that the module **GD** has been saved.
+  </Step>
+</Steps>

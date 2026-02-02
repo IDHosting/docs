@@ -1,0 +1,95 @@
+---
+title: "Install Phorum Forum via Softaculous in SiteWorx"
+description: "A guide on how to install Phorum Forum using the Softaculous installer in SiteWorx."
+---
+
+Softaculous is a one-click installer that simplifies the process of adding web applications to your website. This guide will walk you through installing Phorum Forum using Softaculous within your SiteWorx control panel.
+
+<Steps>
+  <Step title="Log in to your SiteWorx Account">
+    Begin by logging into your SiteWorx account.
+  </Step>
+  <Step title="Access Softaculous">
+    Once logged in, navigate to the **Additional Features** section and click on **Softaculous**.
+
+    <Frame>
+      <img
+        src="/images/kb/sw-softaculous-icon.gif"
+        alt="SiteWorx Softaculous Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Phorum in Softaculous">
+    You will be redirected to the Softaculous interface. On the left-hand side menu, type **Phorum** into the search box. Click on the **Phorum** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/phorum-softaculous.gif"
+        alt="Softaculous Phorum Search Result"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Phorum installation process.
+
+    <Frame>
+      <img
+        src="/images/kb/phorum-install-button.gif"
+        alt="Phorum Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    *   **Choose Installation URL:** Select the desired protocol (HTTP or HTTPS) and domain.
+    *   **In Directory:** If you wish to install Phorum in a specific subdirectory (e.g., `example.com/forum`), enter the directory name here. Leave this field blank to install Phorum in the root of your domain (e.g., `example.com`).
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous Software Setup Screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    In the **Site Settings** section, provide the following details:
+    *   **Site Name:** Enter a name for your Phorum forum (e.g., "My Community Forum").
+    *   **Site Description:** Add a brief description of your forum.
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter your administrator credentials:
+    *   **Admin Username:** Choose a username for your forum's administrator. For security, avoid common usernames like "admin" or "administrator".
+    *   **Admin Password:** Create a strong and secure password.
+    *   **Admin Email:** Provide a valid email address for password recovery and notifications.
+
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a Notepad file, as you will need them to access your Phorum forum's administrative area later.
+    </Note>
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-screen2-general.gif"
+        alt="Softaculous Admin Account Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows for further customization, such as changing the database name or configuring automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the Phorum forum installation.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Final Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

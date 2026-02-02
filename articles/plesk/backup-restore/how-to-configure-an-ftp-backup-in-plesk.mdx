@@ -1,0 +1,68 @@
+---
+title: "Configure an FTP Backup in Plesk"
+description: "Learn how to configure an FTP backup in Plesk for secure, offsite storage of your website backups."
+---
+
+This tutorial will guide you through the process of configuring an FTP backup in Plesk, enabling you to store your website backups on a remote FTP server for enhanced safety and offsite storage.
+
+## Steps to Configure FTP Backup
+
+<Steps>
+  <Step title="Log in to your Plesk Account">
+    Begin by logging into your Plesk control panel.
+  </Step>
+  <Step title="Navigate to Backup & Restore">
+    Once logged in, go to **Websites & Domains**. Then, click on the **Pull icon** and select **Backup & Restore**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-account-backup-manager-access.gif" 
+        alt="Accessing the Backup Manager in Plesk"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Remote Storage Settings">
+    In the Backup Manager, click on **Remote Storage Settings**.
+    <Frame>
+      <img 
+        src="/images/kb/click-remote-storage-settings.gif" 
+        alt="Clicking on Remote Storage Settings"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select FTP(S) Storage">
+    Click on the **FTP(S)** option to configure FTP storage.
+    <Frame>
+      <img 
+        src="/images/kb/remote-storage-ftp-click-to-config.gif" 
+        alt="Selecting FTP(S) for Remote Storage"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Fill in FTP Details">
+    Complete the following fields with your FTP server information:
+    <ul>
+      <li>Ensure <strong>Use FTP(S) storage</strong> is enabled.</li>
+      <li><strong>FTP server hostname or IP:</strong> Enter your FTP server's hostname or IP address.</li>
+      <li><strong>Directory for backup files storage:</strong> Specify the directory on the FTP server where backups will be saved (e.g., `/backup`).</li>
+      <li><strong>FTP Username:</strong> Enter your FTP account username.</li>
+      <li><strong>FTP Password:</strong> Enter your FTP account password.</li>
+      <li><strong>Use passive mode:</strong> It is recommended to enable this option or leave it as default.</li>
+      <li><strong>Use FTPS:</strong> Enable this if your FTP server supports TLS/Encryption.</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/final-ftp-config-plesk-client.gif" 
+        alt="Final FTP configuration in Plesk"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Apply Settings">
+    Click the **Apply** button to save your configuration.
+  </Step>
+</Steps>
+
+If a success message is displayed, you have successfully configured your FTP(S) backup in Plesk. You can now proceed to create backups to your remote storage server.

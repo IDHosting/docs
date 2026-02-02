@@ -1,0 +1,85 @@
+---
+title: "Ban Any IP Address via htaccess"
+description: "Learn how to block specific IP addresses from accessing your website using the .htaccess file."
+---
+
+This article explains how to block unwanted IP addresses from accessing your website by modifying your `.htaccess` file.
+
+## Blocking an IP Address
+
+To block an IP address, you need to add specific directives to your `.htaccess` file.
+
+<Steps>
+  <Step title="Locate or Create .htaccess File">
+    Navigate to the root directory of your website. If a `.htaccess` file already exists, you will edit it. If not, create a new file named `.htaccess`.
+  </Step>
+  <Step title="Add Blocking Directives">
+    Open the `.htaccess` file in a text editor and add the following lines:
+    ```apache
+    order allow,deny
+    deny from IP-ADDRESS
+    allow from all
+    ```
+  </Step>
+  <Step title="Replace Placeholder">
+    Replace `IP-ADDRESS` with the actual IP address you wish to block. For example, to block `192.168.1.100`, the lines would be:
+    ```apache
+    order allow,deny
+    deny from 192.168.1.100
+    allow from all
+    ```
+  </Step>
+  <Step title="Save and Upload">
+    Save the changes to your `.htaccess` file and upload it back to your website's root directory if you made changes locally.
+  </Step>
+</Steps>
+
+<Note>
+Ensure that your web server is configured to allow `.htaccess` overrides. If you are unsure, consult your hosting provider.
+</Note>
+
+## Blocking Multiple IP Addresses
+
+To block multiple IP addresses, simply add a new `deny from` line for each IP address you want to block.
+
+```apache
+order allow,deny
+deny from 192.168.1.100
+deny from 10.0.0.5
+deny from 172.16.0.1
+allow from all
+```
+
+## Blocking an IP Address Range
+
+You can also block a range of IP addresses using wildcards. For example, to block all IPs starting with `192.168.1.`:
+
+```apache
+order allow,deny
+deny from 192.168.1.
+allow from all
+```
+
+<Warning>
+Be cautious when blocking IP address ranges, as you might unintentionally block legitimate users. Always double-check the range before implementing it.
+</Warning>
+
+## Blocking All IPs Except Specific Ones
+
+If you want to allow only specific IP addresses and block all others, you can reverse the logic:
+
+```apache
+order deny,allow
+deny from all
+allow from 192.168.1.100
+allow from 10.0.0.5
+```
+
+In this configuration:
+- `order deny,allow` means that `deny` rules are processed first.
+- `deny from all` blocks everyone by default.
+- `allow from ...` then explicitly permits specific IP addresses.
+
+<Tip>
+It's a good practice to keep a backup of your `.htaccess` file before making any modifications.
+</Tip>

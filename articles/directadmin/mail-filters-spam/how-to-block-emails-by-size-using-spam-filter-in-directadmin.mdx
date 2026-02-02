@@ -1,0 +1,41 @@
+---
+title: "Block Emails by Size Using Spam Filter in DirectAdmin"
+description: "Learn how to configure DirectAdmin's SPAM Filters to block incoming emails based on their size."
+---
+
+You can use the SPAM Filters in DirectAdmin to block emails exceeding a specific size. This is useful for preventing large attachments from filling up mailboxes.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin account by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to SPAM Filters">
+    In the **E-Mail Manager** section, click on **SPAM Filters**.
+    Alternatively, you can use the **search bar** at the top of the DirectAdmin interface, type **SPAM Filters**, and click on the result.
+    <Frame>
+      <img
+        src="/images/kb/da-spamfilters-icon.gif"
+        alt="DirectAdmin SPAM Filters icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Size as the Blocking Criteria">
+    Under the **Block By** section, click the **drop-down** menu and select **Size**.
+  </Step>
+  <Step title="Specify the Size Limit">
+    In the **Value** field, choose the desired unit (**KB** or **MB**) and enter the maximum email size you wish to allow.
+    <Frame>
+      <img
+        src="/images/kb/da-blockby-emailsize.gif"
+        alt="DirectAdmin Block By Email Size configuration"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Apply the Filter">
+    Click the **Block** button to save your settings.
+  </Step>
+</Steps>
+
+Once configured, any incoming emails larger than the specified size (e.g., 5MB) will be automatically blocked by the spam filter.

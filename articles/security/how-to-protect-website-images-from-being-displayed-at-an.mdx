@@ -1,0 +1,46 @@
+---
+title: "Protect Website Images From Being Displayed at an External Website"
+description: "Learn how to use Hotlink Protection in cPanel to prevent external websites from stealing your bandwidth by displaying your images."
+---
+
+External websites may display your website images on their sites, consuming your bandwidth. Hotlink Protection is a feature that prevents this.
+
+## Enable Hotlink Protection
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Hotlink Protection">
+    In the **Security** section, click on **Hotlink Protection**.
+    <Frame>
+      <img 
+        src="/images/kb/hotlink-protection-icon.gif" 
+        alt="Hotlink Protection icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enable Hotlink Protection">
+    If it displays "Hotlink protection is currently disabled", click on the **Enable** button.
+    <Frame>
+      <img 
+        src="/images/kb/hotlink-protection-enable.gif" 
+        alt="Enable Hotlink Protection button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+## Configure Allowed URLs
+
+Under **URLs to allow access**, you can specify external websites or subdomains that are permitted to link to your images.
+
+For example, if you have a subdomain like `demo.example.com`, you can add its URL to this list to allow it to display your images.
+
+<Note>
+  By configuring allowed URLs, you ensure that only trusted domains can hotlink your content, effectively saving bandwidth and enhancing your website's security.
+</Note>
+
+Once configured, you have successfully protected your website images from unauthorized use on external websites.

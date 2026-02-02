@@ -1,0 +1,44 @@
+---
+title: "Protect Your htaccess File"
+description: "Learn how to prevent unauthorized access to your .htaccess file by adding a simple rule."
+---
+
+You can prevent unauthorized access to your `.htaccess` file by adding a specific rule to it. This is a crucial step for securing your website's configuration.
+
+## Protecting Your .htaccess File
+
+To protect your `.htaccess` file, follow these steps:
+
+<Steps>
+  <Step title="Access your .htaccess file">
+    You will need to access your website's root directory using an FTP client or your hosting provider's file manager. Locate the `.htaccess` file. If it doesn't exist, you may need to create it.
+  </Step>
+  <Step title="Add the protection rule">
+    Open the `.htaccess` file in a text editor and add the following lines at the beginning of the file:
+
+    ```apache
+    # .htaccess protection
+
+    order allow, deny
+    deny from all
+    satisfy all
+    ```
+  </Step>
+  <Step title="Save and upload the file">
+    Save the changes to your `.htaccess` file and upload it back to your server.
+  </Step>
+</Steps>
+
+<Note>
+  The `satisfy all` directive ensures that both access control rules (from `order allow, deny`) and any other directives in the `.htaccess` file are evaluated. This prevents direct access to the file itself while allowing other `.htaccess` rules to function.
+</Note>
+
+## How it Works
+
+The added rules work as follows:
+
+*   **`order allow, deny`**: This directive sets the order in which access control rules are processed. In this case, `allow` rules are processed first, followed by `deny` rules.
+*   **`deny from all`**: This is the core of the protection. It explicitly denies access to the `.htaccess` file from any IP address.
+*   **`satisfy all`**: This directive ensures that all access control rules are met. Since `deny from all` is in effect, no one can access the file directly.
+
+By implementing this simple rule, you significantly enhance the security of your website by preventing unauthorized viewing or modification of your `.htaccess` file.

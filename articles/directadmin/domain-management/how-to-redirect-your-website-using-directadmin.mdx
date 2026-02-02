@@ -1,0 +1,51 @@
+---
+title: "Redirect Your Website Using DirectAdmin"
+description: "Learn how to set up website redirects using the DirectAdmin control panel."
+---
+
+This guide will walk you through the process of redirecting your website or specific pages using DirectAdmin. This is useful for directing visitors from an old URL to a new one.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Begin by logging into your DirectAdmin account.
+  </Step>
+  <Step title="Navigate to Site Redirection">
+    In the **Account Manager** section, click on **Site Redirection**.
+    Alternatively, you can use the **search bar** at the top of the page, type "Site Redirection", and click on the result.
+    <Frame>
+      <img
+        src="/images/kb/da-siteredirection-icon.gif"
+        alt="DirectAdmin Site Redirection Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create a New Redirect">
+    Click on the **Create New Redirect** button, usually located in the top-right corner of the page.
+    <Frame>
+      <img
+        src="/images/kb/da-siteredirection-createbtn.gif"
+        alt="DirectAdmin Create New Redirect Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter Redirect Details">
+    Fill in the following fields:
+    *   **Local URL Path**: Enter the specific page you want to redirect (e.g., `about-us.html`). Leave this blank if you want to redirect the entire domain.
+    *   **Redirect Type**: Select the appropriate redirect type from the dropdown menu. Common options include 301 (Permanent) and 302 (Temporary).
+    *   **Destination URL**: Enter the full URL where you want visitors to be sent (e.g., `https://www.newdomain.com/new-page`).
+    <Frame>
+      <img
+        src="/images/kb/da-siteredirection-creating.gif"
+        alt="DirectAdmin Site Redirection Creation Form"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm Creation">
+    Click the **Create** button to finalize the redirect.
+  </Step>
+</Steps>
+
+Once you click **Create**, the redirect will be active, and visitors attempting to access the old URL will be automatically sent to the destination URL you specified.

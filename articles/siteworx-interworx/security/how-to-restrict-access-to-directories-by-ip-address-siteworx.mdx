@@ -1,0 +1,48 @@
+---
+title: "Restrict Directory Access by IP Address"
+description: "Learn how to secure your directories, such as your WordPress admin area, by restricting access to specific IP addresses using an .htaccess file."
+---
+
+To enhance the security of your website, you can restrict access to specific directories by allowing only certain IP addresses. This is particularly useful for protecting sensitive areas like your admin login page. You can achieve this by creating a `.htaccess` file within the directory you wish to protect.
+
+For instance, if you want to secure your WordPress admin area located at `example.com/wp-admin`, you would create a `.htaccess` file inside the `/wp-admin/` directory.
+
+### Steps to Restrict Directory Access
+
+<Steps>
+  <Step title="Create the .htaccess file">
+    Navigate to the directory you want to protect (e.g., `/wp-admin/`). Create a new file named `.htaccess` within this directory.
+  </Step>
+  <Step title="Add Access Control Code">
+    Open the `.htaccess` file and add the following code:
+    ```apache
+    order deny, allow
+    deny from all
+    allow from YOUR-IP-ADDRESS-HERE
+    ```
+  </Step>
+  <Step title="Replace Placeholder with Your IP Address">
+    Replace `YOUR-IP-ADDRESS-HERE` with your actual public IP address.
+    <Note>
+      You can find your public IP address by searching "what is my IP" on Google from the network you want to allow access from.
+    </Note>
+  </Step>
+  <Step title="Save the .htaccess file">
+    Save the changes to your `.htaccess` file.
+  </Step>
+</Steps>
+
+### Testing the Restriction
+
+After implementing the `.htaccess` file, you can test the restriction by attempting to access the protected directory from:
+
+*   **An allowed IP address:** You should be able to access the directory without any issues.
+*   **A different IP address:** You should be denied access, typically receiving a "403 Forbidden" error.
+
+<Tip>
+  If you need to allow access for multiple IP addresses, you can add additional `allow from` lines, each on a new line.
+</Tip>
+
+<Warning>
+  Ensure you correctly identify your IP address. If you use a dynamic IP address that changes frequently, this method might lock you out. Consider using a static IP address or alternative security measures in such cases.
+</Warning>

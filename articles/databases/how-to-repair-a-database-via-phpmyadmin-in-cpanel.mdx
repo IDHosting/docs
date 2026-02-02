@@ -1,0 +1,47 @@
+---
+title: "Repair a Database via phpMyAdmin in cPanel"
+description: "Learn how to repair corrupted database tables using phpMyAdmin within your cPanel account."
+---
+
+If your database has corrupted tables, repairing it through phpMyAdmin in cPanel can help fix issues with them.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging in to your cPanel account.
+  </Step>
+  <Step title="Access phpMyAdmin">
+    In the **Databases** section, click on the **phpMyAdmin** icon.
+
+    <Frame>
+      <img 
+        src="/images/kb/phpmyadmin-icon.gif" 
+        alt="phpMyAdmin icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Expand Database">
+    In the navigation tree on the left sidebar, click the **Expand** icon next to your database name.
+
+    <Frame>
+      <img 
+        src="/images/kb/phpmyadmin-expand-db.gif" 
+        alt="Expand database in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Repair Table">
+    Scroll down and click **Check All** to select all tables. Then, click the drop-down arrow and choose **Repair table**.
+
+    <Frame>
+      <img 
+        src="/images/kb/repair-db.gif" 
+        alt="Repair table option in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+
+    If the table has been repaired successfully, you will see an **OK** message. Otherwise, an error will be displayed for the affected tables.
+  </Step>
+</Steps>

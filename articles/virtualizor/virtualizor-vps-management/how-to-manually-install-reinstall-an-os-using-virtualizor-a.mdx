@@ -1,0 +1,95 @@
+---
+title: "Manually Install/Reinstall an OS Using Virtualizor for a Customized Installation"
+description: "Learn how to manually install or reinstall an operating system on your Virtualizor VPS to create custom partitions."
+---
+
+The automatic OS reinstall option in Virtualizor does not allow for custom partition modifications. This guide will walk you through the process of manually installing or reinstalling an OS to achieve a customized setup.
+
+<Steps>
+  <Step title="Log in to Virtualizor">
+    Access your Virtualizor Control Panel.
+  </Step>
+  <Step title="Navigate to List VPS">
+    In the left-hand side panel, click on **List VPS**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-list-vps-menu.gif" 
+        alt="Virtualizor List VPS menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Manage VPS">
+    Hover over the desired VPS. The line will highlight. Click the **Wrench icon** on the highlighted line.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-click-manage-vps.gif" 
+        alt="Virtualizor click manage VPS icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access VPS Configuration">
+    Click on **Settings** and then select **VPS Configuration**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-settings-tab.gif" 
+        alt="Virtualizor settings tab"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure ISO and Boot Order">
+    Under **VPS Configuration**, select **ISO**. Set the boot order to prioritize **CDROM** by using the up arrow. Click **Submit**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-change-boot-order.gif" 
+        alt="Virtualizor change boot order to CDROM"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Reboot VPS">
+    Click the **Reboot icon** to restart your VPS.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-restart-vps-icon.gif" 
+        alt="Virtualizor restart VPS icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access VNC Quickly">
+    Immediately after rebooting, click on the **VNC icon**. Do not wait.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-vnc-icon.gif" 
+        alt="Virtualizor VNC icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Launch VNC">
+    A new popup window will appear. Click on **Launch VNC**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-vnc-choose-option.gif" 
+        alt="Virtualizor VNC choose option"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Start OS Installation">
+    When the OS installation prompt appears (e.g., "Press any key to start an OS installation"), press any key on your keyboard. If presented with options like "Install OS" or "Test this media," select **Install OS** and press Enter.
+  </Step>
+</Steps>
+
+The OS installation process will now begin, allowing you to create partitions, set passwords, and configure other settings as needed.
+
+<Note>
+After the OS installation is complete, remember to change the boot order back from **CDROM** to the default and reboot the VPS. Failure to do so may result in the VPS booting into installation mode on the next startup.
+</Note>
+
+<Note>
+If your VNC connection is interrupted, click **Connect** to re-establish the connection.
+</Note>

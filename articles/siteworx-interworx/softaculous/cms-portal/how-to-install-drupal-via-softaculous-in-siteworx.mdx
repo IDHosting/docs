@@ -1,0 +1,105 @@
+---
+title: "Install Drupal via Softaculous in SiteWorx"
+description: "A guide on how to install Drupal using the Softaculous installer within your SiteWorx account."
+---
+
+Softaculous is a one-click installer that simplifies the process of deploying web applications. This guide will walk you through installing Drupal Core using Softaculous in your SiteWorx control panel.
+
+<Steps>
+  <Step title="Log in to your SiteWorx Account">
+    Access your SiteWorx account by navigating to your control panel URL and entering your credentials.
+  </Step>
+  <Step title="Navigate to Softaculous">
+    Once logged in, locate the **Additional Features** section and click on the **Softaculous** icon.
+
+    <Frame>
+      <img
+        src="/images/kb/sw-softaculous-icon.gif"
+        alt="SiteWorx Softaculous Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Softaculous Interface">
+    SiteWorx will redirect you to the Softaculous web application installer interface.
+  </Step>
+  <Step title="Search for Drupal Core">
+    On the left-hand sidebar of the Softaculous interface, use the search box to type "Drupal Core". Click on the **Drupal Core** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/drupal-softaculous.gif"
+        alt="Softaculous search for Drupal Core"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Drupal installation process.
+
+    <Frame>
+      <img
+        src="/images/kb/drupal-install-button.gif"
+        alt="Drupal Core Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the required fields under the **Software Setup** section:
+    *   **Choose Installation URL:** Select the desired protocol (HTTP or HTTPS) and domain. In the **In Directory** field, enter a directory name if you wish to install Drupal in a subdirectory (e.g., `example.com/directory`). Leave this field blank to install Drupal on your main domain (e.g., `example.com`).
+    *   **Choose the version you want to install:** It is recommended to leave this set to the latest available version.
+    *   **Cron job:** This can typically be left at its default setting unless you have specific scheduling needs.
+
+    <Frame>
+      <img
+        src="/images/kb/drupal-install-screen.gif"
+        alt="Drupal Softaculous Software Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following information:
+    *   **Site Name:** Enter a name for your Drupal website (e.g., "My Awesome Drupal Site").
+  </Step>
+  <Step title="Configure Admin Account">
+    In the **Admin Account** section, set up your Drupal administrator credentials:
+    *   **Admin Username:** Choose a secure username for your Drupal administrator account. Avoid common usernames like "admin" or "administrator".
+    *   **Admin Password:** Create a strong and complex password.
+    *   **Admin Email:** Enter a valid email address for administrative purposes.
+
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, immediately after setting them. You will need these credentials to log in to your Drupal admin area later.
+    </Note>
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-gen-install-screen-two.gif"
+        alt="Drupal Softaculous Admin Account Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows for more granular control, such as changing the database name or configuring automated backups.
+
+    <Warning>
+      Be mindful of disk space if you choose to enable frequent automated backups.
+    </Warning>
+    You can generally leave these settings at their defaults if you do not have specific requirements.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the Drupal installation.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Drupal Core should now be successfully installed on your domain or subdomain via Softaculous. You can access your new Drupal website and its administration area using the credentials you configured.

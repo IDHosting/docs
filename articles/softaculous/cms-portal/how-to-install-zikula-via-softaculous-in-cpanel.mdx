@@ -1,0 +1,100 @@
+---
+title: "Install Zikula via Softaculous in cPanel"
+description: "A guide on how to install Zikula using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Zikula on your hosting account.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Softaculous Interface">
+    You will be redirected to the Softaculous interface.
+  </Step>
+  <Step title="Search for Zikula">
+    On the left-hand sidebar, type `Zikula` into the search box. Click on the **Zikula** link that appears in the search results.
+    <Frame>
+      <img 
+        src="/images/kb/zikula-softaculous.gif" 
+        alt="Zikula search result in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img 
+        src="/images/kb/zikula-install-button.gif" 
+        alt="Install Zikula button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary details under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (HTTP or HTTPS) and domain. In the <strong>In Directory</strong> field, enter a directory name if you wish to install Zikula in a subdirectory (e.g., `example.com/directory`). Leave it blank to install Zikula in the root of your domain (e.g., `example.com`).
+      </li>
+      <li>
+        <strong>Choose the version you want to install:</strong> You can typically leave this set to the latest available version.
+      </li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-default-install-screen.gif" 
+        alt="Zikula default installation screen in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, provide the following information:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Create a username for your Zikula administrator. For security, avoid common usernames like `administrator` or `admin`.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Choose a strong and secure password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your email address.
+      </li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-admin-fields.gif" 
+        alt="Zikula admin account fields in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a text file, as you will need them to log in to your Zikula admin area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure settings like the database name or automated backup frequency. You can generally leave these as default unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the Zikula installation.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Final Install button for Zikula in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

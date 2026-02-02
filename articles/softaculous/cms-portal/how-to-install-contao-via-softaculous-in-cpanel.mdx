@@ -1,0 +1,110 @@
+---
+title: "Install Contao via Softaculous in cPanel"
+description: "A guide on how to install Contao using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of installing web applications. Follow these steps to install Contao on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Contao">
+    On the left-hand side of the Softaculous interface, type "Contao" into the search box. Click on the **Contao** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/contao-softaculous.gif"
+        alt="Searching for Contao in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Contao installation process.
+    <Frame>
+      <img
+        src="/images/kb/contao-install-button.gif"
+        alt="Contao Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., http, https) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you wish to install Contao in a subdirectory (e.g., `example.com/directory`). Leave this field blank to install Contao in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Contao Software Setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, enter the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your Contao administrator. For security reasons, avoid common usernames like "administrator" or "admin".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Admin Real Name:</strong> You can use your full name or leave it as is.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your email address.
+      </li>
+    </ul>
+    <Note>
+      Copy your admin username and password to a secure location, such as Notepad. You will need these credentials to log in to your Contao admin area.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-gen-install-admin-screen.gif"
+        alt="Contao Admin Account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Contao Manager Account">
+    Under the <strong>Contao Manager Account</strong> section, enter the following:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Enter your desired username for the Contao Manager.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Set a strong password for the Contao Manager.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Advanced Options and Install">
+    You can configure <strong>Advanced Options</strong> if you wish to change the database name or set up automated backups. Be mindful that frequent backups can consume significant disk space.
+    <br />
+    Once you have configured all the settings, scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

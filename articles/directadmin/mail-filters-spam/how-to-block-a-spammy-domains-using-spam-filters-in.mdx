@@ -1,0 +1,40 @@
+---
+title: "Block Spammy Domains Using Spam Filters in DirectAdmin"
+description: "Learn how to block spam emails from specific domains using the SPAM Filters feature in DirectAdmin."
+---
+
+If you are receiving spam emails from the same domain but with different email addresses, you can block the entire domain in DirectAdmin to prevent further unwanted messages.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin account by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to SPAM Filters">
+    In the **E-Mail Manager** section, click on **SPAM Filters**. Alternatively, you can use the **search bar** at the top of your DirectAdmin interface, type "SPAM Filters", and select the option when it appears.
+    <Frame>
+      <img 
+        src="/images/kb/da-spamfilters-icon.gif" 
+        alt="DirectAdmin SPAM Filters icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Domain Blocking">
+    Under the **Block By** section, choose **Domain** from the **drop-down menu**.
+  </Step>
+  <Step title="Enter Domain Value">
+    In the **Value** field, enter the domain name you wish to block. Do not include "http://" or "www." prefixes.
+    <Frame>
+      <img 
+        src="/images/kb/da-block-spamdomain.gif" 
+        alt="DirectAdmin block spam domain input field"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Block the Domain">
+    Click the **Block** button to apply the domain block.
+  </Step>
+</Steps>
+
+If you need to block additional domains, simply repeat steps 3 through 5 for each domain.

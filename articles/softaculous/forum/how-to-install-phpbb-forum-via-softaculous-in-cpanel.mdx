@@ -1,0 +1,72 @@
+---
+title: "Install phpBB Forum via Softaculous in cPanel"
+description: "A guide on how to install phpBB Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to easily install phpBB Forum on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    You will be redirected to the Softaculous interface.
+  </Step>
+  <Step title="Search for phpBB">
+    On the left-hand side of the Softaculous interface, type `phpBB` into the search box. Click on the `phpBB` link that appears.
+    <Frame>
+      <img src="/images/kb/phpbb-softaculous.gif" alt="Searching for phpBB in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/phpbb-install-button.gif" alt="phpBB Install button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    *   **Choose Installation URL**: Select the appropriate protocol (HTTP or HTTPS) and your domain. If you wish to install phpBB in a subdirectory (e.g., `example.com/forum`), enter the directory name in the "In Directory" field. Leave it blank to install on your main domain (e.g., `example.com`).
+        <Frame>
+          <img src="/images/kb/softaculous-general-install-screen.gif" alt="Softaculous general software setup screen" style={{ width: '100%', height: 'auto' }} />
+        </Frame>
+  </Step>
+  <Step title="Set Board Settings">
+    Under the **Board Settings** section, provide the following details:
+    *   **Board Name**: The name of your forum.
+    *   **Site Description**: A brief description of your forum.
+    *   **Board E-mail**: The primary email address for your forum.
+  </Step>
+  <Step title="Configure Admin Account">
+    Under the **Admin Account** section, enter:
+    *   **Admin Username**: Your desired username for the phpBB administrator. For security, avoid common names like "admin" or "administrator".
+    *   **Admin Password**: Choose a strong and secure password.
+    *   **Admin Email**: Your email address.
+    <Frame>
+      <img src="/images/kb/phpbb-install-screen.gif" alt="phpBB installation screen with admin details" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as Notepad. You will need these credentials to access the administrative area of your phpBB forum later.
+    </Note>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your phpBB forum. The default language is English.
+    <Frame>
+      <img src="/images/kb/softaculous-choose-language.gif" alt="Softaculous language selection" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options and Finalize">
+    The **Advanced Options** section allows you to configure database settings or automated backups. Unless you have specific needs, you can leave these as default.
+    <br />
+    Finally, scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous final install button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>

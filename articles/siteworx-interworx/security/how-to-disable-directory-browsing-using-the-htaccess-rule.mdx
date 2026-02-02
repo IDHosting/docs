@@ -1,0 +1,29 @@
+---
+title: "Disable Directory Browsing Using the htaccess Rule"
+description: "Learn how to disable directory browsing on your website for enhanced security by adding a simple rule to your .htaccess file."
+---
+
+For security purposes, it's crucial to disable directory browsing on your website. This prevents unauthorized users from viewing the files and directories hosted on your server. You can achieve this by adding a specific rule to your `.htaccess` file.
+
+## Steps to Disable Directory Browsing
+
+<Steps>
+  <Step title="Locate or Create .htaccess File">
+    Navigate to the root directory of your website (usually `public_html` or `www`). If an `.htaccess` file already exists, you will edit it. If not, create a new file named `.htaccess`.
+  </Step>
+  <Step title="Add the Rule">
+    Open the `.htaccess` file in a text editor and add the following line:
+    ```apache
+    Options -Indexes
+    ```
+  </Step>
+  <Step title="Save and Upload">
+    Save the changes to your `.htaccess` file and upload it back to your website's root directory if you made the edits on your local machine.
+  </Step>
+</Steps>
+
+<Note>
+Ensure that your web server is configured to allow `.htaccess` files to override configurations. Apache servers typically support this by default, but it might be disabled in some hosting environments.
+</Note>
+
+After implementing this change, attempting to access a directory on your website that does not contain an index file (like `index.html` or `index.php`) will result in an error or a forbidden page, rather than a list of files. This is a simple yet effective security measure.

@@ -1,0 +1,50 @@
+---
+title: "Log in to Plesk"
+description: "A tutorial on how to access the Plesk Control Panel."
+---
+
+After you place an order and make a successful payment, you will receive a welcome email containing login details.
+
+## Plesk Login URLs
+
+You can access Plesk using the following URLs:
+
+*   **SSL Protected:** `https://$hostname.com:8443`
+*   **Non-SSL (Insecure):** `http://$hostname.com:8880`
+
+## Login using the IP Address
+
+You can also log in using your server's IP address. Note that using an IP address with SSL protection might require you to accept a security exception in your browser.
+
+*   **SSL Protected (Requires Exception):** `https://$ip-here:8443`
+
+After your domain has propagated, you can access Plesk using your domain name: `https://example.com:8443`.
+
+<Note>
+  If the URL does not open on port 8443, please check your Welcome email for the correct port number.
+</Note>
+
+## How to log in to Plesk?
+
+<Steps>
+  <Step title="Open your Plesk Login URL">
+    Navigate to your Plesk login URL in your web browser.
+    <Frame>
+      <img
+        src="/images/kb/plesk-login-page.gif"
+        alt="Plesk login page example"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter your credentials">
+    Enter your username and password in the provided fields.
+    Click on the **Log in** button.
+  </Step>
+</Steps>
+
+If your login details are correct, you will be successfully logged into your Plesk account.
+
+<Note>
+  If you have recently modified your domain's DNS settings, please be aware that domain propagation can take up to 24 hours to complete.
+</Note>

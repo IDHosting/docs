@@ -1,0 +1,99 @@
+---
+title: "Install Pubvana via Softaculous in cPanel"
+description: "A guide on how to install Pubvana using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Pubvana with ease.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Pubvana">
+    On the left-hand side of the Softaculous interface, type **Pubvana** into the search box. Click on the **Pubvana** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/pubvana-softaculous.gif"
+        alt="Searching for Pubvana in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+
+    <Frame>
+      <img
+        src="/images/kb/pubvana-install-button.gif"
+        alt="Pubvana Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    *   **Choose Installation URL**: Select the appropriate protocol (e.g., `http` or `https`) and domain.
+    *   **In Directory**: If you wish to install Pubvana in a subdirectory (e.g., `example.com/directory`), enter the directory name here. Leave this field blank to install Pubvana on your main domain (e.g., `example.com`).
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following information:
+    *   **Site Name**: Enter the name of your website (e.g., `My First Website`).
+    *   **Site Description**: Provide a brief description of your site.
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following details:
+    *   **Admin Email**: Your email address.
+    *   **Admin Password**: Choose a strong password.
+    *   **Admin Username**: Your new Pubvana username. For security, avoid using common usernames like `admin` or `administrator`.
+    *   **First Name**: Your first name.
+    *   **Last Name**: Your last name.
+
+    <Note>
+      Copy your admin username and password to a safe place, such as Notepad. You will need these credentials to access the admin area of your Pubvana blog later.
+    </Note>
+
+    <Frame>
+      <img
+        src="/images/kb/pubvana-screen2.gif"
+        alt="Pubvana admin account setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options and Finalize Installation">
+    **Advanced Options**: You can typically leave these settings as default unless you need to change the database name or configure automated backups. Be mindful that frequent backups can consume significant disk space.
+
+    Finally, scroll to the bottom of the page and click the **Install** button.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

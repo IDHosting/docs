@@ -1,0 +1,44 @@
+---
+title: "Enable or Disable PHP's allow_url_fopen Using CloudLinux Selector in Plesk"
+description: "Learn how to enable or disable the allow_url_fopen directive in PHP using the CloudLinux Selector within your Plesk control panel."
+---
+
+You can use the CloudLinux Selector to easily enable or disable the `allow_url_fopen` directive in PHP through your Plesk account.
+
+<Steps>
+  <Step title="Log in to Plesk">
+    Access your Plesk control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to PHP Selector">
+    In the right sidebar, click on the **Pull icon** and then select **PHP Selector**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-cl-php-selector-menu.gif" 
+        alt="Plesk CloudLinux PHP Selector Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options">
+    Click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>If the **Options** page displays an error related to the native PHP version, you must first change it to a non-native version before proceeding.</Note>
+  </Step>
+  <Step title="Configure allow_url_fopen">
+    To enable `allow_url_fopen`, check the corresponding box. To disable it, uncheck the box.
+    <Frame>
+      <img 
+        src="/images/kb/cl-fopen-enable-disable.gif" 
+        alt="CloudLinux allow_url_fopen Enable/Disable"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating whether the option has been enabled or disabled.
+  </Step>
+</Steps>

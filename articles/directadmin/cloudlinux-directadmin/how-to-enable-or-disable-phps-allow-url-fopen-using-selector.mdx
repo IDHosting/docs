@@ -1,0 +1,46 @@
+---
+title: "Enable or Disable PHP's allow_url_fopen Using CloudLinux Selector in DirectAdmin"
+description: "Learn how to easily enable or disable the allow_url_fopen directive in PHP using the CloudLinux Selector within your DirectAdmin control panel."
+---
+
+You can use the CloudLinux Selector in DirectAdmin to manage the `allow_url_fopen` setting for your PHP installation. This guide will walk you through the process.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Begin by logging into your DirectAdmin account.
+  </Step>
+  <Step title="Access Select PHP Version">
+    Navigate to the **Extra Features** section. Locate and click on **Select PHP version**. Alternatively, you can type "Select PHP" into the navigation filter box, and the option should appear.
+    <Frame>
+      <img 
+        src="/images/kb/da-cl-php-selector-icon.gif" 
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Open the Options Menu">
+    Once you are on the PHP Selector page, click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If you encounter an error related to the native PHP version on the Options page, you will first need to change your PHP version to a non-native one before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable or Disable allow_url_fopen">
+    To enable `allow_url_fopen`, place a checkmark next to it. To disable it, uncheck the box.
+    <Frame>
+      <img 
+        src="/images/kb/cl-fopen-enable-disable.gif" 
+        alt="CloudLinux allow_url_fopen Enable/Disable Toggle"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    After making your selection, a confirmation message will appear indicating whether the option has been enabled or disabled.
+  </Step>
+</Steps>

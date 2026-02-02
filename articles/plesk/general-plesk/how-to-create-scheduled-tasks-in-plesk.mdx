@@ -1,0 +1,65 @@
+---
+title: "Create Scheduled Tasks in Plesk"
+description: "A guide on how to create scheduled tasks (Cron Jobs) in Plesk."
+---
+
+Follow this tutorial to create Scheduled Tasks (Cron Jobs) in Plesk.
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Websites & Domains">
+    From the **Sidebar Menu**, click on **Websites & Domains**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-websites-and-domains-menu.gif" 
+        alt="Plesk Websites & Domains menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Scheduled Tasks">
+    In the right sidebar, click on the **Pull icon** and then select **Scheduled Tasks**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-scheduled-task-sidebar-menu.gif" 
+        alt="Plesk Scheduled Tasks from sidebar menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add a New Task">
+    Under the **Scheduled Tasks** section, click on the **Add Task** button.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-add-task-button.gif" 
+        alt="Plesk Add Task button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Task Details">
+    Enter the following details for your scheduled task:
+    <ul>
+      <li><strong>Webspace:</strong> Select the relevant domain from the dropdown if you have multiple domains.</li>
+      <li><strong>Task Type:</strong> Choose the appropriate task type based on your requirements.</li>
+      <li><strong>Command/Script Path:</strong> This field will vary depending on your <strong>Task Type</strong> selection. If you choose <strong>Run a command</strong>, enter the command here.</li>
+      <li><strong>Run:</strong> Select the frequency (e.g., <strong>Daily</strong>) and specify the time and hour for execution.</li>
+      <li><strong>Description:</strong> Provide a clear description for the task.</li>
+      <li><strong>Notify:</strong> Choose when you want to be notified, typically <strong>Errors only</strong>, or leave it as default.</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/plesk-add-cronjob-scheduled-a-task-setting.gif" 
+        alt="Plesk Add Cron Job Scheduled Task settings"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Save the Task">
+    Once all details are entered, click **OK** to save the task.
+  </Step>
+</Steps>
+
+Your task will now be scheduled. You can click on **Run Now** to test and verify that the task executes correctly.

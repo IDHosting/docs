@@ -1,0 +1,119 @@
+---
+title: "Install WordPress via Softaculous in cPanel"
+description: "A guide on how to install WordPress using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of installing web applications. Follow these steps to install WordPress on your hosting account using Softaculous.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Find WordPress">
+    Once redirected to the Softaculous interface, type **WordPress** into the search box on the left-hand side. Click on the **WordPress** link that appears.
+
+    <Frame>
+      <img 
+        src="/images/kb/wordpress-softaculous.gif" 
+        alt="Searching for WordPress in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+
+    <Frame>
+      <img 
+        src="/images/kb/wordpress-install-button.gif" 
+        alt="WordPress Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    *   **Choose Installation URL**: Select the appropriate protocol (e.g., `http://` or `https://`) and your domain. If you wish to install WordPress in a subdirectory (e.g., `example.com/blog`), enter the directory name in the **In Directory** field. Leave it blank to install in the root of your domain (e.g., `example.com`).
+    *   **Choose the version you want to install**: You can typically leave this at the default latest version.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-default-install-screen.gif" 
+        alt="Softaculous WordPress default installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, enter the following:
+    *   **Site Name**: The name of your website (e.g., "My Awesome Blog").
+    *   **Site Description**: A brief description or tagline for your website.
+    *   **Enable Multisite (WPMU)**: Leave this unchecked unless you specifically need a WordPress Multisite installation.
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, configure your WordPress administrator credentials:
+    *   **Admin Username**: Choose a secure username. Avoid common ones like "admin" or "administrator".
+    *   **Admin Password**: Create a strong, unique password.
+    *   **Admin Email**: Enter an email address where you can receive notifications and password resets.
+
+    <Note>
+      It is highly recommended to copy your Admin Username and Password to a secure location, such as a password manager or a text file, immediately after setting them. You will need these credentials to log in to your WordPress admin area.
+    </Note>
+
+    <Frame>
+      <img 
+        src="/images/kb/wp-install-screen2.gif" 
+        alt="WordPress admin account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Language">
+    Choose the primary language for your WordPress installation from the dropdown menu.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-select-language.gif" 
+        alt="Softaculous language selection for WordPress"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Plugins (Optional)">
+    You can choose to install specific plugins during the WordPress setup or skip this step.
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    This section allows you to configure advanced settings like database management and automated backups. For a standard installation, you can usually leave these settings as default.
+
+    <Warning>
+      Be mindful of disk space if you enable frequent automated backups.
+    </Warning>
+  </Step>
+  <Step title="Select Theme (Optional)">
+    You can choose a theme to install along with WordPress, or let WordPress use its default theme and select one later via the WordPress dashboard.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the WordPress installation process.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with links to your new WordPress website and its administration area.

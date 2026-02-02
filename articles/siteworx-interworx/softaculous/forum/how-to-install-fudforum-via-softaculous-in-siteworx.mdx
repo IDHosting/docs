@@ -1,0 +1,92 @@
+---
+title: "Install FUDforum via Softaculous in SiteWorx"
+description: "A guide on how to install FUDforum using the Softaculous installer in SiteWorx."
+---
+
+Softaculous is a one-click installer that simplifies the process of adding web applications to your website. This guide will walk you through installing FUDforum using Softaculous within your SiteWorx control panel.
+
+## Installation Steps
+
+<Steps>
+  <Step title="Log in to SiteWorx">
+    Begin by logging into your SiteWorx account.
+  </Step>
+  <Step title="Access Softaculous">
+    Navigate to the **Additional Features** section and click on **Softaculous**.
+    <Frame>
+      <img
+        src="/images/kb/sw-softaculous-icon.gif"
+        alt="SiteWorx Softaculous Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to FUDforum">
+    SiteWorx will redirect you to the Softaculous interface. On the left-hand side, use the search box to find **FUDforum**. Click on the **FUDforum** link once it appears.
+    <Frame>
+      <img
+        src="/images/kb/fudforum-softaculous.gif"
+        alt="Softaculous FUDforum Search"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the FUDforum installation process.
+    <Frame>
+      <img
+        src="/images/kb/fudforum-install-button.gif"
+        alt="FUDforum Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    *   **Choose Installation URL:** Select the desired protocol (HTTP or HTTPS) and domain. In the **In Directory** field, enter a directory name if you wish to install FUDforum in a subdirectory (e.g., `example.com/forum`). Leave this field blank to install FUDforum in the root of your domain (e.g., `example.com`).
+    *   **Data Directory:** You can typically leave this field as the default.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-three.gif"
+        alt="Softaculous Software Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide:
+    *   **Site Name:** Enter a name for your forum (e.g., "Community Hub").
+    *   **Site Description:** Add a brief description of your forum.
+  </Step>
+  <Step title="Set Up Admin Account">
+    In the **Admin Account** section, enter the following details:
+    *   **Admin Username:** Choose a secure username for your FUDforum administrator. Avoid common usernames like "admin" or "administrator".
+    *   **Admin Password:** Create a strong and unique password.
+    *   **Admin Email:** Provide a valid email address for administrative purposes, such as password recovery and notifications.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-screen2-general.gif"
+        alt="Softaculous Admin Account Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, immediately after setting them. You will need these credentials to access your FUDforum admin area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows for further customization, such as changing the database name or configuring automated backups. Unless you have specific requirements, you can leave these settings at their defaults. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the FUDforum installation.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Final Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with the URLs to access your new FUDforum installation and its admin area.

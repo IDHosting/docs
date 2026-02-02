@@ -1,0 +1,44 @@
+---
+title: "Increase or Decrease PHP Memory Limit via CloudLinux Selector in Plesk"
+description: "Learn how to modify the PHP Memory Limit using the CloudLinux PHP Selector in Plesk."
+---
+
+You can modify the **PHP Memory Limit** as per your needs using the CloudLinux PHP Selector in Plesk.
+
+<Steps>
+  <Step title="Log in to your Plesk account">
+    Access your Plesk control panel.
+  </Step>
+  <Step title="Navigate to PHP Selector">
+    In the right-hand sidebar, click on **PHP Selector**.
+    <Frame>
+      <img 
+        src="/images/kb/plesk-cl-php-selector-menu.gif" 
+        alt="Plesk CloudLinux PHP Selector menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options">
+    Click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>If the **Options** page shows an error related to the native PHP version, change it to a non-native version first.</Note>
+  </Step>
+  <Step title="Modify memory_limit">
+    Look for `memory_limit` and click on the drop-down option displayed in front of it. Then, choose the appropriate limit as per your requirements.
+    <Frame>
+      <img 
+        src="/images/kb/cl-increase-decrease-php-memory-limit.gif" 
+        alt="CloudLinux increase or decrease PHP memory limit dropdown"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear stating that the memory limit has been modified.
+  </Step>
+</Steps>

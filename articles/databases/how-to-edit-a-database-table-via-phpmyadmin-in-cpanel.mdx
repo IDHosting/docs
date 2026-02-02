@@ -1,0 +1,64 @@
+---
+title: "Edit a Database Table via phpMyAdmin in cPanel"
+description: "Learn how to quickly edit database table entries using phpMyAdmin within your cPanel account."
+---
+
+Editing a database table in cPanel using phpMyAdmin is a straightforward process for updating your data. This guide will walk you through modifying records, adding new entries, or deleting outdated information.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Open phpMyAdmin">
+    In the **Databases** section of your cPanel dashboard, click on the **phpMyAdmin** icon.
+    <Frame>
+      <img 
+        src="/images/kb/phpmyadmin-icon.gif" 
+        alt="phpMyAdmin icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Expand the database">
+    In the navigation tree on the left sidebar, click the **Expand icon** next to the database you wish to access.
+    <Frame>
+      <img 
+        src="/images/kb/phpmyadmin-expand-db.gif" 
+        alt="Expand database in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select the table">
+    Choose the specific table you want to edit from the list. For example, if you need to change the WordPress blog name, select the `wp-options` table.
+    <Frame>
+      <img 
+        src="/images/kb/phpmyadmin-db-list2.gif" 
+        alt="List of tables in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Edit the record">
+    Locate the row you wish to modify and click the **Edit** link for that row.
+    <Frame>
+      <img 
+        src="/images/kb/wp-table-edit.gif" 
+        alt="Edit button for a table row in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Modify and save changes">
+    Make the necessary changes to the text value in the field. Once you are done, click the **Go** button to save your modifications.
+    <Frame>
+      <img 
+        src="/images/kb/wp-table-change.gif" 
+        alt="Modifying a value and clicking Go in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+By following these steps, you can directly alter SQL data for various applications without needing to access their administrative areas. This method is particularly useful if you encounter issues changing settings through the usual interface, such as modifying a theme setting when the administration area is inaccessible.

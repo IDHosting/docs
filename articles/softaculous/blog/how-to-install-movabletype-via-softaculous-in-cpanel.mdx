@@ -1,0 +1,114 @@
+---
+title: "Install MovableType via Softaculous in cPanel"
+description: "A guide on how to install MovableType using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like MovableType incredibly easy. Follow these steps to get MovableType up and running on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Find Movable Type">
+    You will be redirected to the Softaculous interface. On the left-hand side, type "Movable Type" into the search box. Click on the **Movable Type** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/movabletype-softaculous.gif"
+        alt="Searching for Movable Type in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the MovableType installation process.
+    <Frame>
+      <img
+        src="/images/kb/movabletype-install-button.gif"
+        alt="Movable Type Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "In Directory" field, enter a directory name if you wish to install MovableType in a subdirectory (e.g., `example.com/blog`). Leave this field blank to install MovableType on your main domain (e.g., `example.com`).
+      </li>
+      <li>
+        <strong>Web Directory:</strong> This is usually set automatically. You can typically leave this as is.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/movabletype-install-screen.gif"
+        alt="Movable Type Software Setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following information:
+    <ul>
+      <li>
+        <strong>Site Name:</strong> Enter the name for your website (e.g., "My Awesome Blog").
+      </li>
+      <li>
+        <strong>Site Description:</strong> Add a brief description of your website.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter your administrator details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your MovableType admin account. For security, avoid common usernames like "admin" or "administrator".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>First Name:</strong> Enter your first name.
+      </li>
+      <li>
+        <strong>Last Name:</strong> Enter your last name.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Provide a valid email address.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/movabletype-screenrkd79.gif"
+        alt="Movable Type Admin Account setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, as you will need them to log in to your Movable Type admin area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    You can expand the <strong>Advanced Options</strong> section if you wish to configure specific database settings or set up automated backups. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the MovableType installation.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

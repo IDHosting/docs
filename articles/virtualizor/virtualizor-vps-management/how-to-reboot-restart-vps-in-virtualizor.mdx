@@ -1,0 +1,66 @@
+---
+title: "Reboot/Restart VPS in Virtualizor"
+description: "Learn how to reboot or restart your Virtualizor VPS using either the Virtualizor control panel or the command line."
+---
+
+You can restart your Virtual Private Server (VPS) through the Virtualizor control panel or via the command line. This guide covers both methods.
+
+## How to Reboot/Restart a VPS via Virtualizor?
+
+Follow these steps to restart your VPS using the Virtualizor interface:
+
+<Steps>
+  <Step title="Log in to Virtualizor">
+    Access your Virtualizor Control Panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to List VPS">
+    On the left-hand side panel, click on **List VPS**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-list-vps-menu.gif" 
+        alt="Virtualizor List VPS menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Manage VPS">
+    Hover your mouse over the row of the VPS you wish to manage. The row will highlight. Click on the **Wrench icon** that appears on the highlighted row.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-click-manage-vps.gif" 
+        alt="Virtualizor click manage VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Restart VPS">
+    In the top-right corner of the VPS management interface, click on the **Restart icon**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-restart-vps-icon.gif" 
+        alt="Virtualizor restart VPS icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>The VPS restart process may take a few moments to complete. A confirmation message will be displayed once it's done.</Note>
+
+## How to Reboot/Restart VPS via Command Line?
+
+Alternatively, you can restart your VPS using SSH and a command.
+
+<Steps>
+  <Step title="Log in via SSH">
+    Connect to your VPS using your preferred SSH client.
+  </Step>
+  <Step title="Execute Restart Command">
+    Enter the following command and press Enter:
+    ```bash
+    shutdown -r now
+    ```
+  </Step>
+</Steps>
+
+<Note>After executing the command, your VPS will begin its reboot sequence, which may take some time.</Note>

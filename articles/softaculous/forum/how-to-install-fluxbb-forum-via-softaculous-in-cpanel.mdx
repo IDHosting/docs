@@ -1,0 +1,103 @@
+---
+title: "Install FluxBB Forum via Softaculous in cPanel"
+description: "A guide on how to install FluxBB Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like FluxBB Forum incredibly easy. Follow these steps to get your forum up and running.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to FluxBB">
+    cPanel will redirect you to the Softaculous interface. On the left-hand side, type **FluxBB** into the search box. Click on the **FluxBB** link that appears in the search results.
+    <Frame>
+      <img 
+        src="/images/kb/fluxbb-softaculous.gif" 
+        alt="Searching for FluxBB in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the installation process.
+    <Frame>
+      <img 
+        src="/images/kb/fluxbb-install-button.gif" 
+        alt="FluxBB Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "In Directory" field, enter a directory name if you wish to install FluxBB in a subdirectory (e.g., `example.com/forum`). Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-install-screen.gif" 
+        alt="Softaculous Software Setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    In the **Site Settings** section, provide:
+    <ul>
+      <li><strong>Site Name:</strong> The name for your forum (e.g., "Technology Forum").</li>
+      <li><strong>Site Description:</strong> A brief description of your forum.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter:
+    <ul>
+      <li><strong>Admin Username:</strong> Your desired username for the FluxBB administrator. Avoid common usernames like "administrator" or "admin" for security.</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Your email address, which will be used for password resets and notifications.</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-screen2-general.gif" 
+        alt="Softaculous Admin Account setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>It is highly recommended to copy your admin username and password to a secure location, such as a Notepad file. You will need these credentials to access the admin area of your FluxBB forum later.</Note>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your FluxBB forum from the dropdown menu. The default language is English.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-choose-language.gif" 
+        alt="Softaculous language selection"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure database settings or set up automated backups. You can generally leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with links to your new FluxBB forum and its administration area.

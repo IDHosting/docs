@@ -1,0 +1,71 @@
+---
+title: "Install SMF Simplemachine Forum via Softaculous in cPanel"
+description: "A guide on how to easily install SMF Simplemachine Forum using Softaculous in your cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install SMF Simplemachine Forum on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer Icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for SMF">
+    On the left-hand side menu, type `SMF` into the search box. Click on the **SMF** link that appears.
+    <Frame>
+      <img src="/images/kb/smf-softaculous.gif" alt="SMF search result in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/smf-install-button.gif" alt="SMF Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    *   **Choose Installation URL:** Select the desired protocol (e.g., `http` or `https`) and your domain. If you wish to install SMF in a subdirectory (e.g., `example.com/forum`), enter the directory name in the "In Directory" field. Leave it blank to install in the root of your domain.
+    *   **Choose the version you want to install:** You can typically leave this at the default version.
+    <Frame>
+      <img src="/images/kb/softaculous-default-install-screen.gif" alt="Softaculous SMF Default Installation Screen" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Board Settings">
+    Under the **Board Settings** section, provide the following details:
+    *   **Board Name:** The name for your forum.
+    *   **Visual verification image to display:** Choose your preferred option for visual verification.
+    *   **Board E-mail:** The primary email address for your forum.
+  </Step>
+  <Step title="Set Up Admin Account">
+    In the **Admin Account** section, enter:
+    *   **Admin Username:** Your desired administrator username. For security, avoid common names like `administrator` or `admin`.
+    *   **Admin Password:** Create a strong and secure password.
+    *   **Real Name:** You can leave this as is or enter your actual name.
+    *   **Admin Email:** Your email address. This is crucial for password resets and notifications.
+    <Frame>
+      <img src="/images/kb/smf-install-screen.gif" alt="SMF Admin Account Setup Screen" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>Remember to copy and save your admin username and password in a secure place, like Notepad. You will need these credentials to log in to your SMF admin area later.</Note>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your SMF forum. The default is English.
+    <Frame>
+      <img src="/images/kb/softaculous-choose-language.gif" alt="Softaculous SMF Language Selection" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options and Install">
+    *   **Advanced Options:** You can generally leave these settings as default unless you need to specify a different database name or configure automated backups. Be mindful that frequent backups can consume significant disk space.
+    *   Finally, scroll to the bottom of the page and click the **Install** button to complete the process.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>

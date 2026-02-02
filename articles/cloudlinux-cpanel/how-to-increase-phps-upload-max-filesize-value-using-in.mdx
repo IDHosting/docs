@@ -1,0 +1,46 @@
+---
+title: "Increase PHP's upload_max_filesize Value Using CloudLinux Selector in cPanel"
+description: "Learn how to adjust PHP's upload_max_filesize setting using the CloudLinux PHP Selector in cPanel to accommodate larger file uploads."
+---
+
+You can modify PHP's `upload_max_filesize` as per your needs using CloudLinux's PHP Selector in cPanel.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Navigate to PHP Selector">
+    In the **Software** section, click on **Select PHP Version**.
+    <Frame>
+      <img
+        src="/images/kb/cp-cl-select-php-version-icon.gif"
+        alt="cPanel Select PHP Version Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options Menu">
+    Click on the **Options** menu.
+    <Frame>
+      <img
+        src="/images/kb/cl-options-menu.gif"
+        alt="CloudLinux Options Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the **Options** page displays an error related to the native PHP version, you must first change it to a non-native version before proceeding.
+    </Note>
+  </Step>
+  <Step title="Adjust upload_max_filesize">
+    Locate the `upload_max_filesize` setting. Click on the drop-down menu next to it and select the desired limit according to your requirements.
+    <Frame>
+      <img
+        src="/images/kb/cl-upload-max_filesize.gif"
+        alt="CloudLinux upload_max_filesize setting"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear, indicating that the maximum upload file size has been successfully changed.
+  </Step>
+</Steps>

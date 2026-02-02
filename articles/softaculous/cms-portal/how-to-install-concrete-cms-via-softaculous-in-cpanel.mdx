@@ -1,0 +1,102 @@
+---
+title: "Install Concrete CMS via Softaculous in cPanel"
+description: "A guide on how to install Concrete CMS using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of installing web applications. Follow these steps to install Concrete CMS on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Concrete CMS">
+    On the left-hand sidebar, type "Concrete CMS" into the search box. Click on the **Concrete CMS** link that appears in the search results.
+    <Frame>
+      <img 
+        src="/images/kb/concrete-cms-softaculous.gif" 
+        alt="Searching for Concrete CMS in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img 
+        src="/images/kb/concrete-cms-install-button.gif" 
+        alt="Concrete CMS Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the desired protocol (e.g., `http://` or `https://`) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you want to install Concrete CMS in a subdirectory (e.g., `example.com/directory`). Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+      <li><strong>Choose the version you want to install:</strong> You can typically leave this set to the latest available version.</li>
+    </ul>
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-default-install-screen.gif" 
+        alt="Softaculous default installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the <strong>Site Settings</strong> section, enter the following:
+    <ul>
+      <li><strong>Site Name:</strong> Provide a name for your website (e.g., "My Concrete CMS Site").</li>
+      <li><strong>Sample Data:</strong> You can usually leave this as is, or select sample content if desired.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, enter your administrator details:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a secure username for your Concrete CMS administrator account. Avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and complex password.</li>
+      <li><strong>Admin Email:</strong> Enter a valid email address for administrative purposes.</li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, as you will need them to log in to your Concrete CMS admin area later.
+    </Note>
+    <Frame>
+      <img 
+        src="/images/kb/concrete5-install-screen2.gif" 
+        alt="Concrete CMS admin account setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    Under <strong>Advanced Options</strong>, you can configure settings such as the database name or set up automated backups.
+    <Tip>
+      Be mindful that frequent automated backups can consume significant disk space. Adjust these settings according to your needs and hosting plan.
+    </Tip>
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Softaculous Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with links to your new Concrete CMS website and its administration area.

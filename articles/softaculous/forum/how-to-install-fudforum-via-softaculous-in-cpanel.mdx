@@ -1,0 +1,76 @@
+---
+title: "Install FUDforum via Softaculous in cPanel"
+description: "A guide on how to install FUDforum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like FUDforum incredibly easy. Follow these steps to get your forum up and running.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for FUDforum">
+    On the left-hand side of the Softaculous interface, type **FUDforum** into the search box. Click on the **FUDforum** link that appears in the search results.
+    <Frame>
+      <img src="/images/kb/fudforum-softaculous.gif" alt="FUDforum search results in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/fudforum-install-button.gif" alt="FUDforum Install button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http:// or https://) and your domain. In the <strong>In Directory</strong> field, enter a directory name if you want to install FUDforum in a subdirectory (e.g., `example.com/forum`). Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+      <li><strong>Data Directory:</strong> You can typically leave this field as the default.</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-general-three.gif" alt="Softaculous Software Setup general options" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Enter the following details under the **Site Settings** section:
+    <ul>
+      <li><strong>Site Name:</strong> Provide a name for your forum (e.g., "Technology Forum").</li>
+      <li><strong>Site Description:</strong> Enter a brief description of your forum.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following information:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your FUDforum administrator. For security, avoid common usernames like "administrator" or "admin".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Enter your email address. This is crucial for password recovery and notifications.</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-screen2-general.gif" alt="Softaculous Admin Account details" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>
+      Copy your admin username and password to a secure location, such as Notepad. You will need these credentials to access the FUDforum admin area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    Under <strong>Advanced Options</strong>, you can configure settings like the database name or set up automated backups.
+    <Note>
+      Be mindful that frequent backups can consume significant disk space.
+    </Note>
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install button at the bottom of the page" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>

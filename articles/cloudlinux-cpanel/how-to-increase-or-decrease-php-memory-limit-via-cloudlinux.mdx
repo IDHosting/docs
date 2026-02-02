@@ -1,0 +1,44 @@
+---
+title: "Increase or Decrease PHP Memory Limit via CloudLinux Selector in cPanel"
+description: "Learn how to adjust your PHP memory limit using the CloudLinux PHP Selector tool within your cPanel account."
+---
+
+You can modify the **PHP Memory Limit** to suit your needs using the CloudLinux PHP Selector in cPanel.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on **Select PHP Version**.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="cPanel CloudLinux Select PHP Version Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Options Menu">
+    Click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>If the **Options** page displays an error related to the native PHP version, you must first change it to a non-native version.</Note>
+  </Step>
+  <Step title="Adjust Memory Limit">
+    Locate **memory_limit** and click on the drop-down menu next to it. Select the desired memory limit from the available options.
+    <Frame>
+      <img 
+        src="/images/kb/cl-increase-decrease-php-memory-limit.gif" 
+        alt="CloudLinux Increase/Decrease PHP Memory Limit"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating that the memory limit has been successfully modified.
+  </Step>
+</Steps>

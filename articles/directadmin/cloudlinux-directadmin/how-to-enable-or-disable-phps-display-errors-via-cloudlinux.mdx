@@ -1,0 +1,46 @@
+---
+title: "Enable or Disable PHP's display_errors via CloudLinux Selector in DirectAdmin"
+description: "Learn how to enable or disable PHP's display_errors using the CloudLinux Selector in DirectAdmin for debugging or security purposes."
+---
+
+<p>Sometimes, we need to debug PHP. Hence, we need to enable <strong>display_errors</strong> or disable them for security reasons. You can do this using the CloudLinux Selector to enable or disable PHP's display_errors in DirectAdmin.</p>
+
+<Steps>
+  <Step title="Log in to your DirectAdmin account">
+    Access your DirectAdmin control panel.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Extra Features** section, click on **Select PHP version**. Alternatively, you can type **Select PHP** in the navigation filter box, and the option will appear. Click on it.
+    <Frame>
+      <img
+        src="/images/kb/da-cl-php-selector-icon.gif"
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Options Menu">
+    Click on the **Options** menu.
+    <Frame>
+      <img
+        src="/images/kb/cl-options-menu.gif"
+        alt="CloudLinux Options Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the <strong>Options</strong> page shows an error related to the native PHP version, you must first change it to a non-native version.
+    </Note>
+  </Step>
+  <Step title="Enable or Disable display_errors">
+    To enable <strong>display_errors</strong>, tick the checkbox next to it. To disable it, uncheck the checkbox.
+    <Frame>
+      <img
+        src="/images/kb/cl-enable-or-disable-error.gif"
+        alt="CloudLinux Enable or Disable Error Setting"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating whether the option has been enabled or disabled.
+  </Step>
+</Steps>

@@ -1,0 +1,36 @@
+---
+title: "Redirect a Page or Website Using htaccess"
+description: "Learn how to redirect visitors from old pages or websites to new ones using the .htaccess file."
+---
+
+This article explains how to use the `.htaccess` file to redirect visitors from a non-existent page or an old website to a new destination.
+
+## Redirecting Pages
+
+You can redirect visitors from a specific page to another page on the same domain, or to an entirely different website.
+
+### Redirecting to a Different Domain
+
+To redirect a specific page to a different domain, use the following `.htaccess` configuration:
+
+```bash
+RewriteEngine on
+Redirect 301 /mypage.html http://example.com
+```
+
+This configuration will redirect anyone trying to access `/mypage.html` to `http://example.com`.
+
+### Redirecting to Another Page on the Same Domain
+
+To redirect from one page to another within the same website, use this configuration:
+
+```bash
+#Redirect from a page/directory to another page
+Redirect 301 /oldpage.html /newpage.html
+```
+
+With this rule in place, when a visitor accesses `example.com/oldpage.html`, they will be automatically redirected to `example.com/newpage.html`.
+
+<Note>
+The `Redirect 301` command indicates a permanent redirect. This is important for SEO as it tells search engines that the content has moved permanently and to update their indexes accordingly.
+</Note>

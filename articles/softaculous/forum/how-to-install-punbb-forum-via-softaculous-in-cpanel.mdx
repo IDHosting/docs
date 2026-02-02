@@ -1,0 +1,67 @@
+---
+title: "Install PunBB Forum via Softaculous in cPanel"
+description: "A guide on how to install PunBB Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like PunBB Forum straightforward. Follow these steps to install PunBB Forum on your hosting account.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer Icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Navigate to PunBB">
+    cPanel will redirect you to the Softaculous interface. On the left-hand side, type `PunBB` into the search box. Click on the **PunBB** link that appears in the search results.
+    <Frame>
+      <img src="/images/kb/punbb-softaculous.gif" alt="Softaculous search for PunBB" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button for PunBB.
+    <Frame>
+      <img src="/images/kb/punbb-install-button.gif" alt="PunBB Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and domain. In the "In Directory" field, enter a directory name if you wish to install PunBB in a subdirectory (e.g., `example.com/forum`). Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-general-install-screen.gif" alt="Softaculous General Install Screen" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    In the **Site Settings** section, enter:
+    <ul>
+      <li><strong>Site Name:</strong> The name for your forum (e.g., `Technology Forum`).</li>
+      <li><strong>Site Description:</strong> A brief description of your forum.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, provide:
+    <ul>
+      <li><strong>Admin Username:</strong> Your desired username for the PunBB administrator. Avoid common usernames like `admin` or `administrator` for security reasons.</li>
+      <li><strong>Admin Password:</strong> Create a strong password for your admin account.</li>
+      <li><strong>Admin Email:</strong> Your email address. This is crucial for password recovery and notifications.</li>
+    </ul>
+    <Note>It is highly recommended to copy your admin username and password to a secure location, such as a Notepad file. You will need these credentials to access the PunBB admin area later.</Note>
+    <Frame>
+      <img src="/images/kb/softaculous-screen2-general.gif" alt="Softaculous Admin Account Setup" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure database details or set up automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>

@@ -1,0 +1,46 @@
+---
+title: "Enable or Disable PHP's allow_url_fopen Using CloudLinux Selector in cPanel"
+description: "Learn how to easily enable or disable the allow_url_fopen directive in PHP using the CloudLinux Selector tool within your cPanel interface."
+---
+
+You can use the CloudLinux Selector to enable or disable the `allow_url_fopen` directive in cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account using your provided credentials.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on **Select PHP Version**.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="cPanel Select PHP Version icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Options Menu">
+    Click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="CloudLinux Options menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If the <strong>Options</strong> page displays an error related to the native PHP version, you must first change it to a non-native version before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable or Disable allow_url_fopen">
+    To enable <strong>allow_url_fopen</strong>, check the box next to it. To disable it, uncheck the box.
+    <Frame>
+      <img 
+        src="/images/kb/cl-fopen-enable-disable.gif" 
+        alt="CloudLinux allow_url_fopen enable/disable toggle"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    A confirmation message will appear indicating whether the option has been enabled or disabled.
+  </Step>
+</Steps>

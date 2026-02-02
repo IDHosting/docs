@@ -1,0 +1,108 @@
+---
+title: "Install SMF Simplemachine Forum via Softaculous in SiteWorx"
+description: "A guide on how to install SMF Simplemachine Forum using the Softaculous installer in SiteWorx."
+---
+
+This guide will walk you through the process of installing SMF Simplemachine Forum using Softaculous within your SiteWorx account.
+
+<Steps>
+  <Step title="Log in to your SiteWorx Account">
+    Begin by logging into your SiteWorx account.
+  </Step>
+  <Step title="Access Softaculous">
+    Once logged in, navigate to the **Additional Features** section and click on **Softaculous**.
+
+    <Frame>
+      <img
+        src="/images/kb/sw-softaculous-icon.gif"
+        alt="SiteWorx Softaculous Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to SMF in Softaculous">
+    SiteWorx will redirect you to the Softaculous interface. On the left-hand side, use the search box to type **SMF**. Click on the **SMF** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/smf-softaculous.gif"
+        alt="Softaculous SMF Search Result"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the SMF installation process.
+
+    <Frame>
+      <img
+        src="/images/kb/smf-install-button.gif"
+        alt="SMF Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    *   **Choose Installation URL:** Select the desired protocol (HTTP or HTTPS) and domain. In the **In Directory** field, enter a directory name if you wish to install SMF in a subdirectory (e.g., `example.com/forum`). Leave this field blank to install SMF in the root of your domain (e.g., `example.com`).
+    *   **Choose the version you want to install:** You can typically leave this set to the latest available version.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-default-install-screen.gif"
+        alt="Softaculous Default Install Screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Board Settings">
+    In the **Board Settings** section, provide the following details:
+    *   **Board Name:** Enter the desired name for your forum.
+    *   **Visual verification image to display:** Choose your preferred option for visual verification.
+    *   **Board E-mail:** Enter the primary email address for your forum.
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, configure your administrator credentials:
+    *   **Admin Username:** Choose a secure username for your forum administrator. Avoid common usernames like "administrator" or "admin".
+    *   **Admin Password:** Create a strong and secure password.
+    *   **Real Name:** You can enter your real name or leave it as is.
+    *   **Admin Email:** Provide your email address. This is crucial for password recovery and notifications.
+
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location (like Notepad) immediately after setting them. You will need these credentials to access the admin area of your SMF forum later.
+    </Note>
+
+    <Frame>
+      <img
+        src="/images/kb/smf-install-screen.gif"
+        alt="SMF Install Screen - Admin Account Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose Language">
+    Select the preferred language for your SMF forum from the **Choose Language** dropdown. The default language is English.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-choose-language.gif"
+        alt="Softaculous Choose Language"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure database settings or set up automated backups. It is generally recommended to leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the installation of your SMF Simplemachine Forum.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

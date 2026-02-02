@@ -1,0 +1,58 @@
+---
+title: "Start VPS in Rescue Mode Using Virtualizor"
+description: "Learn how to enable and disable rescue mode on your VPS using the Virtualizor control panel for data recovery and OS repair."
+---
+
+Rescue mode is a valuable tool for data recovery, OS repair, and other maintenance tasks on your Virtualizor VPS. Follow these steps to enable and disable rescue mode.
+
+<Steps>
+  <Step title="Log in to Virtualizor">
+    Access your Virtualizor control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to List VPS">
+    On the left-hand side panel, click on **List VPS**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-list-vps-menu.gif" 
+        alt="Virtualizor List VPS menu item"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Manage VPS">
+    Hover your mouse over the row of the VPS you wish to manage. The row will highlight. Click on the **Wrench icon** that appears on the highlighted line.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-click-manage-vps.gif" 
+        alt="Virtualizor Wrench icon to manage VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select Rescue Mode">
+    In the management options, click on **Rescue Mode**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-rescue-mode-tab.gif" 
+        alt="Virtualizor Rescue Mode tab"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enable Rescue Mode">
+    Enter a new password for rescue mode access and then click on **Enable Rescue Mode**.
+    <Frame>
+      <img 
+        src="/images/kb/virtualizor-rescue-mode-set-password.gif" 
+        alt="Virtualizor set password for rescue mode"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+It may take a few minutes for rescue mode to become active. Once enabled, you can connect to your VPS via SSH using the new password you set. If you encounter any issues with SSH access, you can use the VNC console to access your VPS.
+
+### Disabling Rescue Mode
+
+To exit rescue mode, navigate back to the **Rescue Mode** tab within your VPS management options and click on **Disable Rescue Mode**.

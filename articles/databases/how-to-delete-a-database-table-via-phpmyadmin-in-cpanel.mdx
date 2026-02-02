@@ -1,0 +1,63 @@
+---
+title: "Delete a Database Table via phpMyAdmin in cPanel"
+description: "Learn how to safely delete a database table using phpMyAdmin within your cPanel account."
+---
+
+Deleting a database table in cPanel using phpMyAdmin is a straightforward process, but it's crucial to proceed with caution to avoid accidental data loss.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Open phpMyAdmin">
+    In the **Databases** section of your cPanel dashboard, click on the **phpMyAdmin** icon.
+
+    <Frame>
+      <img
+        src="/images/kb/phpmyadmin-icon.gif"
+        alt="phpMyAdmin icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Expand your database">
+    In the left sidebar navigation tree, click the expand icon next to the database that contains the table you wish to delete.
+
+    <Frame>
+      <img
+        src="/images/kb/phpmyadmin-expand-db.gif"
+        alt="Expand database in phpMyAdmin navigation tree"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select the table">
+    Click on the specific table you want to delete from the expanded list. For example, if you intend to delete the `wp_links` table, select it.
+
+    <Frame>
+      <img
+        src="/images/kb/wp-links.gif"
+        alt="Selecting the wp_links table in phpMyAdmin"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Operations">
+    With the table selected, click on the **Operations** tab.
+
+    <Frame>
+      <img
+        src="/images/kb/wp-link-delete.gif"
+        alt="Operations tab in phpMyAdmin for a selected table"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Delete the table">
+    Scroll down within the **Operations** tab and click on the **Delete the table (DROP)** option.
+
+    <Warning>
+      This action will permanently remove the entire table and all its data. It is irreversible, especially if you do not have a recent backup. Ensure you have a backup before proceeding.
+    </Warning>
+  </Step>
+</Steps>

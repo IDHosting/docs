@@ -1,0 +1,53 @@
+---
+title: "Enable or Disable PHP Extensions Using the CloudLinux Selector in DirectAdmin"
+description: "Learn how to manage PHP extensions within DirectAdmin using the CloudLinux Selector."
+---
+
+You can use the CloudLinux Selector to easily enable or disable available PHP extensions for your website directly from your DirectAdmin control panel.
+
+## Steps to Manage PHP Extensions
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Begin by logging into your DirectAdmin account.
+  </Step>
+  <Step title="Access PHP Version Selector">
+    Navigate to the **Extra Features** section and click on **Select PHP version**. Alternatively, you can type "Select PHP" into the navigation filter box, and the option will appear. Click on it to proceed.
+
+    <Frame>
+      <img 
+        src="/images/kb/da-cl-php-selector-icon.gif" 
+        alt="DirectAdmin CloudLinux PHP Selector Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Go to Extensions Tab">
+    Once the PHP Selector interface loads, click on the **Extensions** tab.
+
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="CloudLinux Extensions Tab Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+
+    <Note>
+      If the **Extensions** page displays an error related to the native PHP version, you will need to change your PHP version to a non-native one before you can manage extensions.
+    </Note>
+  </Step>
+  <Step title="Enable or Disable Extensions">
+    To **enable** a PHP extension, simply check the box next to its name. To **disable** an extension, uncheck the box.
+
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-disabled-extension.gif" 
+        alt="CloudLinux Enable/Disable Extension"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+
+    The interface will indicate whether the module is currently enabled or disabled.
+  </Step>
+</Steps>

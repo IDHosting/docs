@@ -11,93 +11,435 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Web Hosting",
+        "icon": "server",
         "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "index"
-            ]
-          },
-          {
-            "group": "Backup/Restore",
-            "pages": [
-              "articles/backup-restore/how-to-download-backup-of-home-directory-mysql-or-email-only",
-              "articles/backup-restore/how-to-generate-and-download-a-full-backup-of-your-cpanel",
-              "articles/backup-restore/how-to-restore-partial-backups-in-cpanel",
-              "articles/backup-restore/how-to-generate-a-cpanel-backup-and-send-it-to-ftp"
-            ]
-          },
-          {
-            "group": "cPanel - Control Panel",
-            "pages": [
-              "articles/cpanel-control-panel/how-to-reset-cpanels-account-password"
-            ]
-          },
-          {
-            "group": "Databases",
-            "pages": [
-              "articles/databases/how-to-create-a-database-in-cpanel",
-              "articles/databases/how-to-rename-a-database-in-cpanel",
-              "articles/databases/how-to-create-a-database-username-in-cpanel",
-              "articles/databases/how-to-delete-a-database-in-cpanel",
-              "articles/databases/how-to-add-a-user-to-a-database-and-grant-privileges"
-            ]
-          },
-          {
-            "group": "DNS - Nameservers",
-            "pages": [
-              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-name-com",
-              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-dynadot",
-              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-namecheap",
-              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-netearthone-or-based",
-              "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-godaddy"
-            ]
-          },
-          {
-            "group": "Domain Management",
-            "pages": [
-              "articles/domain-management/how-to-create-an-alias-or-park-a-domain-in-cpanel",
-              "articles/domain-management/how-to-remove-parked-domains-aliases-in-cpanel",
-              "articles/domain-management/how-to-create-addon-domains-in-cpanel",
-              "articles/domain-management/how-to-remove-an-add-on-domain-in-cpanel",
-              "articles/domain-management/how-to-redirect-an-add-on-domain-in-cpanel",
-              "articles/domain-management/how-to-create-a-subdomain-in-cpanel",
-              "articles/domain-management/how-to-remove-a-subdomain-in-cpanel",
-              "articles/domain-management/how-to-redirect-a-subdomain-to-an-external-url",
-              "articles/domain-management/how-to-redirect-your-website-to-any-page-or-external-domain",
-              "articles/domain-management/how-to-remove-a-domain-redirect-in-cpanel"
-            ]
-          },
-          {
-            "group": "Email",
-            "pages": [
-              "articles/email/how-to-access-email-from-cpanel-webmail",
-              "articles/email/how-to-change-an-email-accounts-password-in-cpanel",
-              "articles/email/how-to-create-an-email-autoresponder-when-you-are-on",
-              "articles/email/how-to-forward-an-email-to-gmail-or-other-email-service",
-              "articles/email/how-to-create-an-email-account-in-cpanel"
-            ]
-          },
-          {
-            "group": "FTP",
-            "pages": [
-              "articles/ftp/how-to-create-an-ftp-account-in-cpanel",
-              "articles/ftp/how-to-change-the-password-of-the-ftp-account-in-cpanel",
-              "articles/ftp/how-to-change-the-ftp-user-quota-in-cpanel",
-              "articles/ftp/how-to-delete-an-ftp-user-account-from-cpanel"
-            ]
-          },
-          {
-            "group": "Mail Filters &amp; SPAM",
-            "pages": [
-              "articles/mail-filters-spam/how-to-enable-boxtrapper-in-cpanel",
-              "articles/mail-filters-spam/how-to-enable-apache-spamassassin-and-spambox-in-cpanel",
-              "articles/mail-filters-spam/how-to-create-an-account-level-global-email-filter-in-cpanel",
-              "articles/mail-filters-spam/how-to-edit-an-account-level-global-email-filter-in-cpanel",
-              "articles/mail-filters-spam/how-to-delete-an-account-level-global-email-filter-in-cpanel"
-            ]
-          }
+        {
+          "group": "cPanel",
+          "pages": [
+            {
+              "group": "Backup/Restore",
+              "pages": [
+                "articles/backup-restore/how-to-download-backup-of-home-directory-mysql-or-email-only",
+                "articles/backup-restore/how-to-generate-and-download-a-full-backup-of-your-cpanel",
+                "articles/backup-restore/how-to-restore-partial-backups-in-cpanel",
+                "articles/backup-restore/how-to-generate-a-cpanel-backup-and-send-it-to-ftp"
+              ]
+            },
+            {
+              "group": "Control Panel",
+              "pages": [
+                "articles/cpanel-control-panel/how-to-reset-cpanels-account-password"
+              ]
+            },
+            {
+              "group": "Databases",
+              "pages": [
+                "articles/databases/how-to-create-a-database-in-cpanel",
+                "articles/databases/how-to-rename-a-database-in-cpanel",
+                "articles/databases/how-to-create-a-database-username-in-cpanel",
+                "articles/databases/how-to-delete-a-database-in-cpanel",
+                "articles/databases/how-to-add-a-user-to-a-database-and-grant-privileges"
+              ]
+            },
+            {
+              "group": "DNS & Nameservers",
+              "pages": [
+                "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-name-com",
+                "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-dynadot",
+                "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-namecheap",
+                "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-netearthone-or-based",
+                "articles/dns-nameservers/how-to-update-the-dns-nameservers-at-godaddy"
+              ]
+            },
+            {
+              "group": "Domain Management",
+              "pages": [
+                "articles/domain-management/how-to-create-an-alias-or-park-a-domain-in-cpanel",
+                "articles/domain-management/how-to-remove-parked-domains-aliases-in-cpanel",
+                "articles/domain-management/how-to-create-addon-domains-in-cpanel",
+                "articles/domain-management/how-to-remove-an-add-on-domain-in-cpanel",
+                "articles/domain-management/how-to-redirect-an-add-on-domain-in-cpanel",
+                "articles/domain-management/how-to-create-a-subdomain-in-cpanel",
+                "articles/domain-management/how-to-remove-a-subdomain-in-cpanel",
+                "articles/domain-management/how-to-redirect-a-subdomain-to-an-external-url",
+                "articles/domain-management/how-to-redirect-your-website-to-any-page-or-external-domain",
+                "articles/domain-management/how-to-remove-a-domain-redirect-in-cpanel"
+              ]
+            },
+            {
+              "group": "Email",
+              "pages": [
+                "articles/email/how-to-access-email-from-cpanel-webmail",
+                "articles/email/how-to-change-an-email-accounts-password-in-cpanel",
+                "articles/email/how-to-create-an-email-autoresponder-when-you-are-on",
+                "articles/email/how-to-forward-an-email-to-gmail-or-other-email-service",
+                "articles/email/how-to-create-an-email-account-in-cpanel"
+              ]
+            },
+            {
+              "group": "FTP",
+              "pages": [
+                "articles/ftp/how-to-create-an-ftp-account-in-cpanel",
+                "articles/ftp/how-to-change-the-password-of-the-ftp-account-in-cpanel",
+                "articles/ftp/how-to-change-the-ftp-user-quota-in-cpanel",
+                "articles/ftp/how-to-delete-an-ftp-user-account-from-cpanel"
+              ]
+            },
+            {
+              "group": "Mail Filters & SPAM",
+              "pages": [
+                "articles/mail-filters-spam/how-to-enable-boxtrapper-in-cpanel",
+                "articles/mail-filters-spam/how-to-enable-apache-spamassassin-and-spambox-in-cpanel",
+                "articles/mail-filters-spam/how-to-create-an-account-level-global-email-filter-in-cpanel",
+                "articles/mail-filters-spam/how-to-edit-an-account-level-global-email-filter-in-cpanel",
+                "articles/mail-filters-spam/how-to-delete-an-account-level-global-email-filter-in-cpanel"
+              ]
+            },
+            {
+              "group": "Security",
+              "pages": [
+                "articles/security/how-to-password-protect-a-directory-in-cpanel",
+                "articles/security/how-to-block-an-ip-address-to-deny-access-to-your-website",
+                "articles/security/how-to-protect-website-images-from-being-displayed-at-an",
+                "articles/security/how-to-block-any-ip-address-via-an-htaccess-rule",
+                "articles/security/how-to-disable-directory-browsing-using-the-htaccess-rule",
+                "articles/security/how-to-protect-the-htaccess-file",
+                "articles/security/how-to-restrict-access-to-directories-by-ip-address"
+              ]
+            },
+            {
+              "group": "CloudLinux",
+              "pages": [
+                "articles/cloudlinux-cpanel/how-to-increase-phps-upload-max-filesize-value-using-in",
+                "articles/cloudlinux-cpanel/how-to-increase-phps-post-max-size-value-using-cloudlinuxs",
+                "articles/cloudlinux-cpanel/how-to-change-the-php-version-via-cloudlinux-selector-in",
+                "articles/cloudlinux-cpanel/how-to-enable-ioncube-loader-using-cloudlinux-selector-in",
+                "articles/cloudlinux-cpanel/how-to-enable-the-gd-extension-of-php-using-cloudlinux-in",
+                "articles/cloudlinux-cpanel/how-to-enable-the-mailparse-extension-of-php-using-selector",
+                "articles/cloudlinux-cpanel/how-to-enable-or-disable-php-extensions-using-the-cloudlinux",
+                "articles/cloudlinux-cpanel/how-to-enable-or-disable-phps-allow-url-fopen-using-selector",
+                "articles/cloudlinux-cpanel/how-to-enable-or-disable-phps-display-errors-via-cloudlinux",
+                "articles/cloudlinux-cpanel/how-to-increase-or-decrease-php-memory-limit-via-cloudlinux"
+              ]
+            },
+            {
+              "group": "Softaculous",
+              "pages": [
+                "articles/softaculous/what-is-softaculous",
+                "articles/softaculous/how-to-access-softaculous-in-cpanel"
+              ]
+            },
+            {
+              "group": "Others",
+              "pages": [
+                "articles/others/how-to-create-a-user-friendly-url-using-htaccess",
+                "articles/others/how-to-redirect-a-page-or-website-using-htaccess",
+                "articles/others/fix-php-error-allowed-memory-size-of-x-bytes-exhausted"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "DirectAdmin",
+          "pages": [
+            {
+              "group": "Backup/Restore",
+              "pages": [
+                "articles/directadmin/backup-restore/how-to-remove-a-backup-file-using-directadmin"
+              ]
+            },
+            {
+              "group": "Databases",
+              "pages": [
+                "articles/directadmin/databases/how-to-create-a-database-in-directadmin",
+                "articles/directadmin/databases/how-to-modify-a-database-users-privileges-in-directadmin",
+                "articles/directadmin/databases/how-to-change-a-database-password-in-directadmin",
+                "articles/directadmin/databases/how-to-create-a-new-database-user-in-directadmin",
+                "articles/directadmin/databases/how-to-repair-a-database-in-directadmin",
+                "articles/directadmin/databases/how-to-examine-or-optimize-a-database-in-directadmin",
+                "articles/directadmin/databases/how-to-delete-a-database-in-directadmin",
+                "articles/directadmin/databases/how-to-download-a-database-backup-from-directadmin"
+              ]
+            },
+            {
+              "group": "Domain Management",
+              "pages": [
+                "articles/directadmin/domain-management/how-to-create-a-domain-pointer-in-directadmin",
+                "articles/directadmin/domain-management/how-to-remove-a-domain-pointer-in-directadmin",
+                "articles/directadmin/domain-management/how-to-create-a-domain-alias-in-directadmin",
+                "articles/directadmin/domain-management/how-to-remove-a-domain-alias-in-directadmin",
+                "articles/directadmin/domain-management/how-to-add-a-subdomain-in-directadmin",
+                "articles/directadmin/domain-management/how-to-remove-subdomain-in-directadmin",
+                "articles/directadmin/domain-management/how-to-redirect-your-website-using-directadmin",
+                "articles/directadmin/domain-management/how-to-remove-a-redirect-from-your-website-using-directadmin"
+              ]
+            },
+            {
+              "group": "Email",
+              "pages": [
+                "articles/directadmin/email/how-to-create-an-email-account-in-directadmin",
+                "articles/directadmin/email/how-to-change-an-email-accounts-password-in-directadmin",
+                "articles/directadmin/email/how-to-rename-an-email-address-in-directadmin",
+                "articles/directadmin/email/how-to-change-the-email-sending-limit-in-directadmin",
+                "articles/directadmin/email/how-to-change-the-email-account-disks-quota-in-directadmin",
+                "articles/directadmin/email/how-to-access-your-email-from-directadmin"
+              ]
+            },
+            {
+              "group": "FTP",
+              "pages": [
+                "articles/directadmin/ftp/how-to-change-an-ftp-account-password-in-directadmin",
+                "articles/directadmin/ftp/how-to-create-an-ftp-account-in-directadmin",
+                "articles/directadmin/ftp/how-to-suspend-an-ftp-account-in-directadmin",
+                "articles/directadmin/ftp/how-to-remove-an-ftp-account-in-directadmin"
+              ]
+            },
+            {
+              "group": "Mail Filters & SPAM",
+              "pages": [
+                "articles/directadmin/mail-filters-spam/how-to-enable-apache-spamassassin-in-directadmin",
+                "articles/directadmin/mail-filters-spam/how-to-disable-apache-spamassassin-in-directadmin",
+                "articles/directadmin/mail-filters-spam/how-to-block-email-using-spam-filters-in-directadmin",
+                "articles/directadmin/mail-filters-spam/how-to-block-a-spammy-domains-using-spam-filters-in",
+                "articles/directadmin/mail-filters-spam/how-to-block-emails-containing-the-stop-word-in-directadmin",
+                "articles/directadmin/mail-filters-spam/how-to-block-emails-by-size-using-spam-filter-in-directadmin",
+                "articles/directadmin/mail-filters-spam/how-to-remove-email-spam-filters-in-directadmin"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Plesk",
+          "pages": [
+            {
+              "group": "Backup/Restore",
+              "pages": [
+                "articles/plesk/backup-restore/how-to-generate-a-full-backup-in-plesk",
+                "articles/plesk/backup-restore/how-to-exclude-specific-files-folders-from-the-plesk-backup",
+                "articles/plesk/backup-restore/how-to-configure-an-ftp-backup-in-plesk",
+                "articles/plesk/backup-restore/how-to-encrypt-database-password-in-plesk-backup"
+              ]
+            },
+            {
+              "group": "General",
+              "pages": [
+                "articles/plesk/general-plesk/how-to-edit-a-file-in-the-plesk-file-manager",
+                "articles/plesk/general-plesk/how-to-log-in-to-plesk",
+                "articles/plesk/general-plesk/how-to-change-the-password-of-a-plesk-account",
+                "articles/plesk/general-plesk/how-to-reset-a-plesks-account-password",
+                "articles/plesk/general-plesk/how-to-update-a-plesk-accounts-email-address",
+                "articles/plesk/general-plesk/how-to-change-the-language-of-a-plesk-panel",
+                "articles/plesk/general-plesk/how-to-change-the-plesk-accounts-contact-details",
+                "articles/plesk/general-plesk/how-to-upload-files-via-the-plesk-file-manager",
+                "articles/plesk/general-plesk/how-to-create-a-directory-or-files-in-plesk-file-manager",
+                "articles/plesk/general-plesk/how-to-check-disk-and-bandwidth-usage-in-plesk"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "InterWorx",
+          "pages": [
+            {
+              "group": "Configuration",
+              "pages": [
+                "articles/siteworx-interworx/others/how-to-create-a-user-friendly-url-using-htaccess",
+                "articles/siteworx-interworx/others/php-error-allowed-memory-size-of-x-bytes-exhausted",
+                "articles/siteworx-interworx/others/how-to-redirect-a-page-to-another-page-or-website-using"
+              ]
+            },
+            {
+              "group": "Security",
+              "pages": [
+                "articles/siteworx-interworx/security/how-to-ban-any-ip-address-via-htaccess",
+                "articles/siteworx-interworx/security/how-to-disable-directory-browsing-using-the-htaccess-rule",
+                "articles/siteworx-interworx/security/how-to-protect-your-htaccess-file",
+                "articles/siteworx-interworx/security/how-to-restrict-access-to-directories-by-ip-address-siteworx"
+              ]
+            }
+          ]
+        }
+        ]
+      },
+      {
+        "tab": "VPS Hosting",
+        "icon": "cloud",
+        "groups": [
+        {
+          "group": "Virtualizor",
+          "pages": [
+            {
+              "group": "Basics",
+              "pages": [
+                "articles/virtualizor/virtualizor-basic/how-to-log-in-to-virtualizor-control-panel",
+                "articles/virtualizor/virtualizor-basic/how-to-check-vps-online-or-offline-status-in-virtualizor",
+                "articles/virtualizor/virtualizor-basic/how-to-check-vps-specifications-and-virtualization-info-in",
+                "articles/virtualizor/virtualizor-basic/how-to-change-your-virtualizor-account-password"
+              ]
+            },
+            {
+              "group": "VPS Management",
+              "pages": [
+                "articles/virtualizor/virtualizor-vps-management/how-to-reboot-restart-vps-in-virtualizor",
+                "articles/virtualizor/virtualizor-vps-management/how-to-forcefully-or-gracefully-shut-down-the-vps-in",
+                "articles/virtualizor/virtualizor-vps-management/how-to-start-boot-your-vps-in-virtualizor",
+                "articles/virtualizor/virtualizor-vps-management/how-to-access-vps-via-vnc-in-virtualizor",
+                "articles/virtualizor/virtualizor-vps-management/how-to-reinstall-an-os-using-the-virtualizor-automatic-os",
+                "articles/virtualizor/virtualizor-vps-management/how-to-manually-install-reinstall-an-os-using-virtualizor-a"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "SolusVM 2",
+          "pages": [
+            {
+              "group": "Basics",
+              "pages": [
+                "articles/solusvm-2/solusvm-2-basics/how-to-log-in-to-solusvm-2-control-panel",
+                "articles/solusvm-2/solusvm-2-basics/how-to-check-if-your-vps-is-online-or-offline-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-basics/how-to-check-vps-specifications-and-virtualization-info-in-2",
+                "articles/solusvm-2/solusvm-2-basics/how-to-enable-two-factor-authentication-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-basics/how-to-disable-two-factor-authentication-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-basics/how-to-change-the-solusvm-2-control-panel-password"
+              ]
+            },
+            {
+              "group": "VPS Management",
+              "pages": [
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-reboot-restart-vps-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-forcefully-or-gracefully-shut-down-the-vps-in-solusvm",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-start-boot-your-vps-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-access-vps-via-vnc-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-reinstall-an-os-using-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-install-an-os-from-iso-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-enable-or-disable-tun-tap-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-enable-or-disable-ppp-in-solusvm-2",
+                "articles/solusvm-2/solusvm-2-vps-management/how-to-change-hostname-in-solusvm-2"
+              ]
+            }
+          ]
+        }
+        ]
+      },
+      {
+        "tab": "WordPress",
+        "icon": "wordpress",
+        "groups": [
+        {
+          "group": "Getting Started",
+          "pages": [
+            "articles/wordpress/how-to-access-the-wordpress-admin-dashboard",
+            "articles/softaculous/blog/how-to-install-wordpress-via-softaculous-in-cpanel"
+          ]
+        },
+        {
+          "group": "Posts & Content",
+          "pages": [
+            "articles/wordpress/how-to-remove-sample-comments-and-posts-from-wordpress",
+            "articles/wordpress/how-to-write-and-publish-your-first-blog-post-in-wordpress",
+            "articles/wordpress/how-to-remove-a-post-in-wordpress",
+            "articles/wordpress/how-to-bulk-delete-posts-in-wordpress"
+          ]
+        },
+        {
+          "group": "Categories",
+          "pages": [
+            "articles/wordpress/how-to-add-a-new-category-in-wordpress",
+            "articles/wordpress/how-to-delete-an-uncategorized-category-in-wordpress"
+          ]
+        }
+        ]
+      },
+      {
+        "tab": "Applications",
+        "icon": "grid",
+        "groups": [
+        {
+          "group": "Blogs",
+          "pages": [
+            "articles/softaculous/blog/how-to-install-pubvana-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-serendipity-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-dotclear-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-b2evolution-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-textpattern-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-nibbleblog-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-nucleus-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-chyrp-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-pivotx-via-softaculous-in-cpanel",
+            "articles/softaculous/blog/how-to-install-flatpress-via-softaculous-in-cpanel"
+          ]
+        },
+        {
+          "group": "Forums",
+          "pages": [
+            "articles/softaculous/forum/how-to-install-phpbb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-smf-simplemachine-forum-via-softaculous-in",
+            "articles/softaculous/forum/how-to-install-mybb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-advanced-electron-forum-aef-via-softaculous",
+            "articles/softaculous/forum/how-to-install-vanilla-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-punbb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-xmb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-fluxbb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-phorum-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-bbpress-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-fudforum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-minibb-forum-via-softaculous-in-cpanel",
+            "articles/softaculous/forum/how-to-install-beehive-forum-via-softaculous-in-cpanel"
+          ]
+        },
+        {
+          "group": "CMS & Portal",
+          "pages": [
+            "articles/softaculous/cms-portal/how-to-install-drupal-core-via-softaculous-in-cpanel",
+            "articles/softaculous/cms-portal/how-to-install-joomla-via-softaculous-in-cpanel"
+          ]
+        }
+        ]
+      },
+      {
+        "tab": "General",
+        "icon": "circle-info",
+        "groups": [
+        {
+          "group": "Mobile Email",
+          "pages": [
+            {
+              "group": "iOS/Apple",
+              "pages": [
+                "articles/mobile/ios-apple/how-to-add-a-cpanel-email-account-on-apple-ios",
+                "articles/mobile/ios-apple/how-to-check-fetch-an-email-on-apple-ios",
+                "articles/mobile/ios-apple/how-to-automatically-sync-or-fetch-a-cpanel-email-on-apple",
+                "articles/mobile/ios-apple/how-to-change-the-signature-of-an-apple-ios-sent-from-my"
+              ]
+            },
+            {
+              "group": "Android",
+              "pages": [
+                "articles/mobile/android/how-to-set-up-a-cpanel-email-account-in-android",
+                "articles/mobile/android/how-to-read-cpanel-emails-in-android",
+                "articles/mobile/android/how-to-delete-cpanel-emails-in-android",
+                "articles/mobile/android/how-to-fetch-sync-emails-in-android",
+                "articles/mobile/android/how-to-send-an-email-via-android",
+                "articles/mobile/android/how-to-set-up-an-email-signature-in-android",
+                "articles/mobile/android/how-to-automatically-sync-the-cpanel-email-in-android-or-the"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "PayPal",
+          "pages": [
+            "articles/paypal/how-to-subscribe-to-an-invoice-via-paypal",
+            "articles/paypal/how-to-pay-an-invoice-with-a-card-via-paypal-without-an",
+            "articles/paypal/how-to-check-your-automatic-subscriptions-in-paypal",
+            "articles/paypal/how-to-cancel-an-automatic-paypal-subscription",
+            "articles/paypal/how-to-link-a-debit-or-credit-card-to-your-paypal-account",
+            "articles/paypal/how-to-remove-a-debit-or-credit-card-from-paypal",
+            "articles/paypal/how-to-set-a-preferred-payment-method-in-paypal"
+          ]
+        }
         ]
       }
     ]

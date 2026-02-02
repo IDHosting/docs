@@ -1,0 +1,49 @@
+---
+title: "Create a Domain Pointer in DirectAdmin"
+description: "Learn how to create a domain pointer in DirectAdmin to point an additional domain to your primary website's content."
+---
+
+You can use an additional domain to point to the root of your primary website. For example, if your primary domain is `example.com` and you point `example.net` to it, visiting `example.net` in a browser will display the contents of `example.com`.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin account.
+  </Step>
+  <Step title="Navigate to Domain Pointers">
+    In the **Account Manager** section, click on **Domain Pointers**. Alternatively, you can type "Domain Pointers" into the search bar and select the option when it appears.
+    <Frame>
+      <img
+        src="/images/kb/da-domainpointer-icon.gif"
+        alt="DirectAdmin Domain Pointers Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Create a New Domain Pointer">
+    Click on the **Create Domain Pointer** button, usually located in the top right corner of the page.
+    <Frame>
+      <img
+        src="/images/kb/da-createdomainpointer-btn.gif"
+        alt="DirectAdmin Create Domain Pointer Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter Source Domain">
+    Under the **Source Domain** field, enter the domain name you wish to use as the pointer.
+    <Frame>
+      <img
+        src="/images/kb/da-domainpointer-create.gif"
+        alt="DirectAdmin Create Domain Pointer Form"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Finalize Creation">
+    Unmark the **Create as an Alias** option and click the **Create** button.
+  </Step>
+</Steps>
+
+<Warning>
+The domain pointer will not function correctly if it points to the same nameservers as your primary domain. Ensure your DNS records are configured appropriately.
+</Warning>

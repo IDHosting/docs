@@ -1,0 +1,107 @@
+---
+title: "Install an OS from ISO in SolusVM 2"
+description: "Learn how to install an operating system from an ISO image in SolusVM 2 for customized installations."
+---
+
+Installing an OS from an ISO image allows for greater customization, such as partition editing and other advanced options. Follow the steps below to install an OS using an ISO image in SolusVM 2.
+
+<Steps>
+  <Step title="Log in to SolusVM 2">
+    Log in to your SolusVM 2 Control Panel.
+  </Step>
+  <Step title="Select Project">
+    Under **Projects**, click on the **project** that contains your VPS.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-vps-status.gif" 
+        alt="SolusVM 2 VPS Status"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select VPS">
+    Click on the appropriate VPS.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-vps-select.gif" 
+        alt="SolusVM 2 Select VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Boot from ISO Image">
+    Navigate to **Boot &amp; Rescue** and select **Boot from ISO Image**.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-boot-from-iso-menu.gif" 
+        alt="SolusVM 2 Boot from ISO Menu"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose ISO and Apply">
+    Select the desired ISO image from the **drop-down** menu and click **Apply**.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-choose-iso.gif" 
+        alt="SolusVM 2 Choose ISO"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm Settings">
+    Scroll down and click **Apply**, then click **OK** to confirm. Wait a few moments for the server settings to update.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-iso-confirm-action.gif" 
+        alt="SolusVM 2 ISO Confirm Action"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Reboot VPS">
+    Click on **Restart** located at the top right side, then click **Yes** to reboot.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-restart-icon.gif" 
+        alt="SolusVM 2 Restart Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Open VNC Dialog">
+    Click on the **VNC dialog** icon.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-vnc-start.gif" 
+        alt="SolusVM 2 VNC Start"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Boot Menu">
+    The VNC page will open. Press **ESC** to open the boot menu, then enter **1**.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-vnc-booting.gif" 
+        alt="SolusVM 2 VNC Booting"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Start OS Installation">
+    Most operating systems will prompt you to **press any button to start an OS installation** during boot. When prompted, press any key on your keyboard. The OS installation will begin. You might also see options like **Install OS** or **Test this media**. Select **Install OS** and press Enter to proceed with the installation.
+    <Frame>
+      <img 
+        src="/images/kb/solusvm2-iso-os-choose.gif" 
+        alt="SolusVM 2 ISO OS Choose"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>Once the installation starts, you will be guided through steps such as creating a partition and setting a password.</Note>
+  </Step>
+</Steps>
+
+<Info>
+After the OS installation is complete, remember to go to **Boot &amp; Rescue**, select **Boot from Disk**, click **Apply**, and then reboot the VPS. Failure to do so will result in the VPS booting into installation mode instead of normal operation.
+</Info>

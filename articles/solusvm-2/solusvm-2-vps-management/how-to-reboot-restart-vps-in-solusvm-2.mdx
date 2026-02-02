@@ -1,0 +1,75 @@
+---
+title: "Reboot/Restart VPS in SolusVM 2"
+description: "Learn how to reboot or restart your Virtual Private Server (VPS) using either the SolusVM 2 control panel or the command line."
+---
+
+You can restart your VPS through the SolusVM 2 control panel or via the command line.
+
+## How to Reboot/Restart a VPS via SolusVM 2?
+
+<Steps>
+  <Step title="Log in to your SolusVM 2 Control Panel">
+    Access your SolusVM 2 control panel.
+  </Step>
+  <Step title="Select the Project">
+    Under **Projects**, click on the **project** that contains your VPS.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-status.gif"
+        alt="SolusVM 2 VPS Status"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose Your VPS">
+    Click on the specific VPS you wish to restart.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-vps-select.gif"
+        alt="SolusVM 2 Select VPS"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Restart">
+    Click on the **Restart** button, typically located at the top right.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-restart-icon.gif"
+        alt="SolusVM 2 Restart Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Confirm Restart">
+    Choose **Yes** to confirm the restart action.
+    <Frame>
+      <img
+        src="/images/kb/solusvm2-reboot-confirmation.gif"
+        alt="SolusVM 2 Reboot Confirmation"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    The VPS will begin its reboot process. This may take some time. Once completed, a confirmation message will be displayed.
+  </Step>
+</Steps>
+
+## How to Reboot/Restart a VPS via Command Line?
+
+<Steps>
+  <Step title="Log in via SSH">
+    Connect to your VPS using an SSH client.
+  </Step>
+  <Step title="Execute Reboot Command">
+    Enter the following command and press Enter:
+    ```bash
+    shutdown -r now
+    ```
+  </Step>
+</Steps>
+
+After executing the command, your VPS will begin to reboot. This process can take a few minutes.
+
+<Warning>
+If your VPS does not become accessible online within 5 to 10 minutes after initiating a command-line reboot, it is recommended to perform the restart through the SolusVM 2 control panel to ensure proper functionality.
+</Warning>

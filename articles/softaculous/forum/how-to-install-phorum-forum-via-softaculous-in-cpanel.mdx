@@ -1,0 +1,66 @@
+---
+title: "Install Phorum Forum via Softaculous in cPanel"
+description: "A guide on how to easily install Phorum Forum using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Phorum Forum on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Begin by accessing your cPanel dashboard.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel, click on the **Softaculous Apps Installer** icon.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer icon in cPanel" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Phorum">
+    On the left-hand sidebar, locate the search box, type `Phorum`, and then click on the **Phorum** link that appears.
+    <Frame>
+      <img src="/images/kb/phorum-softaculous.gif" alt="Searching for Phorum in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Phorum installation process.
+    <Frame>
+      <img src="/images/kb/phorum-install-button.gif" alt="Phorum Install button in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Under the **Software Setup** section, configure the following:
+    *   **Choose Installation URL:** Select the desired protocol (e.g., `http` or `https`) and your domain. If you wish to install Phorum in a subdirectory (e.g., `example.com/forum`), enter the directory name in the "**In Directory**" field. Leave it blank to install Phorum on your main domain (e.g., `example.com`).
+        <Frame>
+          <img src="/images/kb/softaculous-general-install-screen.gif" alt="Phorum Software Setup configuration" style={{ width: '100%', height: 'auto' }} />
+        </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    In the **Site Settings** section, provide:
+    *   **Site Name:** The name for your forum (e.g., "Gaming Forum").
+    *   **Site Description:** A brief description of your forum.
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter:
+    *   **Admin Username:** Your desired username for the Phorum administrator. For security, avoid common usernames like `administrator` or `admin`.
+    *   **Admin Password:** Create a strong and secure password.
+    *   **Admin Email:** Your email address, which will be used for password resets and notifications.
+    <Frame>
+      <img src="/images/kb/softaculous-screen2-general.gif" alt="Phorum Admin Account configuration" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+    <Note>It is highly recommended to copy and save your admin username and password to a secure location, such as Notepad. You will need these credentials to access the admin area of your Phorum forum later.</Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure database details or set up automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Final Install button in Softaculous" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, your Phorum forum will be ready to use!

@@ -1,0 +1,52 @@
+---
+title: "Create a User-friendly URL Using htaccess"
+description: "Learn how to shorten long URLs into user-friendly versions using the .htaccess file."
+---
+
+If your website uses long URLs like `example.com/files/folder/sitemap.html`, you can create shorter, more user-friendly URLs such as `example.com/sitemap` using the `.htaccess` file.
+
+This guide will walk you through the process.
+
+## Steps to Create User-Friendly URLs
+
+<Steps>
+  <Step title="Enable Rewrite Engine">
+    First, you need to ensure the rewrite engine is enabled. Add the following line to your `.htaccess` file:
+
+    ```apache
+    RewriteEngine on
+    ```
+  </Step>
+  <Step title="Define the Rewrite Rule">
+    Next, define the rule to map the user-friendly URL to the actual URL. Replace `/sitemap/` with your desired user-friendly URL path and `/files/folder/sitemap.html` with the actual path to your file.
+
+    ```apache
+    RewriteRule ^sitemap/$ /files/folder/sitemap.html [L]
+    ```
+
+    *   `^sitemap/$`: This is the pattern for the user-friendly URL. The `^` signifies the beginning of the string, `sitemap` is the desired URL slug, and `/$` signifies the end of the string.
+    *   `/files/folder/sitemap.html`: This is the actual path to the file on your server that the user-friendly URL will point to.
+    *   `[L]`: This flag means that this is the last rule to be processed if it matches.
+  </Step>
+</Steps>
+
+## Example
+
+Let's say you have a page located at `example.com/products/electronics/television.html` and you want to make it accessible via `example.com/television`.
+
+You would add the following to your `.htaccess` file:
+
+```apache
+RewriteEngine on
+RewriteRule ^television/$ /products/electronics/television.html [L]
+```
+
+Now, when a user visits `example.com/television`, they will be seamlessly redirected to `example.com/products/electronics/television.html`.
+
+<Note>
+Ensure that your `.htaccess` file is placed in the root directory of your website. If it's not there, the rules may not be applied correctly.
+</Note>
+
+<Tip>
+You can use this technique for any page or resource on your website to improve SEO and user experience. Just adapt the `RewriteRule` to match your specific needs.
+</Tip>

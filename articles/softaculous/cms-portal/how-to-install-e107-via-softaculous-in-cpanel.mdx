@@ -1,0 +1,72 @@
+---
+title: "Install e107 via Softaculous in cPanel"
+description: "A guide on how to install e107 using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install e107 on your hosting account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img src="/images/kb/softaculous-icon.gif" alt="Softaculous Apps Installer Icon" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for e107">
+    On the left-hand sidebar, type `e107` into the search box. Click on the `e107` link that appears.
+    <Frame>
+      <img src="/images/kb/e107-softaculous.gif" alt="e107 in Softaculous Search" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+    <Frame>
+      <img src="/images/kb/e107-install-button.gif" alt="e107 Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., `http://` or `https://`) and your domain. If you wish to install e107 in a subdirectory (e.g., `example.com/directory`), enter the directory name in the "In Directory" field. Leave it blank to install e107 on your main domain (e.g., `example.com`).</li>
+    </ul>
+    <Frame>
+      <img src="/images/kb/softaculous-general-install-screen.gif" alt="Softaculous General Install Screen" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, enter the following:
+    <ul>
+      <li><strong>Site Name:</strong> Provide a name for your website, such as `e107`.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter the following details:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your e107 admin account. For security reasons, avoid using generic names like `administrator` or `admin`.</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Real Name:</strong> You can use your full name or leave it as is.</li>
+      <li><strong>Admin Email:</strong> Enter your email address.</li>
+    </ul>
+    <Note>
+      Copy your admin username and password to a secure location (like Notepad). You will need these credentials to log in to your e107 admin area later.
+    </Note>
+    <Frame>
+      <img src="/images/kb/softaculous-install-screen-three.gif" alt="e107 Admin Account Setup" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    You can configure **Advanced Options** if you need to change the database name or set up automated backups. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button.
+    <Frame>
+      <img src="/images/kb/softaculous-install-button.gif" alt="Softaculous Install Button" style={{ width: '100%', height: 'auto' }} />
+    </Frame>
+  </Step>
+</Steps>

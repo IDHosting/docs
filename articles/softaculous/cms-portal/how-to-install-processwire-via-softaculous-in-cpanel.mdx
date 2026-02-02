@@ -1,0 +1,106 @@
+---
+title: "Install ProcessWire via Softaculous in cPanel"
+description: "A guide on how to install ProcessWire using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like ProcessWire incredibly easy. Follow these steps to get ProcessWire up and running on your cPanel account.
+
+## Installation Steps
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Access your cPanel account by navigating to your domain's cPanel login URL and entering your credentials.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    Once logged in, scroll down to the **Software** section and click on the **Softaculous Apps Installer** icon.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer Icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to ProcessWire">
+    You will be redirected to the Softaculous interface. On the left-hand sidebar, type "ProcessWire" into the search box. Click on the **ProcessWire** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/processwire-softaculous.gif"
+        alt="Search for ProcessWire in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    On the ProcessWire overview page, click the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/processwire-install-button.gif"
+        alt="ProcessWire Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the desired protocol (e.g., `http://` or `https://`) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you want to install ProcessWire in a subdirectory (e.g., `example.com/directory`). Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous Software Setup Screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following:
+    <ul>
+      <li>
+        <strong>Admin Folder:</strong> Specify a name for your ProcessWire admin folder. For security, it's recommended to use something other than the default, like `admin123`.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your ProcessWire admin login. Avoid common usernames like "admin" or "administrator" for better security.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter a valid email address.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/processwire-install-screen2.gif"
+        alt="ProcessWire Admin Account Setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, as you will need them to log in to your ProcessWire admin area later.
+    </Note>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    You can configure **Advanced Options** if you wish to change the default database name or set up automated backups. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install Button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+Once the installation is complete, you will be provided with links to your new ProcessWire website and its admin area.

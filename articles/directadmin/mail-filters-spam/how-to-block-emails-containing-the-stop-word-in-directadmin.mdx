@@ -1,0 +1,47 @@
+---
+title: "Block Emails Containing the Stop Word in DirectAdmin"
+description: "Learn how to configure DirectAdmin to block emails that contain specific 'stop words'."
+---
+
+## Blocking Emails by Stop Word in DirectAdmin
+
+This guide will walk you through the process of blocking emails that contain specific keywords or "stop words" using DirectAdmin's built-in spam filtering features.
+
+<Steps>
+  <Step title="Log in to DirectAdmin">
+    Access your DirectAdmin control panel by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to SPAM Filters">
+    In the **E-Mail Manager** section, click on **SPAM Filters**.
+    Alternatively, you can use the **search bar** at the top of the DirectAdmin interface, type "SPAM Filters", and select the option when it appears.
+    <Frame>
+      <img 
+        src="/images/kb/da-spamfilters-icon.gif" 
+        alt="DirectAdmin SPAM Filters icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Select 'Stop Word' Option">
+    Under the **Block By** section, locate the **drop-down menu** and select the **Stop Word** option.
+  </Step>
+  <Step title="Enter the Stop Word">
+    In the **Value** field, type the specific word or phrase you wish to block.
+    <Frame>
+      <img 
+        src="/images/kb/da-blockby-stopword.gif" 
+        alt="DirectAdmin Block By Stop Word configuration"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Apply the Block">
+    Click the **Block** button to save your settings and activate the spam filter for the specified stop word.
+  </Step>
+</Steps>
+
+<Tip>
+  To prevent blocking emails with partial matches (e.g., blocking "apple" from also blocking "pineapple"), consider adding spaces before and after your stop word in the <strong>Value</strong> field. For example, entering ` apple ` will only block emails containing the exact word "apple" surrounded by spaces.
+</Tip>
+
+You can repeat this process to add multiple stop words to your blocklist.

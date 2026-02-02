@@ -1,0 +1,55 @@
+---
+title: "Create an FTP Account in SiteWorx"
+description: "Learn how to create a dedicated FTP account in SiteWorx for specific directory access."
+---
+
+You can access your FTP account using your SiteWorx login details, which grants full access to your home directory. However, to create an FTP user account with access limited to a specific directory, you'll need to set up a separate FTP account.
+
+<Steps>
+  <Step title="Log in to SiteWorx">
+    Access your SiteWorx account by logging in with your credentials.
+  </Step>
+  <Step title="Navigate to Add FTP Account">
+    In the **FTP** section, click on the **Add an FTP Account** icon.
+    <Frame>
+      <img
+        src="/images/kb/sw-ad-an-ftp-account-icon.gif"
+        alt="SiteWorx Add an FTP Account icon"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter FTP Account Details">
+    Fill in the following information for your new FTP account:
+    <ul>
+      <li>
+        <strong>FTP Username:</strong> Choose a username for your FTP account (e.g., `John`). If you have multiple domains, select the correct one from the dropdown menu.
+      </li>
+      <li>
+        <strong>Password:</strong> Enter a secure password. Alternatively, click the <strong>Magic Wand</strong> icon to generate a strong password.
+      </li>
+      <li>
+        <strong>Home Directory:</strong> Leave this field as is to use the default home directory.
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/siteworx-ftp-add.gif"
+        alt="SiteWorx FTP Add Account form"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Add the FTP Account">
+    Click the <strong>Add</strong> button to create the FTP account.
+  </Step>
+</Steps>
+
+Your new FTP account is now created and ready to use with your FTP client. You can connect using the following details:
+
+*   **Host:** Your website's IP address or domain name (e.g., `ftp.example.com`). Replace `example.com` with your actual domain.
+*   **Username:** Your full FTP username, formatted as `username@yourdomain.com` (e.g., `John@example.com`).
+*   **FTP Port:** `21` (This is the default port for FTP).
+*   **FTP Password:** The password you set or generated for this FTP account.
+
+You have successfully created your FTP account and can now begin uploading and managing files on your website.

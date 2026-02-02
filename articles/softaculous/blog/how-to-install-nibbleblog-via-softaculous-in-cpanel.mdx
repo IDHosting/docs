@@ -1,0 +1,95 @@
+---
+title: "Install Nibbleblog via Softaculous in cPanel"
+description: "A guide on how to install Nibbleblog using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the process of installing web applications. Follow these steps to install Nibbleblog on your hosting account.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    In the **Software** section, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Nibbleblog">
+    cPanel will redirect you to the Softaculous interface. On the left-hand side, type **Nibbleblog** into the search box. Click on the **Nibbleblog** link that appears.
+    <Frame>
+      <img
+        src="/images/kb/nibbleblog-softaculous.gif"
+        alt="Searching for Nibbleblog in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click on the **Install** button.
+    <Frame>
+      <img
+        src="/images/kb/nibbleblog-install-button.gif"
+        alt="Nibbleblog Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (HTTP or HTTPS) and your domain. If you wish to install Nibbleblog in a subdirectory (e.g., `example.com/blog`), enter the directory name in the "<strong>In Directory</strong>" field. Leave it blank to install it on your main domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the <strong>Site Settings</strong> section, provide the following details:
+    <ul>
+      <li><strong>Site Name:</strong> Enter the name for your website (e.g., <strong>My Awesome Blog</strong>).</li>
+      <li><strong>Site Description:</strong> A brief description of your blog.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, enter:
+    <ul>
+      <li><strong>Admin Username:</strong> Your desired username for the Nibbleblog admin area. For security, avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Admin Email:</strong> Your email address.</li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as Notepad. You will need these credentials to log in to your Nibbleblog admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-screen2-general.gif"
+        alt="Softaculous admin account setup screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure database settings and automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the installation.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous final install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

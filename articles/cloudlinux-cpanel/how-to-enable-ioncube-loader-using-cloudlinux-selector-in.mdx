@@ -1,0 +1,57 @@
+---
+title: "Enable ionCube Loader Using CloudLinux Selector in cPanel"
+description: "A guide on how to enable the ionCube Loader extension in cPanel using the CloudLinux Selector."
+---
+
+You can use the CloudLinux Selector in cPanel to easily enable the ionCube Loader extension for your PHP environment.
+
+## Steps to Enable ionCube Loader
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    Once logged in, locate the **Software** section and click on **Select PHP Version**.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="Select PHP Version icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access Extensions">
+    After navigating to the PHP Version selector, click on the **Extensions** tab.
+    <Frame>
+      <img 
+        src="/images/kb/cl-extensions-tab-button.gif" 
+        alt="Extensions tab button in CloudLinux Selector"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      If you encounter an error related to the native PHP version on the Extensions page, you will first need to change your PHP version to a non-native one before proceeding.
+    </Note>
+  </Step>
+  <Step title="Enable ionCube Loader">
+    On the **Extensions** page, find the option for <strong>ioncube_loader</strong> and check the box next to it.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-ioncubeloader.gif" 
+        alt="Enabling ionCube Loader checkbox"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    Upon successful enablement, you will see a success message indicating that the module has been saved.
+    <Frame>
+      <img 
+        src="/images/kb/cl-ioncube-loader-enabled.gif" 
+        alt="Success message for ionCube Loader enabled"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>
+
+You have now successfully enabled ionCube Loader using the CloudLinux Selector in your cPanel account.

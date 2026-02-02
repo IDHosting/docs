@@ -1,0 +1,115 @@
+---
+title: "Install PyroCMS via Softaculous in cPanel"
+description: "A guide on how to easily install PyroCMS using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install PyroCMS on your hosting account via cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for PyroCMS">
+    On the left-hand sidebar, type **PyroCMS** into the search box. Click on the **PyroCMS** link that appears in the search results.
+
+    <Frame>
+      <img 
+        src="/images/kb/pyrocms-softaculous.gif" 
+        alt="Searching for PyroCMS in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button.
+
+    <Frame>
+      <img 
+        src="/images/kb/pyrocms-install-button.gif" 
+        alt="PyroCMS Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http:// or https://) and your domain. If you wish to install PyroCMS in a subdirectory (e.g., `example.com/directory`), enter the directory name in the "In Directory" field. Leave it blank to install in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-install-screen.gif" 
+        alt="Software Setup screen in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following details:
+    <ul>
+      <li>
+        <strong>Application Name:</strong> Enter the name for your website (e.g., PyroCMS).
+      </li>
+      <li>
+        <strong>Application Reference:</strong> You can typically leave this field as default.
+      </li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your PyroCMS admin account. For security, avoid common usernames like "administrator" or "admin".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your primary email address.
+      </li>
+    </ul>
+
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location (like Notepad) immediately after setting them. You will need these credentials to log in to your PyroCMS admin area later.
+    </Note>
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-screen-app.gif" 
+        alt="Admin Account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure settings like the database name or set up automated backups. You can usually leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the installation process.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

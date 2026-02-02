@@ -1,0 +1,55 @@
+---
+title: "Create a User-friendly URL Using htaccess"
+description: "Learn how to shorten long URLs into user-friendly ones using htaccess rules."
+---
+
+If your website uses long URLs like `example.com/files/folder/sitemap.html`, you can make them more concise, such as `example.com/sitemap`, by using the `.htaccess` file.
+
+This guide will walk you through the process of modifying your `.htaccess` file to create cleaner, more user-friendly URLs.
+
+## Steps to Create User-Friendly URLs
+
+<Steps>
+  <Step title="Enable Rewrite Engine">
+    First, ensure the rewrite engine is enabled in your `.htaccess` file. Add the following line:
+
+    ```apache
+    RewriteEngine on
+    ```
+  </Step>
+  <Step title="Define the Rewrite Rule">
+    Next, define the rule to map the user-friendly URL to the actual file path. Replace `sitemap/` with your desired user-friendly URL and `/files/folder/sitemap.html` with the actual path to your file.
+
+    ```apache
+    RewriteRule ^sitemap/$ /files/folder/sitemap.html [L]
+    ```
+
+    *   `^sitemap/$`: This is the pattern for the user-friendly URL. The `^` signifies the beginning of the string, `sitemap` is the desired URL slug, and `/$` signifies the end of the string.
+    *   `/files/folder/sitemap.html`: This is the actual path to the file on your server.
+    *   `[L]`: This flag means that this is the last rule to be processed if it matches.
+  </Step>
+  <Step title="Save the .htaccess file">
+    Save the changes to your `.htaccess` file. This file is usually located in the root directory of your website. If it doesn't exist, you can create it.
+  </Step>
+</Steps>
+
+<Note>
+Ensure that the `.htaccess` file is placed in the correct directory. For the rule above, it should be in the root directory of your website. If you are trying to rewrite a URL within a specific subdirectory, place the `.htaccess` file in that subdirectory.
+</Note>
+
+## Example Scenario
+
+Let's say you have a page located at `example.com/products/electronics/television.php` and you want to make it accessible via `example.com/television`.
+
+You would add the following lines to your `.htaccess` file:
+
+```apache
+RewriteEngine on
+RewriteRule ^television/$ /products/electronics/television.php [L]
+```
+
+After saving the `.htaccess` file, you should be able to access your page using the cleaner URL `example.com/television`.
+
+<Tip>
+It's always a good practice to back up your `.htaccess` file before making any changes. This will allow you to easily revert to the previous configuration if something goes wrong.
+</Tip>

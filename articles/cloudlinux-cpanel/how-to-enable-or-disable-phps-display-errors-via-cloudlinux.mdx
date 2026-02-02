@@ -1,0 +1,50 @@
+---
+title: "Enable or Disable PHP's display_errors via CloudLinux Selector in cPanel"
+description: "Learn how to enable or disable PHP's display_errors setting using the CloudLinux Selector in cPanel for debugging or security purposes."
+---
+
+<Note>
+  Sometimes, you need to enable or disable PHP's <code>display_errors</code> setting for debugging or security reasons. You can easily manage this using the CloudLinux Selector within your cPanel account.
+</Note>
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's provided URL.
+  </Step>
+  <Step title="Navigate to Select PHP Version">
+    In the **Software** section of your cPanel dashboard, click on the **Select PHP Version** icon.
+    <Frame>
+      <img 
+        src="/images/kb/cp-cl-select-php-version-icon.gif" 
+        alt="Select PHP Version icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Options Menu">
+    Once on the PHP Selector page, click on the **Options** menu.
+    <Frame>
+      <img 
+        src="/images/kb/cl-options-menu.gif" 
+        alt="Options menu in CloudLinux PHP Selector"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Warning>
+      If the **Options** page displays an error related to the native PHP version, you must first change it to a non-native version before proceeding.
+    </Warning>
+  </Step>
+  <Step title="Enable or Disable display_errors">
+    To enable <code>display_errors</code>, place a checkmark next to it. To disable it, uncheck the box.
+    <Frame>
+      <img 
+        src="/images/kb/cl-enable-or-disable-error.gif" 
+        alt="Enable or disable display_errors option"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+    <Note>
+      After making your selection, a confirmation message will appear indicating whether <code>display_errors</code> has been enabled or disabled.
+    </Note>
+  </Step>
+</Steps>

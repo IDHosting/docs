@@ -1,0 +1,106 @@
+---
+title: "Install GRAV via Softaculous in cPanel"
+description: "A guide on how to install GRAV using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a one-click installer that simplifies the process of installing web applications. Follow these steps to install GRAV on your hosting account via cPanel.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for GRAV">
+    On the left-hand side of the Softaculous interface, type **GRAV** into the search box. Click on the **GRAV** link that appears in the search results.
+    <Frame>
+      <img
+        src="/images/kb/grav-softaculous.gif"
+        alt="Searching for GRAV in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button for GRAV.
+    <Frame>
+      <img
+        src="/images/kb/grav-install-button.gif"
+        alt="GRAV Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http:// or https://) and your domain. In the <strong>In Directory</strong> field, enter a directory name if you wish to install GRAV in a subdirectory (e.g., `example.com/directory`). Leave it blank to install GRAV in the root of your domain (e.g., `example.com`).
+      </li>
+    </ul>
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-install-screen.gif"
+        alt="GRAV Software Setup configuration screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Admin Account">
+    Under the <strong>Admin Account</strong> section, enter the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a secure username for your GRAV administrator. Avoid common usernames like `administrator` or `admin`.
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and unique password.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your primary email address.
+      </li>
+      <li>
+        <strong>First Name:</strong> Your first name.
+      </li>
+      <li>
+        <strong>Last Name:</strong> Your last name.
+      </li>
+      <li>
+        <strong>Real Name:</strong> You can use your full name or leave it as is.
+      </li>
+    </ul>
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as a password manager or a text file, as you will need them to log in to your GRAV admin area later.
+    </Note>
+    <Frame>
+      <img
+        src="/images/kb/grav-install-screen2.gif"
+        alt="GRAV Admin Account configuration screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The <strong>Advanced Options</strong> section allows you to configure database settings or set up automated backups. You can typically leave these settings at their defaults unless you have specific requirements. Be mindful that frequent automated backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to begin the GRAV installation process.
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Softaculous Install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

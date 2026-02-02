@@ -1,0 +1,121 @@
+---
+title: "Install Bolt via Softaculous in cPanel"
+description: "A guide on how to install Bolt CMS using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous makes installing web applications like Bolt incredibly easy. Follow the steps below to install Bolt on your cPanel account.
+
+<Steps>
+  <Step title="Log in to your cPanel account">
+    Access your cPanel account through your hosting provider's portal.
+  </Step>
+  <Step title="Navigate to Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-icon.gif"
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Access the Softaculous Interface">
+    cPanel will redirect you to the Softaculous interface.
+  </Step>
+  <Step title="Search for Bolt">
+    On the left-hand side of the Softaculous interface, type **Bolt** into the search box. Click on the **Bolt** link that appears in the search results.
+
+    <Frame>
+      <img
+        src="/images/kb/bolt-softaculous.gif"
+        alt="Searching for Bolt in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button for Bolt.
+
+    <Frame>
+      <img
+        src="/images/kb/bolt-install-button.gif"
+        alt="Bolt Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li>
+        <strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http:// or https://) and your domain. In the "<strong>In Directory</strong>" field, enter a directory name if you wish to install Bolt in a subdirectory (e.g., `example.com/directory`). Leave this field blank to install Bolt in the root of your domain (e.g., `example.com`).
+      </li>
+      <li>
+        <strong>Data Directory:</strong> It is recommended to leave this field as it is.
+      </li>
+    </ul>
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-general-three.gif"
+        alt="Software Setup configuration in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the <strong>Admin Account</strong> section, enter the following details:
+    <ul>
+      <li>
+        <strong>Admin Username:</strong> Choose a username for your Bolt admin account. For security reasons, avoid common usernames like "administrator" or "admin".
+      </li>
+      <li>
+        <strong>Admin Password:</strong> Create a strong and secure password.
+      </li>
+      <li>
+        <strong>Real Name:</strong> You can use your full name or leave this as is.
+      </li>
+      <li>
+        <strong>Admin Email:</strong> Enter your email address.
+      </li>
+    </ul>
+
+    <Note>
+      Copy your admin username and password to a secure location (like Notepad). You will need these credentials to log in to your Bolt admin area later.
+    </Note>
+
+    <Frame>
+      <img
+        src="/images/kb/admin-real-install-screen.gif"
+        alt="Admin Account setup in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose Language">
+    Select the desired language for your Bolt installation. The default language is English.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-choose-language.gif"
+        alt="Language selection in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    Under <strong>Advanced Options</strong>, you can configure settings like the database name or set up automated backups. Unless you have specific requirements, it's generally safe to leave these settings at their defaults. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the Bolt installation.
+
+    <Frame>
+      <img
+        src="/images/kb/softaculous-install-button.gif"
+        alt="Final Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

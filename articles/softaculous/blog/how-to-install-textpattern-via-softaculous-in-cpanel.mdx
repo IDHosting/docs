@@ -1,0 +1,101 @@
+---
+title: "Install Textpattern via Softaculous in cPanel"
+description: "A guide on how to install Textpattern using the Softaculous Apps Installer in cPanel."
+---
+
+Softaculous is a fantastic tool that simplifies the installation of web applications. Follow these steps to install Textpattern on your hosting account using Softaculous in cPanel.
+
+<Steps>
+  <Step title="Log in to cPanel">
+    Begin by logging into your cPanel account.
+  </Step>
+  <Step title="Access Softaculous Apps Installer">
+    In the **Software** section of your cPanel dashboard, click on **Softaculous Apps Installer**.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-icon.gif" 
+        alt="Softaculous Apps Installer icon in cPanel"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Navigate to Textpattern">
+    You will be redirected to the Softaculous interface. On the left-hand side, type **Textpattern** into the search box. Click on the **Textpattern** link that appears in the search results.
+
+    <Frame>
+      <img 
+        src="/images/kb/textpattern-softaculous.gif" 
+        alt="Searching for Textpattern in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Initiate Installation">
+    Click the **Install** button to begin the Textpattern installation process.
+
+    <Frame>
+      <img 
+        src="/images/kb/textpattern-install-button.gif" 
+        alt="Textpattern Install button in Softaculous"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Software Setup">
+    Fill in the necessary fields under the **Software Setup** section:
+    <ul>
+      <li><strong>Choose Installation URL:</strong> Select the appropriate protocol (e.g., http:// or https://) and your domain name. If you wish to install Textpattern in a subdirectory (e.g., `example.com/directory`), enter the directory name in the "In Directory" field. Leave it blank to install in the root of your domain (e.g., `example.com`).</li>
+    </ul>
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-general-install-screen.gif" 
+        alt="Softaculous general installation screen"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Configure Site Settings">
+    Under the **Site Settings** section, provide the following information:
+    <ul>
+      <li><strong>Site Name:</strong> Enter the name for your website (e.g., "My First Website").</li>
+      <li><strong>Site Description:</strong> Provide a brief description of your site.</li>
+    </ul>
+  </Step>
+  <Step title="Set Up Admin Account">
+    Under the **Admin Account** section, enter your administrator credentials:
+    <ul>
+      <li><strong>Admin Username:</strong> Choose a username for your Textpattern admin account. For security reasons, avoid common usernames like "admin" or "administrator".</li>
+      <li><strong>Admin Password:</strong> Create a strong and secure password.</li>
+      <li><strong>Real Name:</strong> You can leave this as is or enter your actual name.</li>
+      <li><strong>Admin Email:</strong> Enter your email address.</li>
+    </ul>
+
+    <Note>
+      It is highly recommended to copy your admin username and password to a secure location, such as Notepad. You will need these credentials to log in to your Textpattern admin area later.
+    </Note>
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-screen2.gif" 
+        alt="Softaculous Textpattern admin account setup"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Advanced Options (Optional)">
+    The **Advanced Options** section allows you to configure settings like the database name or automated backups. You can generally leave these settings at their defaults unless you have specific requirements. Be mindful that frequent backups can consume significant disk space.
+  </Step>
+  <Step title="Complete Installation">
+    Scroll to the bottom of the page and click the **Install** button to finalize the Textpattern installation.
+
+    <Frame>
+      <img 
+        src="/images/kb/softaculous-install-button.gif" 
+        alt="Softaculous final install button"
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </Frame>
+  </Step>
+</Steps>

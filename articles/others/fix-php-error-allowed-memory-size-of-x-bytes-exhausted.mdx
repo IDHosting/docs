@@ -1,0 +1,40 @@
+---
+title: "Fix PHP Error: Allowed Memory Size Exhausted"
+description: "Learn how to resolve the 'Allowed memory size of X bytes exhausted' PHP error using the .htaccess file."
+---
+
+If you encounter a PHP error similar to "Allowed memory size of X bytes exhausted" in a specific file, this guide will help you resolve it by adjusting your server's memory limit using the `.htaccess` file.
+
+## Understanding the Error
+
+The "Allowed memory size of X bytes exhausted" error means that a PHP script has tried to use more memory than is currently allocated to it. This can happen with complex scripts, plugins, or themes that require significant resources.
+
+## Resolving the Error with .htaccess
+
+You can often fix this issue by increasing the memory limit directly in your `.htaccess` file.
+
+<Steps>
+  <Step title="Locate or Create .htaccess File">
+    Navigate to your website's root directory or the specific directory where the error is occurring. Look for a file named `.htaccess`. If it doesn't exist, you'll need to create it.
+  </Step>
+  <Step title="Add Memory Limit Code">
+    Open the `.htaccess` file with a text editor and add the following line:
+    ```apache
+    RLimitMem max
+    ```
+    <Note>
+      If you are unsure where to place the `.htaccess` file, start by placing it in your primary domain's root directory. If the error persists, try placing a copy of the `.htaccess` file in the specific directory where the error is reported (e.g., `example.com/directory/folder/.htaccess`).
+    </Note>
+  </Step>
+  <Step title="Save and Test">
+    Save the `.htaccess` file and refresh the page that was causing the error. The error should now be resolved.
+  </Step>
+</Steps>
+
+## Further Assistance
+
+If the error continues even after applying these changes, it might indicate a more complex issue with your hosting environment or the script itself.
+
+<Info>
+  If you've followed the steps above and the error persists, please contact our support team. We are here to help you diagnose and resolve the problem.
+</Info>
